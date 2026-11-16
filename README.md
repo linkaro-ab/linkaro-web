@@ -93,11 +93,9 @@ Ta också bort raden om e-postadressen under "Kända brister" i `tillganglighet/
 
 ### Analys (Cloudflare Web Analytics)
 
-Varje sida har en bortkommenterad kodsnutt i `<head>`. Gör så här för att aktivera den:
+Cloudflare Web Analytics är aktiverat sedan november 2026. Skriptet (`beacon.min.js`) ligger i `<head>` på varje sida och sätter inga cookies. Statistiken finns i Cloudflare under **Analytics & Logs → Web Analytics**.
 
-1. Ta bort kommentaren och lägg in din token från Cloudflare.
-2. Gör samma sak i alla HTML-filer.
-3. Byt stycket "Besöksstatistik" i integritetspolicyn mot den färdiga texten som ligger i en kommentar direkt under det.
+Vill du stänga av statistiken tar du bort raden med `beacon.min.js` i alla HTML-filer och uppdaterar stycket "Besöksstatistik" i integritetspolicyn.
 
 ### Engelska (/en/)
 
@@ -121,7 +119,7 @@ Webbplatsen ska följa WCAG 2.2 nivå AA. Tänk på följande när du ändrar n�
 
 ## Integritet
 
-Webbplatsen sätter inga cookies, och inget hämtas från andra webbplatser. Enkelt läge sparas i besökarens webbläsare (`localStorage`, nyckeln `lk-enkelt`).
+Webbplatsen sätter inga cookies. Det enda som hämtas från en annan webbplats är Cloudflares statistikskript. Enkelt läge sparas i besökarens webbläsare (`localStorage`, nyckeln `lk-enkelt`).
 
 ## Domän
 
