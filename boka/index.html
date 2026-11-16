@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Boka tolk – skicka en bokningsförfrågan | Linkaro</title>
+<meta name="description" content="Skicka en bokningsförfrågan för teckenspråks-, dövblind- eller distanstolkning med e-post. Vi svarar inom [X arbetstimmar] på vardagar.">
+<link rel="canonical" href="https://linkaro.se/boka/">
+<!-- Engelska: när /en/ finns, lägg till språkalternativen här, till exempel
+<link rel="alternate" hreflang="sv" href="https://linkaro.se/boka/">
+<link rel="alternate" hreflang="en" href="https://linkaro.se/en/boka/">
+<link rel="alternate" hreflang="x-default" href="https://linkaro.se/boka/"> -->
+<meta name="theme-color" content="#0B3C49">
+<meta name="color-scheme" content="light">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="sv_SE">
+<meta property="og:site_name" content="Linkaro">
+<meta property="og:title" content="Boka tolk – skicka en bokningsförfrågan | Linkaro">
+<meta property="og:description" content="Skicka en bokningsförfrågan för teckenspråks-, dövblind- eller distanstolkning med e-post. Vi svarar inom [X arbetstimmar] på vardagar.">
+<meta property="og:url" content="https://linkaro.se/boka/">
+<meta property="og:image" content="https://linkaro.se/assets/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Linkaros logotyp: två sammanlänkade cirklar och ordet linkaro">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/assets/fonts/outfit-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/atkinson-hyperlegible-next-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/site.css">
+<script>
+  // Körs innan sidan ritas: markerar att JavaScript finns och slår på Enkelt läge
+  // om besökaren valt det (sparat i localStorage, ingen cookie) eller via ?enkelt=1 / ?enkelt=0.
+  (function (d) {
+    d.classList.add('js');
+    try {
+      var q = new URLSearchParams(location.search).get('enkelt');
+      if (q !== null) localStorage.setItem('lk-enkelt', q === '0' ? '0' : '1');
+      if (localStorage.getItem('lk-enkelt') === '1') d.classList.add('enkelt');
+    } catch (e) {}
+  })(document.documentElement);
+</script>
+<script src="/assets/js/site.js" defer></script>
+<!-- Cloudflare Web Analytics (cookiefri). Aktivera genom att ta bort kommentaren
+     och klistra in din token från Cloudflare-panelen. Uppdatera då även integritetspolicyn.
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "DIN-TOKEN-HÄR"}'></script>
+-->
+</head>
+<body>
+<a class="skip" href="#innehall">Hoppa till innehållet</a>
+
+<!-- ===== SIDHUVUD (samma på alla sidor – ändra i alla filer) ===== -->
+<div class="util dark" role="region" aria-label="Enkelt läge och kontakt">
+  <div class="wrap util-in">
+    <p class="util-txt">Kontakta oss utan röst – e-post, sms eller videosamtal</p>
+    <div class="util-act">
+      <button type="button" class="tgl" role="switch" aria-checked="false" data-enkelt-toggle><span class="trk" aria-hidden="true"><span class="knb"></span></span>Enkelt läge<span class="on-txt" aria-hidden="true"> är på – stäng av</span></button>
+      <!-- Språkväxlare: visa när engelska sidor finns.
+      <a href="/en/" lang="en" hreflang="en">English</a> -->
+    </div>
+  </div>
+</div>
+
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a href="/" class="logo"><img src="/assets/img/logotyp-horisontell-farg-pa-ljust.svg" alt="Linkaro – till startsidan" width="190" height="40"></a>
+    <nav aria-label="Huvudmeny" class="nav">
+      <ul>
+        <li><a href="/tjanster/">Tjänster</a></li>
+        <li><a href="/om-oss/">Om oss</a></li>
+        <li><a href="/bli-tolk/">Bli tolk hos oss</a></li>
+        <li><a href="/kontakt/">Kontakt</a></li>
+        <li><a class="btn btn-cta" href="/boka/" aria-current="page">Boka tolk</a></li>
+      </ul>
+    </nav>
+    <div class="hdr-m">
+      <a class="btn btn-cta" href="/boka/">Boka tolk</a>
+      <button type="button" class="menu-btn" aria-label="Meny" aria-haspopup="dialog" aria-controls="mobilmeny" aria-expanded="false" data-menu-open><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button>
+    </div>
+  </div>
+</header>
+
+<dialog id="mobilmeny" class="menu dark" aria-label="Meny">
+  <svg class="deco-svg menu-bg" width="420" height="300" viewBox="0 0 420 300" aria-hidden="true" focusable="false"><circle cx="150" cy="150" r="140" fill="none" stroke="#7FD1C7" stroke-width="1.5" opacity=".18"></circle><circle cx="270" cy="150" r="140" fill="none" stroke="#7FD1C7" stroke-width="1.5" opacity=".18"></circle></svg>
+  <div class="menu-top">
+    <img src="/assets/img/logotyp-horisontell-farg-pa-morkt.svg" alt="Linkaro" width="143" height="30">
+    <button type="button" class="menu-close" aria-label="Stäng menyn" data-menu-close><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18"></path></svg></button>
+  </div>
+  <nav aria-label="Huvudmeny, mobil" class="menu-nav">
+    <ul>
+      <li><a class="mi" href="/">Hem</a></li>
+      <li><a class="mi" href="/tjanster/">Tjänster</a></li>
+      <li><a class="mi" href="/om-oss/">Om oss</a></li>
+      <li><a class="mi" href="/bli-tolk/">Bli tolk hos oss</a></li>
+      <li><a class="mi" href="/kontakt/">Kontakt</a></li>
+    </ul>
+  </nav>
+  <div class="menu-foot">
+    <a class="btn btn-cta btn-lg" href="/boka/">Boka tolk</a>
+    <div><button type="button" class="tgl" role="switch" aria-checked="false" data-enkelt-toggle data-where="meny"><span class="trk" aria-hidden="true"><span class="knb"></span></span>Enkelt läge<span class="on-txt" aria-hidden="true"> är på – stäng av</span></button></div>
+    <p class="menu-c">Kontakta oss utan röst: <a href="mailto:info@linkaro.se">info@linkaro.se</a> eller sms [070-000 00 00]</p>
+  </div>
+</dialog>
+<!-- ===== SIDHUVUD SLUT ===== -->
+
+<main id="innehall">
+<section class="kort wrap" aria-labelledby="kort-h">
+    <h2 id="kort-h">Kort om sidan</h2>
+    <ul>
+      <li>Här kan du boka tolk.</li>
+      <li>Du skickar ett e-postmeddelande till oss.</li>
+      <li>Skriv datum, tid och plats. Skriv vilken sorts tolkning du behöver.</li>
+      <li>Vi svarar och bekräftar bokningen.</li>
+      <li>Skriv inte personnummer eller uppgifter om hälsa.</li>
+    </ul>
+  </section>
+
+<section aria-labelledby="h1" class="phero" style="padding-bottom:40px">
+  <div class="wrap phero-txt">
+    <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Boka tolk</p>
+    <h1 id="h1">Skicka en bokningsförfrågan</h1>
+    <p class="lead">Skicka uppgifterna till oss med e-post. Fyll i det ni vet – resten stämmer vi av. En förfrågan blir en bokning först när vi har bekräftat den.</p>
+  </div>
+</section>
+
+<section aria-labelledby="h-steg" class="sec" style="padding-top:0">
+  <div class="wrap g side-grid">
+    <div class="mailflow">
+      <div class="stack" style="gap:12px">
+        <h2 id="h-steg">Så här gör ni</h2>
+        <ol class="bullets" style="font-size:19px">
+          <li>Öppna e-postmallen med knappen nedan, eller kopiera mallen till ert eget e-postprogram.</li>
+          <li>Fyll i uppgifterna om uppdraget, tolkningen och er som beställer.</li>
+          <li>Skicka till <a href="mailto:info@linkaro.se">info@linkaro.se</a>. Vi svarar inom [X arbetstimmar] på vardagar.</li>
+        </ol>
+      </div>
+
+      <div class="notice" role="note">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0B3C49" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z"></path><path d="M9 12l2 2 4-4"></path></svg>
+        <p><strong>Skicka inga känsliga uppgifter.</strong> Skriv inte personnummer, journaluppgifter eller annat om någons hälsa. Behöver vi veta mer om tolkanvändaren stämmer vi av det med er på ett säkert sätt.</p>
+      </div>
+
+      <div class="mall">
+        <h3 id="h-mall">E-postmall för bokningsförfrågan</h3>
+<pre id="mall-boka" tabindex="0" role="region" aria-labelledby="h-mall">Bokningsförfrågan
+
+OM UPPDRAGET
+Datum:
+Starttid och sluttid:
+På plats eller på distans:
+Adress (på plats) eller plattform och möteslänk (på distans):
+Typ av uppdrag, till exempel möte, utbildning, myndighet eller vård:
+
+OM TOLKNINGEN
+Tolkmetod – svenskt teckenspråk, tecken som stöd, dövblindtolkning (taktilt) eller skrivtolkning:
+Antal tolkanvändare:
+Önskemål, till exempel önskad tolk, ledsagning, ämne eller fackord:
+
+KONTAKT OCH FAKTURA
+Organisation:
+Kontaktperson:
+Mobil för sms (valfritt):
+Fakturareferens och fakturaadress (kan lämnas senare):
+
+Något mer vi bör veta?
+</pre>
+        <div class="mall-actions">
+          <a class="btn btn-cta btn-lg" href="mailto:info@linkaro.se?subject=Bokningsf%C3%B6rfr%C3%A5gan" data-mail-body="#mall-boka">Skriv bokningsförfrågan i e-post</a>
+          <button type="button" class="btn btn-sec btn-lg" data-copy="#mall-boka" data-status="copy-boka">Kopiera mallen</button>
+        </div>
+        <p id="copy-boka" class="copy-status" role="status"></p>
+        <p class="small muted">Knappen öppnar ert e-postprogram med mallen ifylld. Använder ni webbmejl, till exempel Outlook på webben? Kopiera mallen och klistra in den i ett nytt meddelande till info@linkaro.se.</p>
+      </div>
+
+      <div class="stack" style="gap:12px">
+        <h2 id="h-sen">Det här händer sedan</h2>
+        <ol class="num-list" style="width:100%">
+          <li><span class="num" aria-hidden="true">01</span><div><h3>Vi går igenom förfrågan</h3><p>Vi matchar en tolk som passar uppdraget och hör av oss om något saknas.</p></div></li>
+          <li><span class="num" aria-hidden="true">02</span><div><h3>Ni får en bekräftelse</h3><p>Med tolkens namn, tid, plats och pris. Först då är bokningen klar.</p></div></li>
+          <li><span class="num" aria-hidden="true">03</span><div><h3>Vi följer upp</h3><p>Efter uppdraget frågar vi hur det fungerade.</p></div></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="info">
+      <div class="card info-box">
+        <h2 id="h-info">Bra att veta</h2>
+        <dl>
+          <dt>Svarstid</dt><dd>Vi svarar inom [X arbetstimmar] på vardagar.</dd>
+          <dt>Framförhållning</dt><dd>[Boka helst X dagar i förväg. Kortare varsel går ofta också.]</dd>
+          <dt>Avbokning</dt><dd>[Avbokningsvillkor, till exempel kostnadsfritt fram till X dagar före.]</dd>
+          <dt>Pris</dt><dd>Ni får alltid pris innan bokningen bekräftas.</dd>
+        </dl>
+      </div>
+      <div class="card info-box">
+        <h2 id="h-annat">Andra sätt att boka</h2>
+        <ul>
+          <li>Sms: [070-000 00 00]</li>
+          <li><a href="/kontakt/#video">Boka ett kort videosamtal</a>, även på teckenspråk</li>
+        </ul>
+        <p class="small muted">Har ni frågor först? Läs <a href="/tjanster/#fragor">vanliga frågor inför bokningen</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ===== SIDFOT (samma på alla sidor – ändra i alla filer) ===== -->
+<footer class="ft dark">
+  <div class="wrap ft-grid">
+    <div class="ft-brand">
+      <img src="/assets/img/logotyp-horisontell-farg-pa-morkt.svg" alt="Linkaro" width="190" height="40">
+      <p class="ft-pitch">Teckenspråks- och dövblindtolkning i Stockholmsregionen och på distans.</p>
+      <a class="btn btn-cta" href="/boka/">Boka tolk</a>
+    </div>
+    <nav aria-labelledby="ft-tj">
+      <h2 id="ft-tj" class="ft-h">Tjänster</h2>
+      <ul class="fl">
+        <li><a href="/tjanster/#teckensprak">Teckenspråkstolkning</a></li>
+        <li><a href="/tjanster/#dovblind">Dövblindtolkning</a></li>
+        <li><a href="/tjanster/#distans">Distanstolkning</a></li>
+        <li><a href="/boka/">Boka tolk</a></li>
+      </ul>
+    </nav>
+    <nav aria-labelledby="ft-lk">
+      <h2 id="ft-lk" class="ft-h">Linkaro</h2>
+      <ul class="fl">
+        <li><a href="/om-oss/">Om oss</a></li>
+        <li><a href="/om-oss/#kvalitet">Så arbetar vi med kvalitet</a></li>
+        <li><a href="/bli-tolk/">Bli tolk hos oss</a></li>
+        <li><a href="/kontakt/">Kontakt</a></li>
+      </ul>
+    </nav>
+    <div>
+      <h2 class="ft-h">Kontakt</h2>
+      <ul class="fl">
+        <li>E-post: <a href="mailto:info@linkaro.se">info@linkaro.se</a></li>
+        <li>Sms: [070-000 00 00]</li>
+        <li><a href="/kontakt/#video">Videosamtal</a></li>
+        <li class="ft-sub">Stockholmsregionen och på distans</li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="ft-bottom">
+      <p class="ft-bolag"><span>© 2026 Linkaro AB · Org.nr 559613-3610</span><span>Säte: [FYLL I: säte, kommun]</span></p>
+      <ul class="ft-legal">
+        <li><a href="/integritetspolicy/">Integritetspolicy</a></li>
+        <li><a href="/tillganglighet/">Tillgänglighetsredogörelse</a></li>
+        <li><button type="button" class="linkbtn" role="switch" aria-checked="false" data-enkelt-toggle data-where="sidfot">Enkelt läge<span class="on-txt" aria-hidden="true"> är på – stäng av</span></button></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<!-- ===== SIDFOT SLUT ===== -->
+</body>
+</html>
