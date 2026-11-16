@@ -100,7 +100,7 @@
   <div class="menu-foot">
     <a class="btn btn-cta btn-lg" href="/boka/">Boka tolk</a>
     <div><button type="button" class="tgl" role="switch" aria-checked="false" data-enkelt-toggle data-where="meny"><span class="trk" aria-hidden="true"><span class="knb"></span></span>Enkelt läge<span class="on-txt" aria-hidden="true"> är på – stäng av</span></button></div>
-    <p class="menu-c">Kontakta oss utan röst: <a href="mailto:info@linkaro.se">info@linkaro.se</a> eller sms [070-000 00 00]</p>
+    <p class="menu-c">Kontakta oss utan röst: <a data-mailto="mailto:info@linkaro.se">info@linkaro.se</a><span class="mail-soon"> (öppnar snart)</span> eller sms <a href="sms:+46709456698">070-945 66 98</a></p>
   </div>
 </dialog>
 <!-- ===== SIDHUVUD SLUT ===== -->
@@ -136,7 +136,7 @@
     <div class="mailflow">
       <div class="stack" style="gap:12px">
         <h2 id="h-skriv">Skriv till oss</h2>
-        <p class="muted">Skicka ett e-postmeddelande till <a href="mailto:info@linkaro.se">info@linkaro.se</a>. Mallen nedan hjälper oss att svara rätt och snabbt – men skriv gärna fritt.</p>
+        <p class="muted">Skicka ett e-postmeddelande till <a data-mailto="mailto:info@linkaro.se">info@linkaro.se</a><span class="mail-soon"> (öppnar snart)</span>. Mallen nedan hjälper oss att svara rätt och snabbt – men skriv gärna fritt.</p>
       </div>
 
       <div class="notice" role="note">
@@ -155,10 +155,11 @@ Mobil för sms (om du vill ha svar med sms):
 Meddelande:
 </pre>
         <div class="mall-actions">
-          <a class="btn btn-pet btn-lg" href="mailto:info@linkaro.se?subject=Fr%C3%A5ga%20till%20Linkaro" data-mail-body="#mall-kontakt">Skriv e-post till oss</a>
-          <button type="button" class="btn btn-sec btn-lg" data-copy="#mall-kontakt" data-status="copy-kontakt">Kopiera mallen</button>
+          <a class="btn btn-pet btn-lg" data-mailto="mailto:info@linkaro.se?subject=Fr%C3%A5ga%20till%20Linkaro" data-mail-body="#mall-kontakt">Skriv e-post till oss<span class="mail-soon"> – öppnar snart</span></a>
+          <button type="button" class="btn btn-sec btn-lg" disabled data-mail-pending data-copy="#mall-kontakt" data-status="copy-kontakt">Kopiera mallen</button>
         </div>
         <p id="copy-kontakt" class="copy-status" role="status"></p>
+        <p class="mail-note">E-postadressen öppnar snart. Så länge når ni oss med sms till <a href="sms:+46709456698">070-945 66 98</a>.</p>
       </div>
       <p class="muted">Har något inte fungerat i ett uppdrag? Skriv ”Synpunkt eller klagomål” i ämnesraden. Vi dokumenterar, åtgärdar och följer upp alla synpunkter.</p>
     </div>
@@ -167,21 +168,21 @@ Meddelande:
       <div class="card info-box">
         <h2 id="h-andra">Andra sätt att nå oss</h2>
         <div class="ways">
-          <div><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0B3C49" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="1.5"></rect><path d="M3 7l9 6 9-6"></path></svg><div><h3>E-post</h3><p><a href="mailto:info@linkaro.se">info@linkaro.se</a></p><p class="small">För frågor, bokningar och upphandling.</p></div></div>
-          <div><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0B3C49" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 5h16v11H9l-5 4z"></path><path d="M8.5 10.5h.01M12 10.5h.01M15.5 10.5h.01"></path></svg><div><h3>Sms</h3><p>[070-000 00 00]</p><p class="small">Även för ändringar med kort varsel.</p></div></div>
+          <div><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0B3C49" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="1.5"></rect><path d="M3 7l9 6 9-6"></path></svg><div><h3>E-post</h3><p><a data-mailto="mailto:info@linkaro.se">info@linkaro.se</a><span class="mail-soon"> (öppnar snart)</span></p><p class="small">För frågor, bokningar och upphandling.</p></div></div>
+          <div><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0B3C49" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 5h16v11H9l-5 4z"></path><path d="M8.5 10.5h.01M12 10.5h.01M15.5 10.5h.01"></path></svg><div><h3>Sms</h3><p><a href="sms:+46709456698">070-945 66 98</a></p><p class="small">Även för ändringar med kort varsel.</p></div></div>
           <div id="video"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0B3C49" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="6" width="13" height="12" rx="1.5"></rect><path d="M16 10l5-3v10l-5-3"></path></svg><div><h3>Videosamtal</h3><p class="small">Boka ett kort videomöte – på svenska eller svenskt teckenspråk.</p>
             <!-- Byt mot länken till bokningssidan (till exempel Microsoft Bookings) när den finns:
             <p><a href="https://…">Välj en tid <span aria-hidden="true">→</span></a></p> -->
-            <p>[Bokningslänk kommer.] Tills vidare: skriv till <a href="mailto:info@linkaro.se?subject=Videosamtal">info@linkaro.se</a> så föreslår vi en tid.</p></div></div>
+            <p>[Bokningslänk kommer.] Tills vidare: skriv till <a data-mailto="mailto:info@linkaro.se?subject=Videosamtal">info@linkaro.se</a><span class="mail-soon"> (öppnar snart)</span> så föreslår vi en tid.</p></div></div>
         </div>
       </div>
       <div class="card info-box">
         <h2 id="h-finns">Här finns vi</h2>
-        <p class="small muted">Vi utgår från [kommun] och tolkar i hela Stockholms län. På distans tolkar vi i hela Sverige.</p>
+        <p class="small muted">Vi utgår från Stockholm och tolkar i hela Stockholms län. På distans tolkar vi i hela Sverige.</p>
         <dl class="facts facts-sm">
           <div><dt>Bolag</dt><dd>Linkaro AB</dd></div>
           <div><dt>Org.nr</dt><dd>559613-3610</dd></div>
-          <div><dt>Säte</dt><dd>[FYLL I: säte, kommun]</dd></div>
+          <div><dt>Säte</dt><dd>Stockholm</dd></div>
           <div><dt>Postadress</dt><dd>[Gatuadress, postnummer ort]</dd></div>
         </dl>
       </div>
@@ -219,8 +220,8 @@ Meddelande:
     <div>
       <h2 class="ft-h">Kontakt</h2>
       <ul class="fl">
-        <li>E-post: <a href="mailto:info@linkaro.se">info@linkaro.se</a></li>
-        <li>Sms: [070-000 00 00]</li>
+        <li>E-post: <a data-mailto="mailto:info@linkaro.se">info@linkaro.se</a><span class="mail-soon"> (öppnar snart)</span></li>
+        <li>Sms: <a href="sms:+46709456698">070-945 66 98</a></li>
         <li><a href="/kontakt/#video">Videosamtal</a></li>
         <li class="ft-sub">Stockholmsregionen och på distans</li>
       </ul>
@@ -228,7 +229,7 @@ Meddelande:
   </div>
   <div class="wrap">
     <div class="ft-bottom">
-      <p class="ft-bolag"><span>© 2026 Linkaro AB · Org.nr 559613-3610</span><span>Säte: [FYLL I: säte, kommun]</span></p>
+      <p class="ft-bolag"><span>© 2026 Linkaro AB · Org.nr 559613-3610 · Säte: Stockholm</span><span>Godkänd för F-skatt</span></p>
       <ul class="ft-legal">
         <li><a href="/integritetspolicy/">Integritetspolicy</a></li>
         <li><a href="/tillganglighet/">Tillgänglighetsredogörelse</a></li>

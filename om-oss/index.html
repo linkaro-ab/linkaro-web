@@ -100,7 +100,7 @@
   <div class="menu-foot">
     <a class="btn btn-cta btn-lg" href="/boka/">Boka tolk</a>
     <div><button type="button" class="tgl" role="switch" aria-checked="false" data-enkelt-toggle data-where="meny"><span class="trk" aria-hidden="true"><span class="knb"></span></span>Enkelt läge<span class="on-txt" aria-hidden="true"> är på – stäng av</span></button></div>
-    <p class="menu-c">Kontakta oss utan röst: <a href="mailto:info@linkaro.se">info@linkaro.se</a> eller sms [070-000 00 00]</p>
+    <p class="menu-c">Kontakta oss utan röst: <a data-mailto="mailto:info@linkaro.se">info@linkaro.se</a><span class="mail-soon"> (öppnar snart)</span> eller sms <a href="sms:+46709456698">070-945 66 98</a></p>
   </div>
 </dialog>
 <!-- ===== SIDHUVUD SLUT ===== -->
@@ -110,7 +110,6 @@
     <h2 id="kort-h">Kort om sidan</h2>
     <ul>
       <li>Linkaro är ett litet tolkföretag. En familj äger företaget.</li>
-      <li>Två personer startade Linkaro.</li>
       <li>Vi tolkar noggrant och har tystnadsplikt.</li>
       <li>Vi följer upp varje uppdrag och blir bättre hela tiden.</li>
     </ul>
@@ -127,39 +126,11 @@
         <a class="btn btn-sec btn-lg" href="#kvalitet">Så arbetar vi med kvalitet</a>
       </div>
     </div>
-    <!-- Byt mot <img src="/assets/img/grundarna.jpg" alt="…"> när fotot finns. -->
+    <!-- Byt mot <img src="/assets/img/om-oss.jpg" alt="…"> när fotot finns. -->
     <figure class="ph">
       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2F4A52" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="6" width="18" height="14" rx="2"></rect><circle cx="12" cy="13" r="3.5"></circle><path d="M8 6l1.5-2h5L16 6"></path></svg>
-      <figcaption>[Foto: de två grundarna tillsammans, i en naturlig arbetsmiljö. Varmt ljus, inte uppställt.]</figcaption>
+      <figcaption>[Foto: tolkning i en verklig situation, med samtycke. Varmt, naturligt ljus.]</figcaption>
     </figure>
-  </div>
-</section>
-
-<section aria-labelledby="h-grund" class="sec sec-white" style="border-bottom:1px solid var(--linje)">
-  <div class="wrap stack-48">
-    <div class="sec-intro">
-      <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Grundarna</p>
-      <h2 id="h-grund">Två personer, ett gemensamt ansvar</h2>
-      <p class="lead">När ni bokar hos oss vet ni vilka ni har att göra med.</p>
-    </div>
-    <div class="g g-2" style="gap:40px">
-      <article class="person">
-        <figure class="ph"><figcaption>[Porträtt, grundare och tolk]</figcaption></figure>
-        <div>
-          <h3>[Förnamn Efternamn]</h3>
-          <p class="role">Grundare och tolk</p>
-          <p class="muted">[Utbildad tolk / auktoriserad av Kammarkollegiet]. Sex års erfarenhet av teckenspråks- och dövblindtolkning, bland annat inom [vård, arbetsliv och utbildning]. Leder tolkningen och ansvarar för kvaliteten i uppdragen.</p>
-        </div>
-      </article>
-      <article class="person">
-        <figure class="ph"><figcaption>[Porträtt, grundare]</figcaption></figure>
-        <div>
-          <h3>[Förnamn Efternamn]</h3>
-          <p class="role">Grundare, [roll]</p>
-          <p class="muted">Ansvarar för [verksamhet, ekonomi och kundkontakt]. Ser till att bokning, bekräftelse och fakturering fungerar smidigt för er som beställer.</p>
-        </div>
-      </article>
-    </div>
   </div>
 </section>
 
@@ -225,11 +196,11 @@
         <dl class="facts">
           <div><dt>Bolag</dt><dd>Linkaro AB</dd></div>
           <div><dt>Organisationsnummer</dt><dd>559613-3610</dd></div>
-          <div><dt>F-skatt</dt><dd>[Godkänd för F-skatt – bekräftas]</dd></div>
-          <div><dt>Momsregistreringsnummer</dt><dd>[SE559613361001 – bekräftas]</dd></div>
-          <div><dt>Försäkring</dt><dd>[Ansvarsförsäkring: bolag och omfattning]</dd></div>
-          <div><dt>Säte</dt><dd>[FYLL I: säte, kommun]</dd></div>
-          <div><dt>Kontakt upphandling</dt><dd>[Namn], <a href="mailto:info@linkaro.se?subject=Upphandling">info@linkaro.se</a></dd></div>
+          <div><dt>F-skatt</dt><dd>Godkänd för F-skatt</dd></div>
+          <div><dt>Momsregistreringsnummer</dt><dd>SE559613361001</dd></div>
+          <div><dt>Försäkring</dt><dd>Ansvarsförsäkring</dd></div>
+          <div><dt>Säte</dt><dd>Stockholm</dd></div>
+          <div><dt>Kontakt upphandling</dt><dd><a data-mailto="mailto:info@linkaro.se?subject=Upphandling">info@linkaro.se</a><span class="mail-soon"> (öppnar snart)</span></dd></div>
         </dl>
       </article>
       <article class="card qcard">
@@ -237,7 +208,7 @@
         <p class="muted">Tjänster, kvalitetsarbete, försäkring och bolagsuppgifter samlat i ett dokument.</p>
         <!-- Lägg PDF:en i /assets/dokument/ och byt texten mot
         <a class="btn btn-sec" href="/assets/dokument/linkaro-foretagspresentation.pdf" download>Ladda ner PDF (X kB)</a> -->
-        <p>[Företagspresentation som PDF kommer.] Vill ni ha den nu? <a href="mailto:info@linkaro.se?subject=F%C3%B6retagspresentation">Be om den via e-post</a>.</p>
+        <p>[Företagspresentation som PDF kommer.] Vill ni ha den nu? <a data-mailto="mailto:info@linkaro.se?subject=F%C3%B6retagspresentation">Be om den via e-post</a><span class="mail-soon"> (öppnar snart)</span>.</p>
       </article>
     </div>
     <p class="muted">Har något inte fungerat? <a href="/kontakt/">Lämna synpunkter eller klagomål</a></p>
@@ -281,8 +252,8 @@
     <div>
       <h2 class="ft-h">Kontakt</h2>
       <ul class="fl">
-        <li>E-post: <a href="mailto:info@linkaro.se">info@linkaro.se</a></li>
-        <li>Sms: [070-000 00 00]</li>
+        <li>E-post: <a data-mailto="mailto:info@linkaro.se">info@linkaro.se</a><span class="mail-soon"> (öppnar snart)</span></li>
+        <li>Sms: <a href="sms:+46709456698">070-945 66 98</a></li>
         <li><a href="/kontakt/#video">Videosamtal</a></li>
         <li class="ft-sub">Stockholmsregionen och på distans</li>
       </ul>
@@ -290,7 +261,7 @@
   </div>
   <div class="wrap">
     <div class="ft-bottom">
-      <p class="ft-bolag"><span>© 2026 Linkaro AB · Org.nr 559613-3610</span><span>Säte: [FYLL I: säte, kommun]</span></p>
+      <p class="ft-bolag"><span>© 2026 Linkaro AB · Org.nr 559613-3610 · Säte: Stockholm</span><span>Godkänd för F-skatt</span></p>
       <ul class="ft-legal">
         <li><a href="/integritetspolicy/">Integritetspolicy</a></li>
         <li><a href="/tillganglighet/">Tillgänglighetsredogörelse</a></li>

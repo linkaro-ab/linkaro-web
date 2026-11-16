@@ -100,7 +100,7 @@
   <div class="menu-foot">
     <a class="btn btn-cta btn-lg" href="/boka/">Boka tolk</a>
     <div><button type="button" class="tgl" role="switch" aria-checked="false" data-enkelt-toggle data-where="meny"><span class="trk" aria-hidden="true"><span class="knb"></span></span>Enkelt läge<span class="on-txt" aria-hidden="true"> är på – stäng av</span></button></div>
-    <p class="menu-c">Kontakta oss utan röst: <a href="mailto:info@linkaro.se">info@linkaro.se</a> eller sms [070-000 00 00]</p>
+    <p class="menu-c">Kontakta oss utan röst: <a data-mailto="mailto:info@linkaro.se">info@linkaro.se</a><span class="mail-soon"> (öppnar snart)</span> eller sms <a href="sms:+46709456698">070-945 66 98</a></p>
   </div>
 </dialog>
 <!-- ===== SIDHUVUD SLUT ===== -->
@@ -111,7 +111,7 @@
     <ul>
       <li>Är du tolk? Du kan arbeta med oss.</li>
       <li>Du väljer själv vilka uppdrag du vill ha.</li>
-      <li>Du behöver ha en tolkutbildning och egen firma.</li>
+      <li>Du behöver ha en tolkutbildning.</li>
       <li>Skicka ett e-postmeddelande och berätta om dig.</li>
     </ul>
   </section>
@@ -148,7 +148,6 @@
         <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0B3C49" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>Frilansande teckenspråkstolkar</li>
         <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0B3C49" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>Frilansande dövblindtolkar</li>
         <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0B3C49" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>Tolkar som vill ta uppdrag på distans</li>
-        <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0B3C49" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>[Skrivtolkar – bekräftas]</li>
       </ul>
       <p class="muted">Du kan ha egen firma sedan länge eller vara på väg att starta. Tar du redan uppdrag via andra förmedlingar går det bra att kombinera. Det viktiga är att du är noggrann och tar ansvar.</p>
     </div>
@@ -157,8 +156,6 @@
       <ul class="bullets">
         <li>Avslutad tolkutbildning [eller auktorisation från Kammarkollegiet]</li>
         <li>Du följer god tolksed och har tystnadsplikt</li>
-        <li>Egen firma med F-skatt</li>
-        <li>[Ansvarsförsäkring – bekräfta krav]</li>
         <li>Referenser från tidigare uppdrag eller praktik</li>
       </ul>
     </div>
@@ -184,7 +181,7 @@
         <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0B3C49" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>Du väljer själv vilka uppdrag du tackar ja till</li>
         <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0B3C49" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>Vi sköter kundkontakt, bokning och bekräftelser</li>
         <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0B3C49" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>Förberedelsematerial inför varje uppdrag</li>
-        <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0B3C49" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>Tydliga villkor och betalning inom [X dagar]</li>
+        <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0B3C49" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>Tydliga villkor</li>
       </ul>
     </div>
   </div>
@@ -208,7 +205,7 @@ Namn:
 Ort eller region:
 Mobil (valfritt):
 Tolkutbildning – skola, examensår och eventuell auktorisation:
-Jag tolkar – svenskt teckenspråk, tecken som stöd, dövblindtolkning, skrivtolkning, på distans:
+Jag tolkar – svenskt teckenspråk, tecken som stöd, dövblindtolkning, på distans:
 Har du egen firma med F-skatt? Ja, nej eller startar snart:
 Hur mycket vill du arbeta via oss? Enstaka uppdrag, regelbundet eller så mycket som möjligt:
 
@@ -217,11 +214,12 @@ Berätta gärna mer:
 (Bifoga gärna ditt cv som pdf eller Word.)
 </pre>
       <div class="mall-actions">
-        <a class="btn btn-cta btn-lg" href="mailto:info@linkaro.se?subject=Intresseanm%C3%A4lan%20%E2%80%93%20tolk" data-mail-body="#mall-tolk">Skicka intresseanmälan med e-post</a>
-        <button type="button" class="btn btn-sec btn-lg" data-copy="#mall-tolk" data-status="copy-tolk">Kopiera mallen</button>
+        <a class="btn btn-cta btn-lg" data-mailto="mailto:info@linkaro.se?subject=Intresseanm%C3%A4lan%20%E2%80%93%20tolk" data-mail-body="#mall-tolk">Skicka intresseanmälan med e-post<span class="mail-soon"> – öppnar snart</span></a>
+        <button type="button" class="btn btn-sec btn-lg" disabled data-mail-pending data-copy="#mall-tolk" data-status="copy-tolk">Kopiera mallen</button>
       </div>
       <p id="copy-tolk" class="copy-status" role="status"></p>
-      <p class="small muted">Mottagare: <a href="mailto:info@linkaro.se">info@linkaro.se</a></p>
+        <p class="mail-note">E-postadressen öppnar snart. Så länge når ni oss med sms till <a href="sms:+46709456698">070-945 66 98</a>.</p>
+      <p class="small muted">Mottagare: <a data-mailto="mailto:info@linkaro.se">info@linkaro.se</a><span class="mail-soon"> (öppnar snart)</span></p>
     </div>
   </div>
 </section>
@@ -263,8 +261,8 @@ Berätta gärna mer:
     <div>
       <h2 class="ft-h">Kontakt</h2>
       <ul class="fl">
-        <li>E-post: <a href="mailto:info@linkaro.se">info@linkaro.se</a></li>
-        <li>Sms: [070-000 00 00]</li>
+        <li>E-post: <a data-mailto="mailto:info@linkaro.se">info@linkaro.se</a><span class="mail-soon"> (öppnar snart)</span></li>
+        <li>Sms: <a href="sms:+46709456698">070-945 66 98</a></li>
         <li><a href="/kontakt/#video">Videosamtal</a></li>
         <li class="ft-sub">Stockholmsregionen och på distans</li>
       </ul>
@@ -272,7 +270,7 @@ Berätta gärna mer:
   </div>
   <div class="wrap">
     <div class="ft-bottom">
-      <p class="ft-bolag"><span>© 2026 Linkaro AB · Org.nr 559613-3610</span><span>Säte: [FYLL I: säte, kommun]</span></p>
+      <p class="ft-bolag"><span>© 2026 Linkaro AB · Org.nr 559613-3610 · Säte: Stockholm</span><span>Godkänd för F-skatt</span></p>
       <ul class="ft-legal">
         <li><a href="/integritetspolicy/">Integritetspolicy</a></li>
         <li><a href="/tillganglighet/">Tillgänglighetsredogörelse</a></li>

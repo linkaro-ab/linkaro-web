@@ -61,8 +61,12 @@
     var src = document.querySelector(a.getAttribute('data-mail-body'));
     if (!src) return;
     var body = src.textContent.replace(/^\s+|\s+$/g, '');
-    var sep = a.href.indexOf('?') === -1 ? '?' : '&';
-    a.href = a.href + sep + 'body=' + encodeURIComponent(body);
+    // Medan e-postadressen inte är aktiv står länken i data-mailto (ingen href).
+    var attr = a.hasAttribute('href') ? 'href' : 'data-mailto';
+    var url = a.getAttribute(attr);
+    if (!url) return;
+    var sep = url.indexOf('?') === -1 ? '?' : '&';
+    a.setAttribute(attr, url + sep + 'body=' + encodeURIComponent(body));
   });
 
   // <button data-copy="#id"> kopierar mallen till urklipp och meddelar resultatet.

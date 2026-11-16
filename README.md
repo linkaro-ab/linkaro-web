@@ -57,13 +57,11 @@ Text inom `[hakparentes]` är platshållare som ska bytas ut. Sök efter `[` fö
 
 | Platshållare | Var |
 |---|---|
-| `[FYLL I: säte, kommun]` och postadress | sidfoten på alla sidor, Om oss, Kontakt |
-| `[070-000 00 00]` (sms) | alla sidor |
+| Postadress | Kontakt, Integritetspolicy |
 | `[X arbetstimmar]` (svarstid) | flera sidor |
-| Merit, namn, porträtt och foton | Hem, Om oss, Bli tolk |
+| Merit, namn i välkomstfilmen och foton | Hem, Om oss, Bli tolk |
 | Avbokningsvillkor, pris, framförhållning | Boka, Tjänster |
 | Bokningslänk för videosamtal (till exempel Microsoft Bookings) | Kontakt (`#video`) |
-| Skrivtolkning `[Bekräftas]` | Hem, Tjänster, Bli tolk. Ta bort blocken om tjänsten inte erbjuds |
 | Integritetspolicyns och tillgänglighetsredogörelsens texter | respektive sida |
 
 **Foton.** Byt `<figure class="ph">…</figure>` mot `<img src="/assets/img/…" alt="…" width="…" height="…">`. Skriv en alt-text som beskriver bilden, eller `alt=""` om bilden bara är dekor.
@@ -73,6 +71,26 @@ Text inom `[hakparentes]` är platshållare som ska bytas ut. Sök efter `[` fö
 ### Kontakt utan formulär
 
 Webbplatsen har inga formulär och samlar inte in några uppgifter. Boka, Kontakt och Bli tolk använder `mailto:`-länkar till `info@linkaro.se`. Mallen som syns på sidan (`<pre>`) läggs automatiskt in i e-postmeddelandet. Den kan också kopieras med knappen "Kopiera mallen", för den som använder webbmejl. Vill du ändra mallen räcker det att ändra texten i `<pre>`.
+
+#### E-posten är avstängd tills adressen finns
+
+Adressen `info@linkaro.se` tar inte emot e-post än. Därför är alla e-postlänkar avstängda men har kvar sin kod:
+
+- Länkarna har `data-mailto="mailto:…"` i stället för `href`, så de går inte att klicka på.
+- Efter adressen står `(öppnar snart)`.
+- Knapparna är streckade och har texten "– öppnar snart".
+- Knapparna "Kopiera mallen" har `disabled`.
+- Boka, Kontakt och Bli tolk har en ruta som hänvisar till sms.
+
+Kör det här i repots rotmapp för att slå på e-posten när adressen fungerar, och granska sedan ändringen med `git diff`:
+
+```bash
+grep -rl 'data-mailto=' --include='*.html' . | xargs sed -i '' \
+  -e 's/ data-mailto=/ href=/g' \
+  -e 's#<span class="mail-soon">[^<]*</span>##g' \
+  -e 's/ disabled data-mail-pending//g' \
+  -e '/class="mail-note"/d'
+```
 
 ### Analys (Cloudflare Web Analytics)
 
