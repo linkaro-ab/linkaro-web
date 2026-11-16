@@ -60,7 +60,6 @@ Text inom `[hakparentes]` är platshållare som ska bytas ut. Sök efter `[` fö
 | Merit, namn i välkomstfilmen och foton | Hem, Om oss, Bli tolk |
 | Avbokningsvillkor, pris, framförhållning | Boka, Tjänster |
 | Bokningslänk för videosamtal (till exempel Microsoft Bookings) | Kontakt (`#video`) |
-| Integritetspolicyns texter | Integritetspolicy |
 
 **Foton.** Byt `<figure class="ph">…</figure>` mot `<img src="/assets/img/…" alt="…" width="…" height="…">`. Skriv en alt-text som beskriver bilden, eller `alt=""` om bilden bara är dekor.
 
@@ -98,7 +97,7 @@ Varje sida har en bortkommenterad kodsnutt i `<head>`. Gör så här för att ak
 
 1. Ta bort kommentaren och lägg in din token från Cloudflare.
 2. Gör samma sak i alla HTML-filer.
-3. Uppdatera stycket "Besöksstatistik" i integritetspolicyn.
+3. Byt stycket "Besöksstatistik" i integritetspolicyn mot den färdiga texten som ligger i en kommentar direkt under det.
 
 ### Engelska (/en/)
 
