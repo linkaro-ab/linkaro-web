@@ -57,12 +57,10 @@ Text inom `[hakparentes]` är platshållare som ska bytas ut. Sök efter `[` fö
 
 | Platshållare | Var |
 |---|---|
-| Postadress | Kontakt, Integritetspolicy |
-| `[X arbetstimmar]` (svarstid) | flera sidor |
 | Merit, namn i välkomstfilmen och foton | Hem, Om oss, Bli tolk |
 | Avbokningsvillkor, pris, framförhållning | Boka, Tjänster |
 | Bokningslänk för videosamtal (till exempel Microsoft Bookings) | Kontakt (`#video`) |
-| Integritetspolicyns och tillgänglighetsredogörelsens texter | respektive sida |
+| Integritetspolicyns texter | Integritetspolicy |
 
 **Foton.** Byt `<figure class="ph">…</figure>` mot `<img src="/assets/img/…" alt="…" width="…" height="…">`. Skriv en alt-text som beskriver bilden, eller `alt=""` om bilden bara är dekor.
 
@@ -91,6 +89,8 @@ grep -rl 'data-mailto=' --include='*.html' . | xargs sed -i '' \
   -e 's/ disabled data-mail-pending//g' \
   -e '/class="mail-note"/d'
 ```
+
+Ta också bort raden om e-postadressen under "Kända brister" i `tillganglighet/index.html`.
 
 ### Analys (Cloudflare Web Analytics)
 
