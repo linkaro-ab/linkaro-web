@@ -1,0 +1,16 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Redigerare
+.vscode/
+.idea/
+*.swp
+*~
+
+# Lokala verktyg och loggar
+node_modules/
+*.log
+.env
