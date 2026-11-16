@@ -204,11 +204,10 @@
       </ul>
     </div>
     <div class="hero-art">
-      <!-- Byt platshållaren mot <img src="/assets/img/hero.jpg" alt="…" class="hero-photo" style="object-fit:cover;padding:0"> när fotot finns. -->
-      <figure class="ph hero-photo">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2F4A52" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="6" width="18" height="14" rx="2"></rect><circle cx="12" cy="13" r="3.5"></circle><path d="M8 6l1.5-2h5L16 6"></path></svg>
-        <figcaption>[Foto: tolk och tolkanvändare i samtal på en arbetsplats. Händer och ansikten i fokus, naturligt ljus.]</figcaption>
-      </figure>
+      <picture>
+        <source type="image/webp" srcset="/assets/img/hem-portratt-480.webp 480w, /assets/img/hem-portratt-940.webp 940w" sizes="(max-width: 699px) 300px, (max-width: 1023px) 380px, 470px">
+        <img class="hero-photo hero-img" src="/assets/img/hem-portratt-940.jpg" srcset="/assets/img/hem-portratt-480.jpg 480w, /assets/img/hem-portratt-940.jpg 940w" sizes="(max-width: 699px) 300px, (max-width: 1023px) 380px, 470px" width="940" height="940" alt="Porträtt av en leende kvinna med glasögon och svart kavaj." fetchpriority="high">
+      </picture>
       <svg class="hero-ring drift" viewBox="0 0 380 380" aria-hidden="true" focusable="false"><circle cx="190" cy="190" r="188" fill="none" stroke="#2BA89A" stroke-width="3"></circle></svg>
       <span class="hero-core" aria-hidden="true"></span>
     </div>
@@ -279,24 +278,15 @@
 
 <section aria-labelledby="h-why" class="sec">
   <div class="wrap g why-grid">
-    <div class="stack-48" style="gap:40px">
-      <div class="sec-intro">
+    <div class="sec-intro">
         <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Varför Linkaro</p>
         <h2 id="h-why">Nära, noggrant och att lita på</h2>
       </div>
-      <ol class="num-list">
+    <ol class="num-list">
         <li><span class="num" aria-hidden="true">01</span><div><h3>Personlig kontakt</h3><p>Ni får en kontaktperson som känner till ert uppdrag, från förfrågan till uppföljning.</p></div></li>
         <li><span class="num" aria-hidden="true">02</span><div><h3>Rätt tolk för uppdraget</h3><p>Vi matchar tolk efter situation, ämne, tolkmetod och tolkanvändarens önskemål.</p></div></li>
         <li><span class="num" aria-hidden="true">03</span><div><h3>Pålitlighet och uppföljning</h3><p>Tydlig bekräftelse, förberedda tolkar och uppföljning efteråt. Avvikelser hanterar vi snabbt och öppet.</p></div></li>
       </ol>
-    </div>
-    <!-- Omdöme: ersätt med ett verkligt citat (med tillstånd) eller ta bort hela <figure>. -->
-    <figure class="quote">
-      <p class="quote-cap">Platshållare – ersätts med verkligt omdöme</p>
-      <svg width="40" height="32" viewBox="0 0 40 32" aria-hidden="true" focusable="false"><path d="M2 30V18C2 8 8 3 16 2v6c-4 1-6 4-6 9h6v13zM24 30V18c0-10 6-15 14-16v6c-4 1-6 4-6 9h6v13z" fill="#2BA89A"></path></svg>
-      <blockquote><p>[Citat från en beställare om hur samarbetet med Linkaro fungerade.]</p></blockquote>
-      <figcaption>[Namn], [roll], [organisation]</figcaption>
-    </figure>
   </div>
 </section>
 
