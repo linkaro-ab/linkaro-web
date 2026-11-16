@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024.00 1024.00" width="1024" height="1024">
+<rect id="bakgrund" width="1024" height="1024" rx="230" fill="#0B3C49"/>
+<g id="symbol" transform="translate(176.000 176.000) scale(5.6)"><path id="karna" d="M60 47.9 A18.5 18.5 0 0 1 60 72.1 A18.5 18.5 0 0 1 60 47.9 Z" fill="#FF7A59"/><path id="lank-vanster" d="M49.82 85.72 A26 26 0 1 1 67.76 74.24" fill="none" stroke="#E8F1F2" stroke-width="9"/><path id="lank-hoger" d="M70.18 34.28 A26 26 0 1 1 52.24 45.76" fill="none" stroke="#7FD1C7" stroke-width="9"/></g>
+</svg>
