@@ -69,27 +69,7 @@ Text inom `[hakparentes]` är platshållare som ska bytas ut. Sök efter `[` fö
 
 Webbplatsen har inga formulär och samlar inte in några uppgifter. Boka, Kontakt och Bli tolk använder `mailto:`-länkar till `info@linkaro.se`. Mallen som syns på sidan (`<pre>`) läggs automatiskt in i e-postmeddelandet. Den kan också kopieras med knappen "Kopiera mallen", för den som använder webbmejl. Vill du ändra mallen räcker det att ändra texten i `<pre>`.
 
-#### E-posten är avstängd tills adressen finns
-
-Adressen `info@linkaro.se` tar inte emot e-post än. Därför är alla e-postlänkar avstängda men har kvar sin kod:
-
-- Länkarna har `data-mailto="mailto:…"` i stället för `href`, så de går inte att klicka på.
-- Efter adressen står `(öppnar snart)`.
-- Knapparna är streckade och har texten "– öppnar snart".
-- Knapparna "Kopiera mallen" har `disabled`.
-- Boka, Kontakt och Bli tolk har en ruta som hänvisar till sms.
-
-Kör det här i repots rotmapp för att slå på e-posten när adressen fungerar, och granska sedan ändringen med `git diff`:
-
-```bash
-grep -rl 'data-mailto=' --include='*.html' . | xargs sed -i '' \
-  -e 's/ data-mailto=/ href=/g' \
-  -e 's#<span class="mail-soon">[^<]*</span>##g' \
-  -e 's/ disabled data-mail-pending//g' \
-  -e '/class="mail-note"/d'
-```
-
-Ta också bort raden om e-postadressen under "Kända brister" i `tillganglighet/index.html`.
+Webbplatsen använder bara en e-postadress, `info@linkaro.se`. Alla e-postlänkar är aktiva sedan 18 november 2026.
 
 ### Analys (Cloudflare Web Analytics)
 
