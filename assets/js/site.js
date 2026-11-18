@@ -9,11 +9,15 @@
   var KEY = 'lk-enkelt';
 
   /* ---------- 1. Enkelt läge ---------- */
+  // Det läge som inte används får attributet hidden, så att skärmläsare,
+  // punktskrift och textversioner aldrig får innehållet två gånger.
   function syncToggles() {
     var on = root.classList.contains('enkelt');
     document.querySelectorAll('[data-enkelt-toggle]').forEach(function (b) {
-      b.setAttribute('aria-checked', on ? 'true' : 'false');
+      b.setAttribute('aria-pressed', on ? 'true' : 'false');
     });
+    document.querySelectorAll('.simple-only, .kort, .on-txt').forEach(function (el) { el.hidden = !on; });
+    document.querySelectorAll('.normal-only').forEach(function (el) { el.hidden = on; });
   }
   syncToggles();
 

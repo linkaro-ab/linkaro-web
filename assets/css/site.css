@@ -606,6 +606,9 @@ html:not(.js) [data-copy] { display: none; }
    Samma innehåll som normalt läge – bara enklare presentation. */
 html:not(.enkelt) .simple-only { display: none !important; }
 html.enkelt .normal-only { display: none !important; }
+/* Det inaktiva läget har attributet hidden i HTML:en (site.js håller det i synk).
+   Visa Enkelt läge direkt, även innan site.js hunnit ta bort hidden. */
+html.enkelt .simple-only[hidden] { display: block; }
 html.enkelt body { background: var(--vit); color: var(--petrol-djup); font-size: 22px; line-height: 1.65; }
 html.enkelt *, html.enkelt *::before, html.enkelt *::after { transition: none !important; animation: none !important; }
 html.enkelt :focus-visible { outline-width: 4px; outline-offset: 3px; }

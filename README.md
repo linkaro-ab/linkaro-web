@@ -47,6 +47,12 @@ Enkelt läge kan slås på eller av direkt i adressen, med `?enkelt=1` och `?enk
 2. Kontrollera ändringen lokalt enligt ovan, både i normalt läge och i Enkelt läge, och i smalt fönster.
 3. Gör en commit och en push till `main`. GitHub Pages publicerar ändringen inom någon minut.
 
+Har du ändrat `site.css` eller `site.js`, räkna då upp versionen i länkarna (`site.css?v=2` → `?v=3`, likadant för `site.js`) i alla HTML-filer. Annars kan besökare få en gammal fil från webbläsarens cache.
+
+### Normalt läge och Enkelt läge
+
+Varje sida innehåller båda lägena. Det läge som inte används får attributet `hidden` (`.simple-only`, `.kort` och texten "är på – stäng av" i normalt läge, och `.normal-only` i Enkelt läge). Därför får skärmläsare, punktskrift och textversioner aldrig innehållet två gånger, och varje sida har bara en `<h1>`. Växeln är en vanlig `<button>` med `aria-pressed`. Skriv aldrig samma text två gånger för dator och mobil. Låt i stället bara de ord som skiljer sig ha `.only-d` eller `.only-m`.
+
 ### Sidhuvud och sidfot
 
 Sidhuvudet och sidfoten finns kopierade i varje HTML-fil, mellan kommentarerna `SIDHUVUD` och `SIDHUVUD SLUT` och mellan `SIDFOT` och `SIDFOT SLUT`. Ändrar du till exempel en menypunkt, en e-postadress eller sms-numret måste ändringen göras i **alla** filer. Det går enklast med sök och ersätt i hela mappen. Sidan du står på markeras i menyn med `aria-current="page"`.
