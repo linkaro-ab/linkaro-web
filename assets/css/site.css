@@ -724,8 +724,10 @@ html.enkelt .ft-bottom { border-top: 2px solid var(--petrol-djup); flex-directio
 @media (prefers-reduced-motion: no-preference) {
   @supports (animation-timeline: view()) {
     .drift { animation: lkdrift linear both; animation-timeline: view(); }
-    .link { view-timeline-name: --lklink; }
-    .link .rl, .link .rr { animation: lklinkl linear both; animation-timeline: --lklink; animation-range: entry 0% cover 60%; }
+    /* Tidslinjen följer sektionen (inte ringarna), så rörelsen börjar när sektionen kommer in i bild
+       oavsett om ringarna sitter upptill eller nertill. */
+    .deco { view-timeline-name: --lklink; }
+    .link .rl, .link .rr { animation: lklinkl linear both; animation-timeline: --lklink; animation-range: entry 0% cover 40%; }
     .link .rr { animation-name: lklinkr; }
     .orbit-arm { animation: lkorbit linear both; animation-timeline: scroll(root); animation-range: 0px 640px; }
   }
