@@ -1,0 +1,69 @@
+meta:
+  titel: Bli tolk hos oss – frilansa med Linkaro
+  beskrivning: "Är du teckenspråks- eller dövblindtolk? Frilansa med Linkaro: du väljer dina uppdrag, vi sköter kundkontakten. Uppdrag i Stockholmsregionen och på distans."
+kort:
+  - Är du tolk? Du kan arbeta med oss.
+  - Du väljer själv vilka uppdrag du vill ha.
+  - Du behöver ha en tolkutbildning.
+  - Skicka ett e-postmeddelande och berätta om dig.
+topp:
+  overrubrik: För frilanstolkar
+  rubrik: Frilansa som tolk hos Linkaro
+  ingress: Vi bygger ett nätverk av frilansande teckenspråks- och dövblindtolkar. Du bestämmer över din tid och tackar ja till de uppdrag som passar dig – vi sköter kundkontakten och förmedlar uppdragen.
+  punkt: Du väljer dina uppdrag
+  punkt2: På plats och på distans
+  punkt3: Kort väg till beslut
+  foto: ""
+  fototext: ""
+h_vem:
+  rubrik: Vem vi söker
+  punkt: Frilansande teckenspråkstolkar
+  punkt2: Frilansande dövblindtolkar
+  punkt3: Tolkar som vill ta uppdrag på distans
+  stycke: Du kan vara ny i yrket eller ha lång erfarenhet. Tar du redan uppdrag via andra förmedlingar, eller har en anställning, går det bra att kombinera. Det viktiga är att du är noggrann och tar ansvar.
+  rubrik2: Krav
+  punkt4: Avslutad tolkutbildning [eller auktorisation från Kammarkollegiet]
+  punkt5: Du följer god tolksed och har tystnadsplikt
+  punkt6: Referenser från tidigare uppdrag eller praktik
+h_hur:
+  overrubrik: Så går det till
+  rubrik: Från intresseanmälan till första uppdraget
+  underrubrik: Intresseanmälan
+  stycke: Skicka din intresseanmälan med e-post. Det tar några minuter.
+  underrubrik2: Intervju och referenser
+  stycke2: Du kallas till intervju på plats hos oss, via videosamtal eller Teams. Vi tar referenser.
+  underrubrik3: Avtal och sekretess
+  stycke3: Går du vidare godkänner du samarbetsavtalet och sekretessförbindelsen.
+  underrubrik4: Välkommen till Linkaro
+  stycke4: Vi registrerar dig som tolk hos oss – och ser fram emot att förmedla dina tjänster till Linkaros kunder.
+  underrubrik5: Gemensam uppföljning
+  stycke5: Vi bestämmer en tid för att tillsammans följa upp hur det har gått.
+  underrubrik6: Därför frilansar du med oss
+  punkt: Du väljer själv vilka uppdrag du tackar ja till
+  punkt2: Vi sköter kundkontakt, bokning och bekräftelser
+  punkt3: Förberedelsematerial inför varje uppdrag
+  punkt4: Tydliga villkor
+h_anm:
+  overrubrik: Intresseanmälan
+  rubrik: Berätta om dig
+  ingress: Du förbinder dig inte till något genom att anmäla intresse.
+  ingress2: Hellre via video? Skriv det i ditt meddelande, så bokar vi ett samtal – gärna på teckenspråk.
+  stycke: Vi sparar dina uppgifter så länge det behövs för rekryteringen. Läs mer i vår [integritetspolicy](/integritetspolicy/).
+  underrubrik: E-postmall för intresseanmälan
+  mall: |
+    Intresseanmälan – tolk
+
+    Namn:
+    Ort eller region:
+    Mobil (valfritt):
+    Tolkutbildning – skola, examensår och eventuell auktorisation:
+    Jag tolkar – svenskt teckenspråk, tecken som stöd, dövblindtolkning, på distans:
+    Har du egen firma med F-skatt? Ja, nej eller startar snart (inget krav):
+    Hur mycket vill du arbeta via oss? Enstaka uppdrag, regelbundet eller så mycket som möjligt:
+
+    Berätta gärna mer:
+
+    (Bifoga gärna ditt cv som pdf eller Word.)
+  stycke2: "Mottagare: {epost}"
+h_boka:
+  rubrik: Letar du efter tolk till ett uppdrag?

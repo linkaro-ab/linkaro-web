@@ -1,0 +1,11 @@
+meta:
+  titel: Sidan finns inte | Linkaro
+  beskrivning: Sidan du letar efter finns inte på linkaro.se.
+topp:
+  overrubrik: Fel 404
+  rubrik: Sidan finns inte
+  ingress: "Länken kan vara gammal, eller så har adressen skrivits fel. Här är några sätt att komma vidare:"
+  punkt: "[Till startsidan](/)"
+  punkt2: "[Våra tjänster](/tjanster/)"
+  punkt3: "[Boka tolk](/boka/)"
+  punkt4: "[Kontakta oss](/kontakt/)"

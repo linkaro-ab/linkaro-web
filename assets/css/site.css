@@ -277,6 +277,7 @@ html:not(.js) [data-enkelt-toggle] { display: none !important; }
 .phero-grid { grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: 72px; align-items: center; }
 .phero-txt { display: flex; flex-direction: column; gap: 24px; align-items: flex-start; }
 .phero .ph { height: 440px; }
+.phero-img { display: block; width: 100%; height: 440px; object-fit: cover; border-radius: var(--radius); }
 
 /* ---------- Hem ---------- */
 .hero { padding: 88px 0 104px; overflow: hidden; overflow: clip; }
@@ -514,6 +515,7 @@ html:not(.js) [data-copy] { display: none; }
   .hero-orbit { right: 188px; top: 170px; width: 300px; height: 300px; --core: 18px; }
   .phero h1 { font-size: 48px; }
   .phero .ph { height: 320px; }
+  .phero-img { height: 320px; }
   .quote { margin-top: 40px; }
   .video-txt { order: 1; }
   .video-fig { order: 2; }
@@ -560,6 +562,7 @@ html:not(.js) [data-copy] { display: none; }
   .phero h1 { font-size: 36px; line-height: 1.1; }
   .phero .lead { font-size: 18px; }
   .phero .ph { height: 240px; }
+  .phero-img { height: 240px; }
   .phero-txt { gap: 18px; align-items: stretch; }
   .phero-txt .eyebrow { align-self: flex-start; }
 
@@ -650,7 +653,7 @@ html.enkelt .kort {
 html.enkelt .kort h2 { font-size: 26px !important; }
 html.enkelt .kort ul { padding-left: 1.2em; display: flex; flex-direction: column; gap: 6px; }
 html.enkelt .g, html.enkelt .hero-grid, html.enkelt .sec-head, html.enkelt .cta-box, html.enkelt .btns { display: flex !important; flex-direction: column; gap: 24px; align-items: stretch; }
-html.enkelt main .deco-svg, html.enkelt main .ph, html.enkelt main svg[aria-hidden='true'],
+html.enkelt main .deco-svg, html.enkelt main .ph, html.enkelt main .phero-img, html.enkelt main svg[aria-hidden='true'],
 html.enkelt main .hero-art, html.enkelt main .dot, html.enkelt main .num, html.enkelt main .decor { display: none !important; }
 html.enkelt main section, html.enkelt main .sec, html.enkelt main .phero, html.enkelt main .hero, html.enkelt main .svc-sec {
   background: var(--vit) !important; color: var(--petrol-djup); padding-top: 40px !important; padding-bottom: 40px !important; border: 0;

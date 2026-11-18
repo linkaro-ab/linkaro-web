@@ -1,0 +1,73 @@
+meta:
+  titel: Integritetspolicy | Linkaro
+  beskrivning: Så behandlar Linkaro AB personuppgifter. Webbplatsen använder inga cookies och ingen spårning.
+kort:
+  - Här står hur vi hanterar uppgifter om dig.
+  - Webbplatsen har inga cookies.
+  - Vi spårar dig inte.
+  - Om du skickar e-post till oss sparar vi bara det som behövs.
+  - Du kan fråga oss vilka uppgifter vi har om dig.
+topp:
+  overrubrik: Integritet
+  rubrik: Integritetspolicy
+  ingress: Så behandlar Linkaro AB personuppgifter när du besöker webbplatsen eller hör av dig till oss.
+avsnitt:
+  datum: "2026-11-16"
+  brodtext: |-
+    ## Kort sammanfattning
+
+    -   Webbplatsen använder **inga cookies** och **ingen spårning** mellan webbplatser. Vi mäter bara antal besök, utan cookies.
+    -   Det finns inga formulär på webbplatsen. Du kontaktar oss med e-post, sms eller videosamtal.
+    -   Vi behandlar bara de uppgifter du själv skickar till oss, och bara för att kunna svara och utföra uppdrag.
+    -   Skicka aldrig personnummer eller uppgifter om hälsa via e-post.
+
+    ## Personuppgiftsansvarig
+
+    Linkaro AB, organisationsnummer {orgnr}, är personuppgiftsansvarig.  
+    E-post: {epost}
+
+    ## När du besöker webbplatsen
+
+    ### Cookies och lagring i webbläsaren
+
+    Vi använder inga cookies. Om du slår på **Enkelt läge** sparas ditt val i din egen webbläsare (localStorage), så att läget gäller på alla sidor. Uppgiften skickas aldrig till oss och du kan ta bort den genom att stänga av Enkelt läge eller rensa webbplatsdata i webbläsaren.
+
+    ### Driftleverantörer
+
+    Webbplatsen ligger hos GitHub Pages (GitHub Inc.), och domänens namnuppslag (DNS) sköts av Cloudflare. Som alla webbservrar registrerar GitHub tekniska uppgifter, till exempel IP-adress och tidpunkt, för att leverera sidorna och skydda mot attacker. Vi har inte tillgång till uppgifterna och använder dem inte. Båda företagen finns i USA. Överföringen dit sker med stöd av EU-kommissionens beslut om EU–US Data Privacy Framework eller EU:s standardavtalsklausuler.
+
+    ### Besöksstatistik
+
+    Vi mäter antal besök med Cloudflare Web Analytics. Verktyget använder inga cookies, sparar inget i din webbläsare och följer dig inte mellan webbplatser. Vi ser bara sammanställd statistik, till exempel hur många som besökt en sida.
+
+    ### Externa resurser
+
+    Typsnitt och bilder ligger på vår egen webbplats. Det enda som hämtas från en annan webbplats är Cloudflares statistikskript.
+
+    ## När du kontaktar oss eller bokar tolk
+
+    När du skickar e-post eller sms behandlar vi det du skriver, ditt namn och dina kontaktuppgifter, och vid bokning uppgifter om uppdraget och er organisation.
+
+    -   **Ändamål:** att svara på frågor, hantera bokningar, utföra och följa upp tolkuppdrag och fakturera.
+    -   **Rättslig grund:** avtal (bokning och uppdrag), rättslig förpliktelse (bokföring) och berättigat intresse (att svara på frågor).
+    -   **Lagringstid:** vi sparar uppgifterna så länge de behövs för ändamålet och raderar dem sedan. Fakturor och annat bokföringsunderlag sparas så länge bokföringslagen kräver, i dag sju år.
+
+    Uppgifter om tolkanvändare och det som sägs i ett uppdrag omfattas av tystnadsplikt. När vi utför tolkning åt en region, kommun eller myndighet är vi ofta personuppgiftsbiträde, och då gäller personuppgiftsbiträdesavtalet med beställaren.
+
+    ## När du anmäler intresse som tolk
+
+    Vi behandlar uppgifterna i din intresseanmälan och ditt cv för att bedöma om vi kan samarbeta. Vi sparar dem så länge rekryteringen pågår och raderar dem sedan, om du inte blir tolk hos oss eller ber oss spara dem längre.
+
+    ## Vilka som får ta del av uppgifterna
+
+    Vi säljer aldrig personuppgifter. Uppgifterna hanteras av Linkaro och av leverantörer vi anlitar för e-post, bokföring och administration. De får bara använda uppgifterna för att utföra tjänsten åt oss. Tolkar som utför ett uppdrag får de uppgifter som behövs för uppdraget.
+
+    ## Dina rättigheter
+
+    Du har rätt att få veta vilka uppgifter vi har om dig, att få fel rättade, att få uppgifter raderade eller begränsade, att invända mot behandling och att få ut uppgifter du lämnat (dataportabilitet). Kontakta oss på {epost}, gärna på teckenspråk via videosamtal.
+
+    Är du inte nöjd med hur vi hanterar dina uppgifter kan du klaga hos Integritetsskyddsmyndigheten (IMY), [imy.se](https://www.imy.se/).
+
+    ## Ändringar
+
+    Vi uppdaterar policyn när något ändras. Datumet högst upp visar när den senast ändrades.

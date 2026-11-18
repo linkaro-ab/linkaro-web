@@ -1,0 +1,61 @@
+meta:
+  titel: Om oss – ett litet tolkföretag med nära kontakt | Linkaro
+  beskrivning: Linkaro AB är ett familjeägt tolkföretag i Stockholmsregionen. Läs om grundarna, namnet, våra värderingar och hur vi arbetar med kvalitet.
+kort:
+  - Linkaro är ett litet tolkföretag. En familj äger företaget.
+  - Vi tolkar noggrant och har tystnadsplikt.
+  - Vi följer upp varje uppdrag och blir bättre hela tiden.
+topp:
+  overrubrik: Om oss
+  rubrik: Ett litet tolkföretag med nära kontakt
+  ingress: Linkaro AB är ett familjeägt bolag i Stockholmsregionen. Vi tror att tolkning blir bäst när den är personlig, noggrann och går att lita på.
+  foto: ""
+  fototext: ""
+h_namn:
+  overrubrik: Namnet
+  rubrik: Link + Karo
+  ingress: "**Link** betyder länk och förbindelse. **Karo** står för kärna och värde. Tolken är länken som bygger bron mellan två språk och två världar."
+  ingress2: Symbolen är två sammanlänkade cirklar. Där de möts bildas ett öga, med kärnan som pupill. Teckenspråk är ett språk man ser – och att se och bli sedd är grunden för all kommunikation.
+h_var:
+  overrubrik: Våra värderingar
+  rubrik: Det vi står för
+  underrubrik: Precision
+  stycke: Vi förbereder oss noga och tolkar det som sägs och tecknas – varken mer eller mindre.
+  underrubrik2: Respekt
+  stycke2: För tolkanvändare, beställare och alla i rummet. Var och en är expert på sin egen kommunikation.
+  underrubrik3: Att bli sedd
+  stycke3: Vi lyssnar på önskemål och anpassar tolkningen efter människan, inte tvärtom.
+h_kval:
+  overrubrik: Kvalitet
+  rubrik: Så arbetar vi med kvalitet
+  ingress: Kortfattat för er som beställer eller upphandlar. Fler detaljer finns i vår företagspresentation.
+  underrubrik: Systematiskt kvalitetsarbete
+  stycke: "Vi arbetar enligt principerna i ISO 9001: planera, genomföra, följa upp och förbättra."
+  punkt: Kvalitetskontroll och uppföljning av uppdrag
+  punkt2: Avvikelser och klagomål dokumenteras, åtgärdas och följs upp
+  punkt3: "Kvalitetssäkring av underkonsulter: utbildning, referenser och avtal"
+  punkt4: Intern genomgång [varje kvartal] för ständig förbättring
+  underrubrik2: Etik och sekretess
+  stycke2: Förtroende är grunden i varje uppdrag.
+  punkt5: Vi följer god tolksed enligt Kammarkollegiets riktlinjer
+  punkt6: Tystnadsplikt gäller alla tolkar och all personal
+  punkt7: Personuppgifter hanteras enligt GDPR – vi sparar bara det som behövs
+  punkt8: Personuppgiftsbiträdesavtal tecknas när det behövs
+  underrubrik3: Bolagsuppgifter
+  begrepp: Bolag
+  forklaring: Linkaro AB
+  begrepp2: Organisationsnummer
+  begrepp3: F-skatt
+  forklaring2: Godkänd för F-skatt
+  begrepp4: Försäkring
+  forklaring3: Ansvarsförsäkring
+  begrepp5: Säte
+  begrepp6: Kontakt upphandling
+  forklaring4: "[{epostadress}](mailto:{epostadress}?subject=Upphandling)"
+  underrubrik4: Företagspresentation
+  stycke3: Tjänster, kvalitetsarbete, försäkring och bolagsuppgifter samlat i ett dokument.
+  stycke4: "[Företagspresentation som PDF kommer.] Vill ni ha den nu? [Be om den via e-post](mailto:{epostadress}?subject=F%C3%B6retagspresentation)."
+  stycke5: Har något inte fungerat? [Lämna synpunkter eller klagomål](/kontakt/)
+h_cta:
+  rubrik: Vill ni arbeta med oss?
+  stycke: Skicka en bokningsförfrågan eller hör av er med frågor.

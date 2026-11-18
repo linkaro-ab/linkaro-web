@@ -1,0 +1,44 @@
+meta:
+  titel: Kontakta oss – utan att ringa | Linkaro
+  beskrivning: Kontakta Linkaro med e-post, sms eller videosamtal på svenska eller svenskt teckenspråk. Du behöver aldrig ringa.
+kort:
+  - Här kan du kontakta oss.
+  - Du behöver inte ringa.
+  - Du kan skicka e-post eller sms.
+  - Du kan boka ett videosamtal på teckenspråk.
+topp:
+  overrubrik: Kontakt
+  rubrik: Kontakta oss
+  ingress: Hör av dig som det passar dig – du behöver aldrig ringa.
+  stycke: |-
+    **Vill du boka tolk?**\
+    Använd vår e-postmall för bokningar, så får vi alla uppgifter direkt.
+h_skriv:
+  rubrik: Skriv till oss
+  stycke: Skicka ett e-postmeddelande till {epost}. Mallen nedan hjälper oss att svara rätt och snabbt – men skriv gärna fritt.
+  stycke2: "**Skicka inga känsliga uppgifter.** Skriv inte personnummer eller uppgifter om någons hälsa i e-post."
+  underrubrik: E-postmall
+  mall: |
+    Vad gäller det? Fråga om tolkning, offert eller upphandling, synpunkt eller klagomål, teknik och IT, eller annat:
+    Namn:
+    Organisation (valfritt):
+    Hur vill du att vi svarar? E-post, sms eller videosamtal på teckenspråk:
+    Mobil för sms (om du vill ha svar med sms):
+
+    Meddelande:
+  stycke3: Har något inte fungerat i ett uppdrag? Skriv ”Synpunkt eller klagomål” i ämnesraden. Vi dokumenterar, åtgärdar och följer upp alla synpunkter.
+  rubrik2: Andra sätt att nå oss
+  underrubrik2: E-post
+  stycke4: "{epost}"
+  stycke5: För frågor, bokningar och upphandling.
+  underrubrik3: Sms
+  stycke6: Även för ändringar med kort varsel.
+  underrubrik4: Videosamtal
+  stycke7: Boka ett kort videomöte – på svenska eller svenskt teckenspråk.
+  stycke8: "[Bokningslänk kommer.] Tills vidare: skriv till [{epostadress}](mailto:{epostadress}?subject=Videosamtal) så föreslår vi en tid."
+  rubrik3: Här finns vi
+  stycke9: Vi utgår från Stockholm och tolkar i hela Stockholms län. På distans tolkar vi i hela Sverige.
+  begrepp: Bolag
+  forklaring: Linkaro AB
+  begrepp2: Org.nr
+  begrepp3: Säte

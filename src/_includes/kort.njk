@@ -1,0 +1,8 @@
+<section class="kort wrap" aria-labelledby="kort-h" hidden>
+    <h2 id="kort-h">Kort om sidan</h2>
+    <ul>
+{%- for punkt in s.kort %}
+      <li>{{ punkt | mdi | safe }}</li>
+{%- endfor %}
+    </ul>
+  </section>

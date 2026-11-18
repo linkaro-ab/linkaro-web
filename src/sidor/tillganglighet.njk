@@ -1,0 +1,27 @@
+---
+layout: bas.njk
+permalink: /tillganglighet/index.html
+sida: tillganglighet
+sokvag: /tillganglighet/
+---
+{%- set s = sidor['tillganglighet'] -%}
+<main id="innehall">
+{% include "kort.njk" %}
+
+<section aria-labelledby="h1" class="phero" style="padding-bottom:24px">
+  <div class="wrap phero-txt">
+    <p class="eyebrow"><span class="dot" aria-hidden="true"></span>{{ s.topp.overrubrik | mdi | safe }}</p>
+    <h1 id="h1">{{ s.topp.rubrik | mdi | safe }}</h1>
+    <p class="lead">{{ s.topp.ingress | mdi | safe }}</p>
+  </div>
+</section>
+
+<section aria-label="Redogörelsen" class="sec" style="padding-top:24px">
+  <div class="wrap prose">
+    <p class="meta">Senast granskad: <time datetime="{{ s.avsnitt.datum | isodatum }}">{{ s.avsnitt.datum | svdatum }}</time></p>
+
+    {{ s.avsnitt.brodtext | md | safe }}
+    <p class="meta">{{ s.avsnitt.slutnot | mdi | safe }}</p>
+  </div>
+</section>
+</main>

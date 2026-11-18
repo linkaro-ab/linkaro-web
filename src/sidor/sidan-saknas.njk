@@ -1,0 +1,24 @@
+---
+layout: bas.njk
+permalink: /404.html
+sida: sidan-saknas
+sokvag: /404.html
+noindex: true
+---
+{%- set s = sidor['sidan-saknas'] -%}
+<main id="innehall">
+<section aria-labelledby="h1" class="phero deco" style="min-height:50vh">
+  <svg class="deco-svg deco-a link" width="760" height="520" viewBox="0 0 760 520" aria-hidden="true" focusable="false"><circle class="rl" cx="260" cy="260" r="250" fill="none" stroke="#7FD1C7" stroke-width="2" opacity=".35"></circle><circle class="rr" cx="500" cy="260" r="250" fill="none" stroke="#7FD1C7" stroke-width="2" opacity=".35"></circle></svg>
+  <div class="wrap phero-txt">
+    <p class="eyebrow"><span class="dot" aria-hidden="true"></span>{{ s.topp.overrubrik | mdi | safe }}</p>
+    <h1 id="h1">{{ s.topp.rubrik | mdi | safe }}</h1>
+    <p class="lead">{{ s.topp.ingress | mdi | safe }}</p>
+    <ul class="bullets" style="font-size:19px">
+      <li>{{ s.topp.punkt | mdi | safe }}</li>
+      <li>{{ s.topp.punkt2 | mdi | safe }}</li>
+      <li>{{ s.topp.punkt3 | mdi | safe }}</li>
+      <li>{{ s.topp.punkt4 | mdi | safe }}</li>
+    </ul>
+  </div>
+</section>
+</main>

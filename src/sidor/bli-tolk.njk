@@ -1,0 +1,114 @@
+---
+layout: bas.njk
+permalink: /bli-tolk/index.html
+sida: bli-tolk
+sokvag: /bli-tolk/
+---
+{%- set s = sidor['bli-tolk'] -%}
+<main id="innehall">
+{% include "kort.njk" %}
+
+<section aria-labelledby="h1" class="phero">
+  <div class="wrap g phero-grid">
+    <div class="phero-txt">
+      <p class="eyebrow"><span class="dot" aria-hidden="true"></span>{{ s.topp.overrubrik | mdi | safe }}</p>
+      <h1 id="h1">{{ s.topp.rubrik | mdi | safe }}</h1>
+      <p class="lead">{{ s.topp.ingress | mdi | safe }}</p>
+      <div class="btns">
+        <a class="btn btn-cta btn-lg" href="#anmalan">Lämna intresseanmälan</a>
+        <a class="btn btn-sec btn-lg" href="#sa-gar-det-till">Så går det till</a>
+      </div>
+      <ul class="hero-checks">
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0B3C49" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>{{ s.topp.punkt | mdi | safe }}</li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0B3C49" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>{{ s.topp.punkt2 | mdi | safe }}</li>
+        <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0B3C49" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>{{ s.topp.punkt3 | mdi | safe }}</li>
+      </ul>
+    </div>
+    {%- if s.topp.foto %}
+    {% bild s.topp.foto, s.topp.fototext, "phero-img", "(max-width: 1023px) 100vw, 560px" %}
+    {%- else %}
+    <figure class="ph">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2F4A52" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="6" width="18" height="14" rx="2"></rect><circle cx="12" cy="13" r="3.5"></circle><path d="M8 6l1.5-2h5L16 6"></path></svg>
+      <figcaption>[Foto: tolk som tolkar på distans framför skärm och kamera, händerna i fokus.]</figcaption>
+    </figure>
+    {%- endif %}
+  </div>
+</section>
+
+<section aria-labelledby="h-vem" class="sec sec-white" style="border-bottom:1px solid var(--linje)">
+  <div class="wrap g g-2 g-wide">
+    <div class="stack" style="gap:20px">
+      <h2 id="h-vem">{{ s.h_vem.rubrik | mdi | safe }}</h2>
+      <ul class="checks">
+        <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0B3C49" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>{{ s.h_vem.punkt | mdi | safe }}</li>
+        <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0B3C49" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>{{ s.h_vem.punkt2 | mdi | safe }}</li>
+        <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0B3C49" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>{{ s.h_vem.punkt3 | mdi | safe }}</li>
+      </ul>
+      <p class="muted">{{ s.h_vem.stycke | mdi | safe }}</p>
+    </div>
+    <div class="stack" style="gap:20px">
+      <h2 id="h-krav">{{ s.h_vem.rubrik2 | mdi | safe }}</h2>
+      <ul class="bullets">
+        <li>{{ s.h_vem.punkt4 | mdi | safe }}</li>
+        <li>{{ s.h_vem.punkt5 | mdi | safe }}</li>
+        <li>{{ s.h_vem.punkt6 | mdi | safe }}</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="sa-gar-det-till" aria-labelledby="h-hur" class="sec">
+  <div class="wrap stack-48">
+    <div class="sec-intro">
+      <p class="eyebrow"><span class="dot" aria-hidden="true"></span>{{ s.h_hur.overrubrik | mdi | safe }}</p>
+      <h2 id="h-hur">{{ s.h_hur.rubrik | mdi | safe }}</h2>
+    </div>
+    <ol class="g steps" style="grid-template-columns:repeat(auto-fit,minmax(190px,1fr))">
+      <li><span class="num" aria-hidden="true">01</span><h3>{{ s.h_hur.underrubrik | mdi | safe }}</h3><p>{{ s.h_hur.stycke | mdi | safe }}</p></li>
+      <li><span class="num" aria-hidden="true">02</span><h3>{{ s.h_hur.underrubrik2 | mdi | safe }}</h3><p>{{ s.h_hur.stycke2 | mdi | safe }}</p></li>
+      <li><span class="num" aria-hidden="true">03</span><h3>{{ s.h_hur.underrubrik3 | mdi | safe }}</h3><p>{{ s.h_hur.stycke3 | mdi | safe }}</p></li>
+      <li><span class="num" aria-hidden="true">04</span><h3>{{ s.h_hur.underrubrik4 | mdi | safe }}</h3><p>{{ s.h_hur.stycke4 | mdi | safe }}</p></li>
+      <li><span class="num" aria-hidden="true">05</span><h3>{{ s.h_hur.underrubrik5 | mdi | safe }}</h3><p>{{ s.h_hur.stycke5 | mdi | safe }}</p></li>
+    </ol>
+    <div class="perks">
+      <h3 class="perks-h">{{ s.h_hur.underrubrik6 | mdi | safe }}</h3>
+      <ul class="g g-4">
+        <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0B3C49" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>{{ s.h_hur.punkt | mdi | safe }}</li>
+        <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0B3C49" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>{{ s.h_hur.punkt2 | mdi | safe }}</li>
+        <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0B3C49" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>{{ s.h_hur.punkt3 | mdi | safe }}</li>
+        <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0B3C49" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>{{ s.h_hur.punkt4 | mdi | safe }}</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="anmalan" aria-labelledby="h-anm" class="sec dark deco">
+  <svg class="deco-svg deco-b link" width="640" height="440" viewBox="0 0 640 440" aria-hidden="true" focusable="false"><circle class="rl" cx="220" cy="220" r="210" fill="none" stroke="#7FD1C7" stroke-width="2" opacity=".45"></circle><circle class="rr" cx="420" cy="220" r="210" fill="none" stroke="#7FD1C7" stroke-width="2" opacity=".45"></circle></svg>
+  <div class="wrap g g-anm">
+    <div class="stack" style="gap:20px">
+      <p class="eyebrow"><span class="dot" aria-hidden="true"></span>{{ s.h_anm.overrubrik | mdi | safe }}</p>
+      <h2 id="h-anm">{{ s.h_anm.rubrik | mdi | safe }}</h2>
+      <p class="lead">{{ s.h_anm.ingress | mdi | safe }}</p>
+      <p class="lead">{{ s.h_anm.ingress2 | mdi | safe }}</p>
+      <p class="small muted">{{ s.h_anm.stycke | mdi | safe }}</p>
+    </div>
+    <div class="mall">
+      <h3 id="h-mall">{{ s.h_anm.underrubrik | mdi | safe }}</h3>
+<pre id="mall-tolk" tabindex="0" role="region" aria-labelledby="h-mall">{{ s.h_anm.mall | tok }}</pre>
+      <div class="mall-actions">
+        <a class="btn btn-cta btn-lg" href="mailto:{{ k.epost }}?subject=Intresseanm%C3%A4lan%20%E2%80%93%20tolk" data-mail-body="#mall-tolk">Skicka intresseanmälan med e-post</a>
+        <button type="button" class="btn btn-sec btn-lg" data-copy="#mall-tolk" data-status="copy-tolk">Kopiera mallen</button>
+      </div>
+      <p id="copy-tolk" class="copy-status" role="status"></p>
+      <p class="small muted">{{ s.h_anm.stycke2 | mdi | safe }}</p>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="h-boka" class="sec" style="--sektion:56px">
+  <div class="wrap cta-box">
+    <h2 id="h-boka" style="font-size:24px">{{ s.h_boka.rubrik | mdi | safe }}</h2>
+    <a class="btn btn-cta" href="/boka/">Boka tolk</a>
+  </div>
+</section>
+</main>

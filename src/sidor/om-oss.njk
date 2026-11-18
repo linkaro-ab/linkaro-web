@@ -1,0 +1,119 @@
+---
+layout: bas.njk
+permalink: /om-oss/index.html
+sida: om-oss
+sokvag: /om-oss/
+---
+{%- set s = sidor['om-oss'] -%}
+<main id="innehall">
+{% include "kort.njk" %}
+
+<section aria-labelledby="h1" class="phero">
+  <div class="wrap g phero-grid">
+    <div class="phero-txt">
+      <p class="eyebrow"><span class="dot" aria-hidden="true"></span>{{ s.topp.overrubrik | mdi | safe }}</p>
+      <h1 id="h1">{{ s.topp.rubrik | mdi | safe }}</h1>
+      <p class="lead">{{ s.topp.ingress | mdi | safe }}</p>
+      <div class="btns">
+        <a class="btn btn-cta btn-lg" href="/boka/">Boka tolk</a>
+        <a class="btn btn-sec btn-lg" href="#kvalitet">Så arbetar vi med kvalitet</a>
+      </div>
+    </div>
+    {%- if s.topp.foto %}
+    {% bild s.topp.foto, s.topp.fototext, "phero-img", "(max-width: 1023px) 100vw, 560px" %}
+    {%- else %}
+    <figure class="ph">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#2F4A52" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="6" width="18" height="14" rx="2"></rect><circle cx="12" cy="13" r="3.5"></circle><path d="M8 6l1.5-2h5L16 6"></path></svg>
+      <figcaption>[Foto: tolkning i en verklig situation, med samtycke. Varmt, naturligt ljus.]</figcaption>
+    </figure>
+    {%- endif %}
+  </div>
+</section>
+
+<section aria-labelledby="h-namn" class="sec dark deco">
+  <svg class="deco-svg deco-a link" width="760" height="520" viewBox="0 0 760 520" aria-hidden="true" focusable="false"><circle class="rl" cx="260" cy="260" r="250" fill="none" stroke="#7FD1C7" stroke-width="2" opacity=".45"></circle><circle class="rr" cx="500" cy="260" r="250" fill="none" stroke="#7FD1C7" stroke-width="2" opacity=".45"></circle></svg>
+  <div class="wrap g name-grid">
+    <img class="decor" src="/assets/img/symbol-farg-pa-morkt.svg" alt="" width="360" height="240">
+    <div class="stack" style="gap:20px">
+      <p class="eyebrow"><span class="dot" aria-hidden="true"></span>{{ s.h_namn.overrubrik | mdi | safe }}</p>
+      <h2 id="h-namn">{{ s.h_namn.rubrik | mdi | safe }}</h2>
+      <p class="lead">{{ s.h_namn.ingress | mdi | safe }}</p>
+      <p class="lead">{{ s.h_namn.ingress2 | mdi | safe }}</p>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="h-var" class="sec">
+  <div class="wrap stack-48" style="gap:40px">
+    <div class="sec-intro">
+      <p class="eyebrow"><span class="dot" aria-hidden="true"></span>{{ s.h_var.overrubrik | mdi | safe }}</p>
+      <h2 id="h-var">{{ s.h_var.rubrik | mdi | safe }}</h2>
+    </div>
+    <ul class="g g-3 plain">
+      <li class="card value"><h3><span class="dot" aria-hidden="true"></span>{{ s.h_var.underrubrik | mdi | safe }}</h3><p>{{ s.h_var.stycke | mdi | safe }}</p></li>
+      <li class="card value"><h3><span class="dot" aria-hidden="true"></span>{{ s.h_var.underrubrik2 | mdi | safe }}</h3><p>{{ s.h_var.stycke2 | mdi | safe }}</p></li>
+      <li class="card value"><h3><span class="dot" aria-hidden="true"></span>{{ s.h_var.underrubrik3 | mdi | safe }}</h3><p>{{ s.h_var.stycke3 | mdi | safe }}</p></li>
+    </ul>
+  </div>
+</section>
+
+<section id="kvalitet" aria-labelledby="h-kval" class="sec sec-panel">
+  <div class="wrap stack-48">
+    <div class="sec-intro">
+      <p class="eyebrow"><span class="dot" aria-hidden="true"></span>{{ s.h_kval.overrubrik | mdi | safe }}</p>
+      <h2 id="h-kval">{{ s.h_kval.rubrik | mdi | safe }}</h2>
+      <p class="lead">{{ s.h_kval.ingress | mdi | safe }}</p>
+    </div>
+    <div class="g g-2">
+      <article class="card qcard">
+        <h3>{{ s.h_kval.underrubrik | mdi | safe }}</h3>
+        <p class="muted">{{ s.h_kval.stycke | mdi | safe }}</p>
+        <ul class="checks">
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0B3C49" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>{{ s.h_kval.punkt | mdi | safe }}</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0B3C49" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>{{ s.h_kval.punkt2 | mdi | safe }}</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0B3C49" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>{{ s.h_kval.punkt3 | mdi | safe }}</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0B3C49" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>{{ s.h_kval.punkt4 | mdi | safe }}</li>
+        </ul>
+      </article>
+      <article class="card qcard">
+        <h3>{{ s.h_kval.underrubrik2 | mdi | safe }}</h3>
+        <p class="muted">{{ s.h_kval.stycke2 | mdi | safe }}</p>
+        <ul class="checks">
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0B3C49" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>{{ s.h_kval.punkt5 | mdi | safe }}</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0B3C49" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>{{ s.h_kval.punkt6 | mdi | safe }}</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0B3C49" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>{{ s.h_kval.punkt7 | mdi | safe }}</li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0B3C49" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>{{ s.h_kval.punkt8 | mdi | safe }}</li>
+        </ul>
+      </article>
+    </div>
+    <div class="g g-facts">
+      <article class="card qcard">
+        <h3>{{ s.h_kval.underrubrik3 | mdi | safe }}</h3>
+        <dl class="facts">
+          <div><dt>{{ s.h_kval.begrepp | mdi | safe }}</dt><dd>{{ s.h_kval.forklaring | mdi | safe }}</dd></div>
+          <div><dt>{{ s.h_kval.begrepp2 | mdi | safe }}</dt><dd>{{ k.orgnr }}</dd></div>
+          <div><dt>{{ s.h_kval.begrepp3 | mdi | safe }}</dt><dd>{{ s.h_kval.forklaring2 | mdi | safe }}</dd></div>
+          <div><dt>{{ s.h_kval.begrepp4 | mdi | safe }}</dt><dd>{{ s.h_kval.forklaring3 | mdi | safe }}</dd></div>
+          <div><dt>{{ s.h_kval.begrepp5 | mdi | safe }}</dt><dd>{{ k.sate }}</dd></div>
+          <div><dt>{{ s.h_kval.begrepp6 | mdi | safe }}</dt><dd>{{ s.h_kval.forklaring4 | mdi | safe }}</dd></div>
+        </dl>
+      </article>
+      <article class="card qcard">
+        <h3>{{ s.h_kval.underrubrik4 | mdi | safe }}</h3>
+        <p class="muted">{{ s.h_kval.stycke3 | mdi | safe }}</p>
+        <!-- Lägg PDF:en i /assets/dokument/ och byt texten mot
+        <a class="btn btn-sec" href="/assets/dokument/linkaro-foretagspresentation.pdf" download>Ladda ner PDF (X kB)</a> -->
+        <p>{{ s.h_kval.stycke4 | mdi | safe }}</p>
+      </article>
+    </div>
+    <p class="muted">{{ s.h_kval.stycke5 | mdi | safe }}</p>
+  </div>
+</section>
+
+<section aria-labelledby="h-cta" class="sec">
+  <div class="wrap cta-box">
+    <div><h2 id="h-cta">{{ s.h_cta.rubrik | mdi | safe }}</h2><p>{{ s.h_cta.stycke | mdi | safe }}</p></div>
+    <div class="btns"><a class="btn btn-cta btn-lg" href="/boka/">Boka tolk</a><a class="btn btn-sec btn-lg" href="/kontakt/">Kontakta oss</a></div>
+  </div>
+</section>
+</main>

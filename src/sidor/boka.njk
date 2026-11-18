@@ -1,0 +1,77 @@
+---
+layout: bas.njk
+permalink: /boka/index.html
+sida: boka
+sokvag: /boka/
+---
+{%- set s = sidor['boka'] -%}
+<main id="innehall">
+{% include "kort.njk" %}
+
+<section aria-labelledby="h1" class="phero" style="padding-bottom:40px">
+  <div class="wrap phero-txt">
+    <p class="eyebrow"><span class="dot" aria-hidden="true"></span>{{ s.topp.overrubrik | mdi | safe }}</p>
+    <h1 id="h1">{{ s.topp.rubrik | mdi | safe }}</h1>
+    <p class="lead">{{ s.topp.ingress | mdi | safe }}</p>
+  </div>
+</section>
+
+<section aria-labelledby="h-steg" class="sec" style="padding-top:0">
+  <div class="wrap g side-grid">
+    <div class="mailflow">
+      <div class="stack" style="gap:12px">
+        <h2 id="h-steg">{{ s.h_steg.rubrik | mdi | safe }}</h2>
+        <ol class="bullets" style="font-size:19px">
+          <li>{{ s.h_steg.punkt | mdi | safe }}</li>
+          <li>{{ s.h_steg.punkt2 | mdi | safe }}</li>
+          <li>{{ s.h_steg.punkt3 | mdi | safe }}</li>
+        </ol>
+      </div>
+
+      <div class="notice" role="note">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0B3C49" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z"></path><path d="M9 12l2 2 4-4"></path></svg>
+        <p>{{ s.h_steg.stycke | mdi | safe }}</p>
+      </div>
+
+      <div class="mall">
+        <h3 id="h-mall">{{ s.h_steg.underrubrik | mdi | safe }}</h3>
+<pre id="mall-boka" tabindex="0" role="region" aria-labelledby="h-mall">{{ s.h_steg.mall | tok }}</pre>
+        <div class="mall-actions">
+          <a class="btn btn-cta btn-lg" href="mailto:{{ k.epost }}?subject=Bokningsf%C3%B6rfr%C3%A5gan" data-mail-body="#mall-boka">Skriv bokningsförfrågan i e-post</a>
+          <button type="button" class="btn btn-sec btn-lg" data-copy="#mall-boka" data-status="copy-boka">Kopiera mallen</button>
+        </div>
+        <p id="copy-boka" class="copy-status" role="status"></p>
+        <p class="small muted">{{ s.h_steg.stycke2 | mdi | safe }}</p>
+      </div>
+
+      <div class="stack" style="gap:12px">
+        <h2 id="h-sen">{{ s.h_steg.rubrik2 | mdi | safe }}</h2>
+        <ol class="num-list" style="width:100%">
+          <li><span class="num" aria-hidden="true">01</span><div><h3>{{ s.h_steg.underrubrik2 | mdi | safe }}</h3><p>{{ s.h_steg.stycke3 | mdi | safe }}</p></div></li>
+          <li><span class="num" aria-hidden="true">02</span><div><h3>{{ s.h_steg.underrubrik3 | mdi | safe }}</h3><p>{{ s.h_steg.stycke4 | mdi | safe }}</p></div></li>
+          <li><span class="num" aria-hidden="true">03</span><div><h3>{{ s.h_steg.underrubrik4 | mdi | safe }}</h3><p>{{ s.h_steg.stycke5 | mdi | safe }}</p></div></li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="info">
+      <div class="card info-box">
+        <h2 id="h-info">{{ s.h_steg.rubrik3 | mdi | safe }}</h2>
+        <dl>
+          <dt>{{ s.h_steg.begrepp | mdi | safe }}</dt><dd>{{ s.h_steg.forklaring | mdi | safe }}</dd>
+          <dt>{{ s.h_steg.begrepp2 | mdi | safe }}</dt><dd>{{ s.h_steg.forklaring2 | mdi | safe }}</dd>
+          <dt>{{ s.h_steg.begrepp3 | mdi | safe }}</dt><dd>{{ s.h_steg.forklaring3 | mdi | safe }}</dd>
+        </dl>
+      </div>
+      <div class="card info-box">
+        <h2 id="h-annat">{{ s.h_steg.rubrik4 | mdi | safe }}</h2>
+        <ul>
+          <li>{{ s.h_steg.punkt4 | mdi | safe }}</li>
+          <li>{{ s.h_steg.punkt5 | mdi | safe }}</li>
+        </ul>
+        <p class="small muted">{{ s.h_steg.stycke6 | mdi | safe }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
