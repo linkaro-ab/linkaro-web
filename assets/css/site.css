@@ -353,9 +353,15 @@ html:not(.js) [data-enkelt-toggle] { display: none !important; }
 }
 .toc a:hover { border-color: var(--petrol); }
 .svc-sec { padding: 88px 0; }
-.svc-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 80px; }
-.svc-main { display: flex; flex-direction: column; gap: 20px; align-items: flex-start; }
-.svc-main h2 { font-size: 40px; }
+.svc-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 20px 80px; }
+.svc-head, .svc-main { display: flex; flex-direction: column; gap: 20px; align-items: flex-start; }
+.svc-head h2 { font-size: 40px; }
+/* Ikon och rubrik på egen rad – högerkolumnen börjar i linje med första stycket */
+@media (min-width: 1024px) {
+  .svc-head { grid-column: 1; grid-row: 1; }
+  .svc-main { grid-column: 1; grid-row: 2; }
+  .svc-side { grid-column: 2; grid-row: 2; }
+}
 .svc-main > p { color: var(--text-dampad); }
 .svc-side { display: flex; flex-direction: column; gap: 28px; }
 .svc-side h3 { font-size: 21px; margin-bottom: 10px; }
@@ -496,6 +502,8 @@ html:not(.js) [data-copy] { display: none; }
 
   .hero { padding: 64px 0 80px; }
   .hero-grid, .phero-grid, .why-grid, .video-grid, .tolk-grid, .svc-grid, .faq-grid, .name-grid, .side-grid { grid-template-columns: 1fr; gap: 40px; }
+  .svc-grid { gap: 20px; }
+  .svc-side { margin-top: 20px; }
   .hero h1 { font-size: 56px; }
   .hero-art { height: 440px; max-width: 520px; width: 100%; justify-self: center; }
   .hero-photo { width: 380px; height: 380px; top: 0; padding: 52px; }
@@ -579,8 +587,8 @@ html:not(.js) [data-copy] { display: none; }
   .cta-box .btns { width: 100%; }
 
   .svc-sec { padding: 56px 0; }
-  .svc-main h2 { font-size: 30px; }
-  .svc-grid { gap: 32px; }
+  .svc-head h2 { font-size: 30px; }
+  .svc-side { margin-top: 12px; }
   .tbc-box { padding: 24px; }
   .soon { grid-template-columns: 1fr; gap: 16px; }
   .faq summary { font-size: 18px; padding: 18px 0; }
