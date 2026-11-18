@@ -47,7 +47,7 @@ Enkelt läge kan slås på eller av direkt i adressen, med `?enkelt=1` och `?enk
 2. Kontrollera ändringen lokalt enligt ovan, både i normalt läge och i Enkelt läge, och i smalt fönster.
 3. Gör en commit och en push till `main`. GitHub Pages publicerar ändringen inom någon minut.
 
-Har du ändrat `site.css` eller `site.js`, räkna då upp versionen i länkarna (`site.css?v=6` → `?v=7`, likadant för `site.js`) i alla HTML-filer. Annars kan besökare få en gammal fil från webbläsarens cache.
+Har du ändrat `site.css` eller `site.js`, räkna då upp versionen i länkarna (`site.css?v=7` → `?v=8`, likadant för `site.js`) i alla HTML-filer. Annars kan besökare få en gammal fil från webbläsarens cache.
 
 ### Normalt läge och Enkelt läge
 
