@@ -38,20 +38,20 @@ sokvag: /bli-tolk/
 <section aria-labelledby="h-vem" class="sec sec-white" style="border-bottom:1px solid var(--linje)">
   <div class="wrap g g-2 g-wide">
     <div class="stack" style="gap:20px">
-      <h2 id="h-vem">{{ s.h_vem.rubrik | mdi | safe }}</h2>
+      <h2 id="h-vem">{{ s.h_vem.block1.rubrik | mdi | safe }}</h2>
       <ul class="checks">
-        <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0B3C49" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>{{ s.h_vem.punkt | mdi | safe }}</li>
-        <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0B3C49" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>{{ s.h_vem.punkt2 | mdi | safe }}</li>
-        <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0B3C49" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>{{ s.h_vem.punkt3 | mdi | safe }}</li>
+        <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0B3C49" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>{{ s.h_vem.block1.punkt | mdi | safe }}</li>
+        <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0B3C49" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>{{ s.h_vem.block1.punkt2 | mdi | safe }}</li>
+        <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0B3C49" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>{{ s.h_vem.block1.punkt3 | mdi | safe }}</li>
       </ul>
-      <p class="muted">{{ s.h_vem.stycke | mdi | safe }}</p>
+      <p class="muted">{{ s.h_vem.block1.text | mdi | safe }}</p>
     </div>
     <div class="stack" style="gap:20px">
-      <h2 id="h-krav">{{ s.h_vem.rubrik2 | mdi | safe }}</h2>
+      <h2 id="h-krav">{{ s.h_vem.block2.rubrik | mdi | safe }}</h2>
       <ul class="bullets">
-        <li>{{ s.h_vem.punkt4 | mdi | safe }}</li>
-        <li>{{ s.h_vem.punkt5 | mdi | safe }}</li>
-        <li>{{ s.h_vem.punkt6 | mdi | safe }}</li>
+        <li>{{ s.h_vem.block2.punkt | mdi | safe }}</li>
+        <li>{{ s.h_vem.block2.punkt2 | mdi | safe }}</li>
+        <li>{{ s.h_vem.block2.punkt3 | mdi | safe }}</li>
       </ul>
     </div>
   </div>
@@ -64,11 +64,11 @@ sokvag: /bli-tolk/
       <h2 id="h-hur">{{ s.h_hur.rubrik | mdi | safe }}</h2>
     </div>
     <ol class="g steps" style="grid-template-columns:repeat(auto-fit,minmax(190px,1fr))">
-      <li><span class="num" aria-hidden="true">01</span><h3>{{ s.h_hur.underrubrik | mdi | safe }}</h3><p>{{ s.h_hur.stycke | mdi | safe }}</p></li>
-      <li><span class="num" aria-hidden="true">02</span><h3>{{ s.h_hur.underrubrik2 | mdi | safe }}</h3><p>{{ s.h_hur.stycke2 | mdi | safe }}</p></li>
-      <li><span class="num" aria-hidden="true">03</span><h3>{{ s.h_hur.underrubrik3 | mdi | safe }}</h3><p>{{ s.h_hur.stycke3 | mdi | safe }}</p></li>
-      <li><span class="num" aria-hidden="true">04</span><h3>{{ s.h_hur.underrubrik4 | mdi | safe }}</h3><p>{{ s.h_hur.stycke4 | mdi | safe }}</p></li>
-      <li><span class="num" aria-hidden="true">05</span><h3>{{ s.h_hur.underrubrik5 | mdi | safe }}</h3><p>{{ s.h_hur.stycke5 | mdi | safe }}</p></li>
+      <li><span class="num" aria-hidden="true">01</span><h3>{{ s.h_hur.steg1.rubrik | mdi | safe }}</h3><p>{{ s.h_hur.steg1.text | mdi | safe }}</p></li>
+      <li><span class="num" aria-hidden="true">02</span><h3>{{ s.h_hur.steg2.rubrik | mdi | safe }}</h3><p>{{ s.h_hur.steg2.text | mdi | safe }}</p></li>
+      <li><span class="num" aria-hidden="true">03</span><h3>{{ s.h_hur.steg3.rubrik | mdi | safe }}</h3><p>{{ s.h_hur.steg3.text | mdi | safe }}</p></li>
+      <li><span class="num" aria-hidden="true">04</span><h3>{{ s.h_hur.steg4.rubrik | mdi | safe }}</h3><p>{{ s.h_hur.steg4.text | mdi | safe }}</p></li>
+      <li><span class="num" aria-hidden="true">05</span><h3>{{ s.h_hur.steg5.rubrik | mdi | safe }}</h3><p>{{ s.h_hur.steg5.text | mdi | safe }}</p></li>
     </ol>
     <div class="perks">
       <h3 class="perks-h">{{ s.h_hur.underrubrik6 | mdi | safe }}</h3>

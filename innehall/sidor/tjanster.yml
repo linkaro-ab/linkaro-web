@@ -1,12 +1,3 @@
-meta:
-  titel: Tjänster – teckenspråks-, dövblind- och distanstolkning | Linkaro
-  beskrivning: Teckenspråkstolkning, dövblindtolkning och distanstolkning. Vad varje tjänst innebär, när den passar och hur ni förbereder uppdraget.
-kort:
-  - Här kan du läsa om våra tjänster.
-  - "Teckenspråkstolkning: vi tolkar mellan teckenspråk och svenska."
-  - "Dövblindtolkning: vi tolkar med händerna, beskriver omgivningen och ledsagar."
-  - "Distanstolkning: vi tolkar på video."
-  - Längst ner finns svar på vanliga frågor.
 topp:
   overrubrik: Tjänster
   rubrik: Tolkning anpassad efter situationen
@@ -19,56 +10,69 @@ s1:
   rubrik: Teckenspråkstolkning
   stycke: Tolken översätter mellan svenskt teckenspråk och talad svenska, i båda riktningarna. Alla kan använda sitt eget språk och delta på lika villkor.
   stycke2: Vi tolkar också TSS (tecken som stöd) för den som har svenska som förstaspråk och använder tecken som komplement.
-  underrubrik: Typiska situationer
-  punkt: Möten, arbetsplatsträffar och medarbetarsamtal
-  punkt2: Vård- och myndighetsbesök
-  punkt3: Utbildning, föreläsningar och kurser
-  punkt4: Konferenser, evenemang och ceremonier
-  underrubrik2: Så bokar du
-  stycke3: Skicka en bokningsförfrågan med datum, tid, plats och typ av uppdrag. Vi bekräftar vilken tolk som kommer. Vid uppdrag över 1 timme eller med intensiv tolkning bokar vi två tolkar som avlöser varandra.
-  underrubrik3: Förbered inför uppdraget
-  punkt5: Skicka dagordning, presentationer och namnlista i förväg
-  punkt6: Ange fackord, namn och förkortningar
-  punkt7: Ge tolken en plats där hen syns väl, med bra ljus
-  punkt8: Planera in pauser vid långa möten
+  block1:
+    rubrik: Typiska situationer
+    punkt: Möten, arbetsplatsträffar och medarbetarsamtal
+    punkt2: Vård- och myndighetsbesök
+    punkt3: Utbildning, föreläsningar och kurser
+    punkt4: Konferenser, evenemang och ceremonier
+  block2:
+    rubrik: Så bokar du
+    text: Skicka en bokningsförfrågan med datum, tid, plats och typ av uppdrag. Vi bekräftar vilken tolk som kommer. Vid uppdrag över 1 timme eller med intensiv tolkning bokar vi två tolkar som avlöser varandra.
+  block3:
+    rubrik: Förbered inför uppdraget
+    punkt: Skicka dagordning, presentationer och namnlista i förväg
+    punkt2: Ange fackord, namn och förkortningar
+    punkt3: Ge tolken en plats där hen syns väl, med bra ljus
+    punkt4: Planera in pauser vid långa möten
 s2:
   rubrik: Dövblindtolkning
   stycke: Dövblindtolkning anpassas efter varje person. Den kombinerar språk, beskrivning av omgivningen och ledsagning, så att tolkanvändaren får hela sammanhanget.
-  begrepp: Taktilt teckenspråk
-  forklaring: Teckenspråk som tas emot med händerna.
-  begrepp2: Haptiska signaler
-  forklaring2: Signaler på rygg eller arm som förmedlar till exempel reaktioner, stämning och var personer finns i rummet.
-  begrepp3: Beskrivning av omgivningen
-  forklaring3: Vem som är där, vad som händer och hur rummet ser ut.
-  begrepp4: Ledsagning
-  forklaring4: Tolken leder tryggt mellan platser, till exempel från entrén till mötesrummet.
-  underrubrik: Typiska situationer
-  punkt: Vård- och myndighetsbesök
-  punkt2: Möten, arbete och studier
-  punkt3: Kultur, föreningsliv och evenemang
-  underrubrik2: Så bokar du
-  stycke2: Beskriv tolkanvändarens kommunikationssätt och om ledsagning behövs. Vi matchar en tolk med rätt kompetens. Vid längre uppdrag bokar vi ofta två tolkar.
-  underrubrik3: Förbered inför uppdraget
-  punkt4: Ange önskad tolkmetod, till exempel taktilt eller på nära håll
-  punkt5: Bestäm var tolk och tolkanvändare möts
-  punkt6: Skicka material i förväg
-  punkt7: Välj en lugn plats med bra ljus och få störningar
+  rad1:
+    rubrik: Taktilt teckenspråk
+    text: Teckenspråk som tas emot med händerna.
+  rad2:
+    rubrik: Haptiska signaler
+    text: Signaler på rygg eller arm som förmedlar till exempel reaktioner, stämning och var personer finns i rummet.
+  rad3:
+    rubrik: Beskrivning av omgivningen
+    text: Vem som är där, vad som händer och hur rummet ser ut.
+  rad4:
+    rubrik: Ledsagning
+    text: Tolken leder tryggt mellan platser, till exempel från entrén till mötesrummet.
+  block1:
+    rubrik: Typiska situationer
+    punkt: Vård- och myndighetsbesök
+    punkt2: Möten, arbete och studier
+    punkt3: Kultur, föreningsliv och evenemang
+  block2:
+    rubrik: Så bokar du
+    text: Beskriv tolkanvändarens kommunikationssätt och om ledsagning behövs. Vi matchar en tolk med rätt kompetens. Vid längre uppdrag bokar vi ofta två tolkar.
+  block3:
+    rubrik: Förbered inför uppdraget
+    punkt: Ange önskad tolkmetod, till exempel taktilt eller på nära håll
+    punkt2: Bestäm var tolk och tolkanvändare möts
+    punkt3: Skicka material i förväg
+    punkt4: Välj en lugn plats med bra ljus och få störningar
 s3:
   rubrik: Distanstolkning
   stycke: Tolken deltar via video, med samma kvalitet och tystnadsplikt som på plats. Det passar korta möten, uppföljningar och tillfällen när det är svårt att ses.
   stycke2: Vi tolkar i [Teams, Zoom och andra plattformar som stöds] eller via en säker länk som vi skickar.
-  underrubrik: Typiska situationer
-  punkt: Korta möten och avstämningar
-  punkt2: Digitala möten och webbinarier
-  punkt3: Vårdsamtal på video
-  punkt4: När deltagarna finns på olika orter
-  underrubrik2: Så bokar du
-  stycke3: Skriv i bokningen att tolkningen sker på distans och ange plattform och möteslänk. Vid behov testar vi tekniken tillsammans innan mötet.
-  underrubrik3: Förbered inför uppdraget
-  punkt5: Skicka länken i god tid och släpp in tolken från lobbyn
-  punkt6: Se till att den som tecknar har kamera och bra ljus
-  punkt7: Använd en stabil uppkoppling
-  punkt8: Fäst tolkens bild så att den syns hela tiden
+  block1:
+    rubrik: Typiska situationer
+    punkt: Korta möten och avstämningar
+    punkt2: Digitala möten och webbinarier
+    punkt3: Vårdsamtal på video
+    punkt4: När deltagarna finns på olika orter
+  block2:
+    rubrik: Så bokar du
+    text: Skriv i bokningen att tolkningen sker på distans och ange plattform och möteslänk. Vid behov testar vi tekniken tillsammans innan mötet.
+  block3:
+    rubrik: Förbered inför uppdraget
+    punkt: Skicka länken i god tid och släpp in tolken från lobbyn
+    punkt2: Se till att den som tecknar har kamera och bra ljus
+    punkt3: Använd en stabil uppkoppling
+    punkt4: Fäst tolkens bild så att den syns hela tiden
 s_it:
   overrubrik: Utanför tolkningen
   stycke: "Vi planerar stöd för tolkförmedlingar och tolkar: utrustning och uppsättningar för distanstolkning, säkra videolösningar och hjälp med IT-miljön."
@@ -76,12 +80,33 @@ s_faq:
   overrubrik: Vanliga frågor
   rubrik: Inför bokningen
   stycke: Hittar du inte svaret? [Skriv till oss](/kontakt/).
-  stycke2: Boka gärna så tidigt som möjligt, helst 2 dagar i förväg. Hör av dig även med kort varsel – vi gör vårt bästa för att hitta en tolk.
-  stycke3: Priset beror på uppdragets längd, tid på dygnet, antal tolkar och resor. [Prismodell eller länk till prislista.] Du får alltid ett pris innan bokningen bekräftas.
-  stycke4: Det beror på sammanhanget, till exempel om det gäller vård, arbete, utbildning eller vardagstolkning. Är ni osäkra hjälper vi er att reda ut vem som ansvarar.
-  stycke5: Vid långa eller intensiva uppdrag avlöser två tolkar varandra. Det håller kvaliteten jämn hela vägen. Vi föreslår vad som passar när vi ser er förfrågan.
-  stycke6: Ja. Skriv önskemålet i bokningen så gör vi vad vi kan för att tillgodose det.
-  stycke7: Avboka så snart som möjligt via e-post eller sms, och senast 24 timmar före uppdraget.
+  fraga1:
+    rubrik: Hur långt i förväg behöver vi boka?
+    text: Boka gärna så tidigt som möjligt, helst 2 dagar i förväg. Hör av dig även med kort varsel – vi gör vårt bästa för att hitta en tolk.
+  fraga2:
+    rubrik: Vad kostar det?
+    text: Priset beror på uppdragets längd, tid på dygnet, antal tolkar och resor. [Prismodell eller länk till prislista.] Du får alltid ett pris innan bokningen bekräftas.
+  fraga3:
+    rubrik: Vem står för kostnaden?
+    text: Det beror på sammanhanget, till exempel om det gäller vård, arbete, utbildning eller vardagstolkning. Är ni osäkra hjälper vi er att reda ut vem som ansvarar.
+  fraga4:
+    rubrik: När behövs två tolkar?
+    text: Vid långa eller intensiva uppdrag avlöser två tolkar varandra. Det håller kvaliteten jämn hela vägen. Vi föreslår vad som passar när vi ser er förfrågan.
+  fraga5:
+    rubrik: Kan tolkanvändaren önska en viss tolk?
+    text: Ja. Skriv önskemålet i bokningen så gör vi vad vi kan för att tillgodose det.
+  fraga6:
+    rubrik: Vad händer om vi behöver avboka?
+    text: Avboka så snart som möjligt via e-post eller sms, och senast 24 timmar före uppdraget.
 s_cta:
   rubrik: Redo att boka?
   ingress: Skicka en förfrågan, så återkommer vi med bekräftelse och pris.
+kort:
+  - Här kan du läsa om våra tjänster.
+  - "Teckenspråkstolkning: vi tolkar mellan teckenspråk och svenska."
+  - "Dövblindtolkning: vi tolkar med händerna, beskriver omgivningen och ledsagar."
+  - "Distanstolkning: vi tolkar på video."
+  - Längst ner finns svar på vanliga frågor.
+meta:
+  titel: Tjänster – teckenspråks-, dövblind- och distanstolkning | Linkaro
+  beskrivning: Teckenspråkstolkning, dövblindtolkning och distanstolkning. Vad varje tjänst innebär, när den passar och hur ni förbereder uppdraget.

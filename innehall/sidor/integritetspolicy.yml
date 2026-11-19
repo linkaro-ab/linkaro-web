@@ -1,18 +1,8 @@
-meta:
-  titel: Integritetspolicy | Linkaro
-  beskrivning: Så behandlar Linkaro AB personuppgifter. Webbplatsen använder inga cookies och ingen spårning.
-kort:
-  - Här står hur vi hanterar uppgifter om dig.
-  - Webbplatsen har inga cookies.
-  - Vi spårar dig inte.
-  - Om du skickar e-post till oss sparar vi bara det som behövs.
-  - Du kan fråga oss vilka uppgifter vi har om dig.
 topp:
   overrubrik: Integritet
   rubrik: Integritetspolicy
   ingress: Så behandlar Linkaro AB personuppgifter när du besöker webbplatsen eller hör av dig till oss.
 avsnitt:
-  datum: "2026-11-16"
   brodtext: |-
     ## Kort sammanfattning
 
@@ -71,3 +61,13 @@ avsnitt:
     ## Ändringar
 
     Vi uppdaterar policyn när något ändras. Datumet högst upp visar när den senast ändrades.
+  datum: "2026-11-16"
+kort:
+  - Här står hur vi hanterar uppgifter om dig.
+  - Webbplatsen har inga cookies.
+  - Vi spårar dig inte.
+  - Om du skickar e-post till oss sparar vi bara det som behövs.
+  - Du kan fråga oss vilka uppgifter vi har om dig.
+meta:
+  titel: Integritetspolicy | Linkaro
+  beskrivning: Så behandlar Linkaro AB personuppgifter. Webbplatsen använder inga cookies och ingen spårning.

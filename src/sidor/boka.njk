@@ -20,11 +20,11 @@ sokvag: /boka/
   <div class="wrap g side-grid">
     <div class="mailflow">
       <div class="stack" style="gap:12px">
-        <h2 id="h-steg">{{ s.h_steg.rubrik | mdi | safe }}</h2>
+        <h2 id="h-steg">{{ s.h_steg.block1.rubrik | mdi | safe }}</h2>
         <ol class="bullets" style="font-size:19px">
-          <li>{{ s.h_steg.punkt | mdi | safe }}</li>
-          <li>{{ s.h_steg.punkt2 | mdi | safe }}</li>
-          <li>{{ s.h_steg.punkt3 | mdi | safe }}</li>
+          <li>{{ s.h_steg.block1.punkt | mdi | safe }}</li>
+          <li>{{ s.h_steg.block1.punkt2 | mdi | safe }}</li>
+          <li>{{ s.h_steg.block1.punkt3 | mdi | safe }}</li>
         </ol>
       </div>
 
@@ -45,31 +45,31 @@ sokvag: /boka/
       </div>
 
       <div class="stack" style="gap:12px">
-        <h2 id="h-sen">{{ s.h_steg.rubrik2 | mdi | safe }}</h2>
+        <h2 id="h-sen">{{ s.h_steg.block2.rubrik | mdi | safe }}</h2>
         <ol class="num-list" style="width:100%">
-          <li><span class="num" aria-hidden="true">01</span><div><h3>{{ s.h_steg.underrubrik2 | mdi | safe }}</h3><p>{{ s.h_steg.stycke3 | mdi | safe }}</p></div></li>
-          <li><span class="num" aria-hidden="true">02</span><div><h3>{{ s.h_steg.underrubrik3 | mdi | safe }}</h3><p>{{ s.h_steg.stycke4 | mdi | safe }}</p></div></li>
-          <li><span class="num" aria-hidden="true">03</span><div><h3>{{ s.h_steg.underrubrik4 | mdi | safe }}</h3><p>{{ s.h_steg.stycke5 | mdi | safe }}</p></div></li>
+          <li><span class="num" aria-hidden="true">01</span><div><h3>{{ s.h_steg.steg1.rubrik | mdi | safe }}</h3><p>{{ s.h_steg.steg1.text | mdi | safe }}</p></div></li>
+          <li><span class="num" aria-hidden="true">02</span><div><h3>{{ s.h_steg.steg2.rubrik | mdi | safe }}</h3><p>{{ s.h_steg.steg2.text | mdi | safe }}</p></div></li>
+          <li><span class="num" aria-hidden="true">03</span><div><h3>{{ s.h_steg.steg3.rubrik | mdi | safe }}</h3><p>{{ s.h_steg.steg3.text | mdi | safe }}</p></div></li>
         </ol>
       </div>
     </div>
 
     <div class="info">
       <div class="card info-box">
-        <h2 id="h-info">{{ s.h_steg.rubrik3 | mdi | safe }}</h2>
+        <h2 id="h-info">{{ s.h_steg.block3.rubrik | mdi | safe }}</h2>
         <dl>
-          <dt>{{ s.h_steg.begrepp | mdi | safe }}</dt><dd>{{ s.h_steg.forklaring | mdi | safe }}</dd>
-          <dt>{{ s.h_steg.begrepp2 | mdi | safe }}</dt><dd>{{ s.h_steg.forklaring2 | mdi | safe }}</dd>
-          <dt>{{ s.h_steg.begrepp3 | mdi | safe }}</dt><dd>{{ s.h_steg.forklaring3 | mdi | safe }}</dd>
+          <dt>{{ s.h_steg.block3.rubrik2 | mdi | safe }}</dt><dd>{{ s.h_steg.block3.text | mdi | safe }}</dd>
+          <dt>{{ s.h_steg.block3.rubrik3 | mdi | safe }}</dt><dd>{{ s.h_steg.block3.text2 | mdi | safe }}</dd>
+          <dt>{{ s.h_steg.block3.rubrik4 | mdi | safe }}</dt><dd>{{ s.h_steg.block3.text3 | mdi | safe }}</dd>
         </dl>
       </div>
       <div class="card info-box">
-        <h2 id="h-annat">{{ s.h_steg.rubrik4 | mdi | safe }}</h2>
+        <h2 id="h-annat">{{ s.h_steg.block4.rubrik | mdi | safe }}</h2>
         <ul>
-          <li>{{ s.h_steg.punkt4 | mdi | safe }}</li>
-          <li>{{ s.h_steg.punkt5 | mdi | safe }}</li>
+          <li>{{ s.h_steg.block4.punkt | mdi | safe }}</li>
+          <li>{{ s.h_steg.block4.punkt2 | mdi | safe }}</li>
         </ul>
-        <p class="small muted">{{ s.h_steg.stycke6 | mdi | safe }}</p>
+        <p class="small muted">{{ s.h_steg.block4.text | mdi | safe }}</p>
       </div>
     </div>
   </div>

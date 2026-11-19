@@ -1,21 +1,13 @@
-meta:
-  titel: Boka tolk – skicka en bokningsförfrågan | Linkaro
-  beskrivning: Skicka en bokningsförfrågan för teckenspråks-, dövblind- eller distanstolkning med e-post.
-kort:
-  - Här kan du boka tolk.
-  - Du skickar ett e-postmeddelande till oss.
-  - Skriv datum, tid och plats. Skriv vilken sorts tolkning du behöver.
-  - Vi svarar och bekräftar bokningen.
-  - Skriv inte personnummer eller uppgifter om hälsa.
 topp:
   overrubrik: Boka tolk
   rubrik: Skicka en bokningsförfrågan
   ingress: Skicka uppgifterna till oss med e-post. Fyll i det ni vet – resten stämmer vi av. En förfrågan blir en bokning först när vi har bekräftat den.
 h_steg:
-  rubrik: Så här gör ni
-  punkt: Öppna e-postmallen med knappen nedan, eller kopiera mallen till ert eget e-postprogram.
-  punkt2: Fyll i uppgifterna om uppdraget, tolkningen och er som beställer.
-  punkt3: Skicka till {epost}.
+  block1:
+    rubrik: Så här gör ni
+    punkt: Öppna e-postmallen med knappen nedan, eller kopiera mallen till ert eget e-postprogram.
+    punkt2: Fyll i uppgifterna om uppdraget, tolkningen och er som beställer.
+    punkt3: Skicka till {epost}.
   stycke: "**Skicka inga känsliga uppgifter.** Skriv inte personnummer, journaluppgifter eller annat om någons hälsa. Behöver vi veta mer om tolkanvändaren stämmer vi av det med er på ett säkert sätt."
   underrubrik: E-postmall för bokningsförfrågan
   mall: |
@@ -41,21 +33,36 @@ h_steg:
 
     Något mer vi bör veta?
   stycke2: Knappen öppnar ert e-postprogram med mallen ifylld. Använder ni webbmejl, till exempel Outlook på webben? Kopiera mallen och klistra in den i ett nytt meddelande till {epostadress}.
-  rubrik2: Det här händer sedan
-  underrubrik2: Vi går igenom förfrågan
-  stycke3: Vi matchar en tolk som passar uppdraget och hör av oss om något saknas.
-  underrubrik3: Ni får en bekräftelse
-  stycke4: Med tolkens namn, tid, plats och pris. Först då är bokningen klar.
-  underrubrik4: Vi följer upp
-  stycke5: Efter uppdraget frågar vi hur det fungerade.
-  rubrik3: Bra att veta
-  begrepp: Framförhållning
-  forklaring: Boka helst 2 dagar i förväg. Kortare varsel går ofta också.
-  begrepp2: Avbokning
-  forklaring2: Avboka senast 24 timmar före uppdraget.
-  begrepp3: Pris
-  forklaring3: Ni får alltid pris innan bokningen bekräftas.
-  rubrik4: Andra sätt att boka
-  punkt4: "Sms: {sms}"
-  punkt5: "[Boka ett kort videosamtal](/kontakt/#video), även på teckenspråk"
-  stycke6: Har ni frågor först? Läs [vanliga frågor inför bokningen](/tjanster/#fragor).
+  block2:
+    rubrik: Det här händer sedan
+  steg1:
+    rubrik: Vi går igenom förfrågan
+    text: Vi matchar en tolk som passar uppdraget och hör av oss om något saknas.
+  steg2:
+    rubrik: Ni får en bekräftelse
+    text: Med tolkens namn, tid, plats och pris. Först då är bokningen klar.
+  steg3:
+    rubrik: Vi följer upp
+    text: Efter uppdraget frågar vi hur det fungerade.
+  block3:
+    rubrik: Bra att veta
+    rubrik2: Framförhållning
+    text: Boka helst 2 dagar i förväg. Kortare varsel går ofta också.
+    rubrik3: Avbokning
+    text2: Avboka senast 24 timmar före uppdraget.
+    rubrik4: Pris
+    text3: Ni får alltid pris innan bokningen bekräftas.
+  block4:
+    rubrik: Andra sätt att boka
+    punkt: "Sms: {sms}"
+    punkt2: "[Boka ett kort videosamtal](/kontakt/#video), även på teckenspråk"
+    text: Har ni frågor först? Läs [vanliga frågor inför bokningen](/tjanster/#fragor).
+kort:
+  - Här kan du boka tolk.
+  - Du skickar ett e-postmeddelande till oss.
+  - Skriv datum, tid och plats. Skriv vilken sorts tolkning du behöver.
+  - Vi svarar och bekräftar bokningen.
+  - Skriv inte personnummer eller uppgifter om hälsa.
+meta:
+  titel: Boka tolk – skicka en bokningsförfrågan | Linkaro
+  beskrivning: Skicka en bokningsförfrågan för teckenspråks-, dövblind- eller distanstolkning med e-post.

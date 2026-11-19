@@ -1,43 +1,42 @@
-meta:
-  titel: Bli tolk hos oss – frilansa med Linkaro
-  beskrivning: "Är du teckenspråks- eller dövblindtolk? Frilansa med Linkaro: du väljer dina uppdrag, vi sköter kundkontakten. Uppdrag i Stockholmsregionen och på distans."
-kort:
-  - Är du tolk? Du kan arbeta med oss.
-  - Du väljer själv vilka uppdrag du vill ha.
-  - Du behöver ha en tolkutbildning.
-  - Skicka ett e-postmeddelande och berätta om dig.
 topp:
+  foto: ""
+  fototext: ""
   overrubrik: För frilanstolkar
   rubrik: Frilansa som tolk hos Linkaro
   ingress: Vi bygger ett nätverk av frilansande teckenspråks- och dövblindtolkar. Du bestämmer över din tid och tackar ja till de uppdrag som passar dig – vi sköter kundkontakten och förmedlar uppdragen.
   punkt: Du väljer dina uppdrag
   punkt2: På plats och på distans
   punkt3: Kort väg till beslut
-  foto: ""
-  fototext: ""
 h_vem:
-  rubrik: Vem vi söker
-  punkt: Frilansande teckenspråkstolkar
-  punkt2: Frilansande dövblindtolkar
-  punkt3: Tolkar som vill ta uppdrag på distans
-  stycke: Du kan vara ny i yrket eller ha lång erfarenhet. Tar du redan uppdrag via andra förmedlingar, eller har en anställning, går det bra att kombinera. Det viktiga är att du är noggrann och tar ansvar.
-  rubrik2: Krav
-  punkt4: Avslutad tolkutbildning [eller auktorisation från Kammarkollegiet]
-  punkt5: Du följer god tolksed och har tystnadsplikt
-  punkt6: Referenser från tidigare uppdrag eller praktik
+  block1:
+    rubrik: Vem vi söker
+    punkt: Frilansande teckenspråkstolkar
+    punkt2: Frilansande dövblindtolkar
+    punkt3: Tolkar som vill ta uppdrag på distans
+    text: Du kan vara ny i yrket eller ha lång erfarenhet. Tar du redan uppdrag via andra förmedlingar, eller har en anställning, går det bra att kombinera. Det viktiga är att du är noggrann och tar ansvar.
+  block2:
+    rubrik: Krav
+    punkt: Avslutad tolkutbildning [eller auktorisation från Kammarkollegiet]
+    punkt2: Du följer god tolksed och har tystnadsplikt
+    punkt3: Referenser från tidigare uppdrag eller praktik
 h_hur:
   overrubrik: Så går det till
   rubrik: Från intresseanmälan till första uppdraget
-  underrubrik: Intresseanmälan
-  stycke: Skicka din intresseanmälan med e-post. Det tar några minuter.
-  underrubrik2: Intervju och referenser
-  stycke2: Du kallas till intervju på plats hos oss, via videosamtal eller Teams. Vi tar referenser.
-  underrubrik3: Avtal och sekretess
-  stycke3: Går du vidare godkänner du samarbetsavtalet och sekretessförbindelsen.
-  underrubrik4: Välkommen till Linkaro
-  stycke4: Vi registrerar dig som tolk hos oss – och ser fram emot att förmedla dina tjänster till Linkaros kunder.
-  underrubrik5: Gemensam uppföljning
-  stycke5: Vi bestämmer en tid för att tillsammans följa upp hur det har gått.
+  steg1:
+    rubrik: Intresseanmälan
+    text: Skicka din intresseanmälan med e-post. Det tar några minuter.
+  steg2:
+    rubrik: Intervju och referenser
+    text: Du kallas till intervju på plats hos oss, via videosamtal eller Teams. Vi tar referenser.
+  steg3:
+    rubrik: Avtal och sekretess
+    text: Går du vidare godkänner du samarbetsavtalet och sekretessförbindelsen.
+  steg4:
+    rubrik: Välkommen till Linkaro
+    text: Vi registrerar dig som tolk hos oss – och ser fram emot att förmedla dina tjänster till Linkaros kunder.
+  steg5:
+    rubrik: Gemensam uppföljning
+    text: Vi bestämmer en tid för att tillsammans följa upp hur det har gått.
   underrubrik6: Därför frilansar du med oss
   punkt: Du väljer själv vilka uppdrag du tackar ja till
   punkt2: Vi sköter kundkontakt, bokning och bekräftelser
@@ -67,3 +66,11 @@ h_anm:
   stycke2: "Mottagare: {epost}"
 h_boka:
   rubrik: Letar du efter tolk till ett uppdrag?
+kort:
+  - Är du tolk? Du kan arbeta med oss.
+  - Du väljer själv vilka uppdrag du vill ha.
+  - Du behöver ha en tolkutbildning.
+  - Skicka ett e-postmeddelande och berätta om dig.
+meta:
+  titel: Bli tolk hos oss – frilansa med Linkaro
+  beskrivning: "Är du teckenspråks- eller dövblindtolk? Frilansa med Linkaro: du väljer dina uppdrag, vi sköter kundkontakten. Uppdrag i Stockholmsregionen och på distans."

@@ -1,6 +1,3 @@
-meta:
-  titel: Sidan finns inte | Linkaro
-  beskrivning: Sidan du letar efter finns inte på linkaro.se.
 topp:
   overrubrik: Fel 404
   rubrik: Sidan finns inte
@@ -9,3 +6,6 @@ topp:
   punkt2: "[Våra tjänster](/tjanster/)"
   punkt3: "[Boka tolk](/boka/)"
   punkt4: "[Kontakta oss](/kontakt/)"
+meta:
+  titel: Sidan finns inte | Linkaro
+  beskrivning: Sidan du letar efter finns inte på linkaro.se.

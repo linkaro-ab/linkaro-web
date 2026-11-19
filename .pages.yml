@@ -1,5 +1,5 @@
 # Pages CMS (https://pagescms.org): vad som går att redigera och hur fälten ser ut.
-# Genereras inte automatiskt – ändra för hand om sidornas innehållsfiler får nya fält.
+# Fälten följer sidans ordning. Får en sida nya fält i innehall/sidor/*.yml måste de läggas till här.
 media:
   input: innehall/bilder
   output: /bilder
@@ -51,175 +51,8 @@ content:
         path: innehall/sidor/hem.yml
         format: yaml
         fields:
-          - name: meta
-            label: Sökmotorer och delning
-            type: object
-            fields:
-              - name: titel
-                label: Sidtitel
-                type: string
-                required: true
-                description: Visas i webbläsarens flik och i Google. Högst cirka 60 tecken.
-              - name: beskrivning
-                label: Beskrivning
-                type: text
-                required: true
-                description: Visas under länken i Google. Cirka 150 tecken.
-              - name: delningstitel
-                label: Titel vid delning
-                type: string
-                description: Visas när sidan delas i sociala medier.
-          - name: kort
-            label: Kort om sidan (lättläst, visas i Enkelt läge)
-            type: string
-            list: true
-            description: Korta meningar på lättläst svenska. En mening per rad.
-          - name: s_h1
-            label: Enkelt läge – Tolkning som skapar förbindelse
-            type: object
-            fields:
-              - name: rubrik
-                label: Huvudrubrik (h1)
-                type: string
-                required: true
-              - name: stycke
-                label: Stycke
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-          - name: s_video
-            label: Enkelt läge – Välkommen på teckenspråk
-            type: object
-            fields:
-              - name: rubrik
-                label: Rubrik
-                type: string
-                required: true
-              - name: stycke
-                label: Stycke 1
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: stycke2
-                label: Stycke 2
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-          - name: s_tj
-            label: Enkelt läge – Det här gör vi
-            type: object
-            fields:
-              - name: rubrik
-                label: Rubrik
-                type: string
-                required: true
-              - name: punkt
-                label: Punkt 1
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: punkt2
-                label: Punkt 2
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: punkt3
-                label: Punkt 3
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: stycke
-                label: Stycke
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-          - name: s_var
-            label: Enkelt läge – Här tolkar vi
-            type: object
-            fields:
-              - name: rubrik
-                label: Rubrik
-                type: string
-                required: true
-              - name: punkt
-                label: Punkt 1
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: punkt2
-                label: Punkt 2
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: punkt3
-                label: Punkt 3
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: punkt4
-                label: Punkt 4
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: punkt5
-                label: Punkt 5
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: punkt6
-                label: Punkt 6
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-          - name: s_lita
-            label: Enkelt läge – Därför kan du lita på oss
-            type: object
-            fields:
-              - name: rubrik
-                label: Rubrik
-                type: string
-                required: true
-              - name: punkt
-                label: Punkt 1
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: punkt2
-                label: Punkt 2
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: punkt3
-                label: Punkt 3
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: punkt4
-                label: Punkt 4
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-          - name: s_kontakt
-            label: Enkelt läge – Kontakta oss
-            type: object
-            fields:
-              - name: rubrik
-                label: Rubrik
-                type: string
-                required: true
-              - name: stycke
-                label: Stycke
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: punkt
-                label: Punkt 1
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: punkt2
-                label: Punkt 2
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: punkt3
-                label: Punkt 3
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-          - name: s_tolk
-            label: Enkelt läge – Är du tolk?
-            type: object
-            fields:
-              - name: rubrik
-                label: Rubrik
-                type: string
-                required: true
-              - name: stycke
-                label: Stycke
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
           - name: h_hero
-            label: Tolkning som skapar förbindelse
+            label: 1. Toppen – Tolkning som skapar förbindelse
             type: object
             fields:
               - name: rubrik
@@ -228,6 +61,10 @@ content:
                 required: true
               - name: ingress
                 label: Ingress
+                type: text
+                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: punkt
+                label: Punkt
                 type: text
                 description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
               - name: bild
@@ -240,52 +77,64 @@ content:
                 type: string
                 description: Beskriv kort vad bilden visar, till exempel vem det är.
                 required: true
-              - name: punkt
-                label: Punkt
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
           - name: h_trust
-            label: Därför kan ni lita på oss
+            label: 2. Raden under toppen (fyra punkter)
             type: object
             fields:
               - name: rubrik
                 label: Rubrik
                 type: string
                 required: true
-              - name: underrubrik
-                label: Underrubrik 1
-                type: string
-                required: true
-              - name: stycke
-                label: Stycke 1
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: underrubrik2
-                label: Underrubrik 2
-                type: string
-                required: true
-              - name: stycke2
-                label: Stycke 2
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: underrubrik3
-                label: Underrubrik 3
-                type: string
-                required: true
-              - name: stycke3
-                label: Stycke 3
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: underrubrik4
-                label: Underrubrik 4
-                type: string
-                required: true
-              - name: stycke4
-                label: Stycke 4
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: del1
+                label: Del 1
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: text
+                    label: Text
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: del2
+                label: Del 2
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: text
+                    label: Text
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: del3
+                label: Del 3
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: text
+                    label: Text
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: del4
+                label: Del 4
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: text
+                    label: Text
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
           - name: h_tj
-            label: Tolkning för alla som behöver förstå varandra
+            label: 3. Tolkning för alla som behöver förstå varandra
             type: object
             fields:
               - name: overrubrik
@@ -299,32 +148,44 @@ content:
                 label: Ingress
                 type: text
                 description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: underrubrik
-                label: Underrubrik 1
-                type: string
-                required: true
-              - name: stycke
-                label: Stycke 1
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: underrubrik2
-                label: Underrubrik 2
-                type: string
-                required: true
-              - name: stycke2
-                label: Stycke 2
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: underrubrik3
-                label: Underrubrik 3
-                type: string
-                required: true
-              - name: stycke3
-                label: Stycke 3
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: kort1
+                label: Kort 1
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: text
+                    label: Text
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: kort2
+                label: Kort 2
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: text
+                    label: Text
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: kort3
+                label: Kort 3
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: text
+                    label: Text
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
           - name: h_var
-            label: Där kommunikationen behöver fungera
+            label: 4. Där kommunikationen behöver fungera
             type: object
             fields:
               - name: overrubrik
@@ -338,56 +199,80 @@ content:
                 label: Ingress
                 type: text
                 description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: underrubrik
-                label: Underrubrik 1
-                type: string
-                required: true
-              - name: stycke
-                label: Stycke 1
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: underrubrik2
-                label: Underrubrik 2
-                type: string
-                required: true
-              - name: stycke2
-                label: Stycke 2
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: underrubrik3
-                label: Underrubrik 3
-                type: string
-                required: true
-              - name: stycke3
-                label: Stycke 3
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: underrubrik4
-                label: Underrubrik 4
-                type: string
-                required: true
-              - name: stycke4
-                label: Stycke 4
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: underrubrik5
-                label: Underrubrik 5
-                type: string
-                required: true
-              - name: stycke5
-                label: Stycke 5
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: underrubrik6
-                label: Underrubrik 6
-                type: string
-                required: true
-              - name: stycke6
-                label: Stycke 6
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: del1
+                label: Del 1
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: text
+                    label: Text
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: del2
+                label: Del 2
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: text
+                    label: Text
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: del3
+                label: Del 3
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: text
+                    label: Text
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: del4
+                label: Del 4
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: text
+                    label: Text
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: del5
+                label: Del 5
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: text
+                    label: Text
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: del6
+                label: Del 6
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: text
+                    label: Text
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
           - name: h_why
-            label: Nära, noggrant och att lita på
+            label: 5. Nära, noggrant och att lita på
             type: object
             fields:
               - name: overrubrik
@@ -397,32 +282,44 @@ content:
                 label: Rubrik
                 type: string
                 required: true
-              - name: underrubrik
-                label: Underrubrik 1
-                type: string
-                required: true
-              - name: stycke
-                label: Stycke 1
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: underrubrik2
-                label: Underrubrik 2
-                type: string
-                required: true
-              - name: stycke2
-                label: Stycke 2
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: underrubrik3
-                label: Underrubrik 3
-                type: string
-                required: true
-              - name: stycke3
-                label: Stycke 3
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: steg1
+                label: Steg 1
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: text
+                    label: Text
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: steg2
+                label: Steg 2
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: text
+                    label: Text
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: steg3
+                label: Steg 3
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: text
+                    label: Text
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
           - name: h_video
-            label: Välkommen till Linkaro
+            label: 6. Välkomstfilmen på teckenspråk
             type: object
             fields:
               - name: overrubrik
@@ -441,9 +338,8 @@ content:
                 type: text
                 description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
               - name: fraga
-                label: Fråga
+                label: Rubrik för utfällbar text
                 type: string
-                required: true
               - name: stycke2
                 label: Stycke 2
                 type: text
@@ -453,7 +349,7 @@ content:
                 type: text
                 description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
           - name: h_tolk
-            label: Är du tolk? Väx med oss
+            label: 7. Är du tolk? Väx med oss
             type: object
             fields:
               - name: overrubrik
@@ -480,7 +376,7 @@ content:
                 type: text
                 description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
           - name: h_kontakt
-            label: Hör av dig på det sätt som passar dig
+            label: 8. Hör av dig på det sätt som passar dig
             type: object
             fields:
               - name: overrubrik
@@ -518,12 +414,159 @@ content:
                 label: Stycke
                 type: text
                 description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-      - name: sida_tjanster
-        label: Tjänster
-        type: file
-        path: innehall/sidor/tjanster.yml
-        format: yaml
-        fields:
+          - name: kort
+            label: "Enkelt läge: Kort om sidan (lättläst sammanfattning)"
+            type: string
+            list: true
+            description: Korta meningar på lättläst svenska. En mening per rad.
+          - name: enkelt
+            label: Enkelt läge – lättläst version av sidan
+            type: object
+            fields:
+              - name: s_h1
+                label: Tolkning som skapar förbindelse
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Huvudrubrik (h1)
+                    type: string
+                    required: true
+                  - name: stycke
+                    label: Stycke
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: s_video
+                label: Välkommen på teckenspråk
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: stycke
+                    label: Stycke 1
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: stycke2
+                    label: Stycke 2
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: s_tj
+                label: Det här gör vi
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: punkt
+                    label: Punkt 1
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: punkt2
+                    label: Punkt 2
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: punkt3
+                    label: Punkt 3
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: stycke
+                    label: Stycke
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: s_var
+                label: Här tolkar vi
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: punkt
+                    label: Punkt 1
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: punkt2
+                    label: Punkt 2
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: punkt3
+                    label: Punkt 3
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: punkt4
+                    label: Punkt 4
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: punkt5
+                    label: Punkt 5
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: punkt6
+                    label: Punkt 6
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: s_lita
+                label: Därför kan du lita på oss
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: punkt
+                    label: Punkt 1
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: punkt2
+                    label: Punkt 2
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: punkt3
+                    label: Punkt 3
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: punkt4
+                    label: Punkt 4
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: s_kontakt
+                label: Kontakta oss
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: stycke
+                    label: Stycke
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: punkt
+                    label: Punkt 1
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: punkt2
+                    label: Punkt 2
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: punkt3
+                    label: Punkt 3
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: s_tolk
+                label: Är du tolk?
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: stycke
+                    label: Stycke
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
           - name: meta
             label: Sökmotorer och delning
             type: object
@@ -538,13 +581,18 @@ content:
                 type: text
                 required: true
                 description: Visas under länken i Google. Cirka 150 tecken.
-          - name: kort
-            label: Kort om sidan (lättläst, visas i Enkelt läge)
-            type: string
-            list: true
-            description: Korta meningar på lättläst svenska. En mening per rad.
+              - name: delningstitel
+                label: Titel vid delning
+                type: string
+                description: Visas när sidan delas i sociala medier.
+      - name: sida_tjanster
+        label: Tjänster
+        type: file
+        path: innehall/sidor/tjanster.yml
+        format: yaml
+        fields:
           - name: topp
-            label: "Sidans topp: Tolkning anpassad efter situationen"
+            label: 1. Toppen – Tolkning anpassad efter situationen
             type: object
             fields:
               - name: overrubrik
@@ -575,7 +623,7 @@ content:
                 type: text
                 description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
           - name: s1
-            label: Teckenspråkstolkning
+            label: 2. Teckenspråkstolkning
             type: object
             fields:
               - name: rubrik
@@ -590,56 +638,68 @@ content:
                 label: Stycke 2
                 type: text
                 description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: underrubrik
-                label: Underrubrik 1
-                type: string
-                required: true
-              - name: punkt
-                label: Punkt 1
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: punkt2
-                label: Punkt 2
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: punkt3
-                label: Punkt 3
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: punkt4
-                label: Punkt 4
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: underrubrik2
-                label: Underrubrik 2
-                type: string
-                required: true
-              - name: stycke3
-                label: Stycke 3
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: underrubrik3
-                label: Underrubrik 3
-                type: string
-                required: true
-              - name: punkt5
-                label: Punkt 5
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: punkt6
-                label: Punkt 6
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: punkt7
-                label: Punkt 7
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: punkt8
-                label: Punkt 8
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: block1
+                label: Block 1
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: punkt
+                    label: Punkt 1
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: punkt2
+                    label: Punkt 2
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: punkt3
+                    label: Punkt 3
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: punkt4
+                    label: Punkt 4
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: block2
+                label: Block 2
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: text
+                    label: Text
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: block3
+                label: Block 3
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: punkt
+                    label: Punkt 1
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: punkt2
+                    label: Punkt 2
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: punkt3
+                    label: Punkt 3
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: punkt4
+                    label: Punkt 4
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
           - name: s2
-            label: Dövblindtolkning
+            label: 3. Dövblindtolkning
             type: object
             fields:
               - name: rubrik
@@ -647,87 +707,115 @@ content:
                 type: string
                 required: true
               - name: stycke
-                label: Stycke 1
+                label: Stycke
                 type: text
                 description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: begrepp
-                label: Begrepp 1
-                type: string
-                required: true
-              - name: forklaring
-                label: Förklaring 1
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: begrepp2
-                label: Begrepp 2
-                type: string
-                required: true
-              - name: forklaring2
-                label: Förklaring 2
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: begrepp3
-                label: Begrepp 3
-                type: string
-                required: true
-              - name: forklaring3
-                label: Förklaring 3
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: begrepp4
-                label: Begrepp 4
-                type: string
-                required: true
-              - name: forklaring4
-                label: Förklaring 4
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: underrubrik
-                label: Underrubrik 1
-                type: string
-                required: true
-              - name: punkt
-                label: Punkt 1
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: punkt2
-                label: Punkt 2
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: punkt3
-                label: Punkt 3
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: underrubrik2
-                label: Underrubrik 2
-                type: string
-                required: true
-              - name: stycke2
-                label: Stycke 2
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: underrubrik3
-                label: Underrubrik 3
-                type: string
-                required: true
-              - name: punkt4
-                label: Punkt 4
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: punkt5
-                label: Punkt 5
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: punkt6
-                label: Punkt 6
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: punkt7
-                label: Punkt 7
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: rad1
+                label: Rad 1
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Begrepp
+                    type: string
+                    required: true
+                  - name: text
+                    label: Förklaring
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: rad2
+                label: Rad 2
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Begrepp
+                    type: string
+                    required: true
+                  - name: text
+                    label: Förklaring
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: rad3
+                label: Rad 3
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Begrepp
+                    type: string
+                    required: true
+                  - name: text
+                    label: Förklaring
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: rad4
+                label: Rad 4
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Begrepp
+                    type: string
+                    required: true
+                  - name: text
+                    label: Förklaring
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: block1
+                label: Block 1
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: punkt
+                    label: Punkt 1
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: punkt2
+                    label: Punkt 2
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: punkt3
+                    label: Punkt 3
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: block2
+                label: Block 2
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: text
+                    label: Text
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: block3
+                label: Block 3
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: punkt
+                    label: Punkt 1
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: punkt2
+                    label: Punkt 2
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: punkt3
+                    label: Punkt 3
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: punkt4
+                    label: Punkt 4
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
           - name: s3
-            label: Distanstolkning
+            label: 4. Distanstolkning
             type: object
             fields:
               - name: rubrik
@@ -742,56 +830,68 @@ content:
                 label: Stycke 2
                 type: text
                 description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: underrubrik
-                label: Underrubrik 1
-                type: string
-                required: true
-              - name: punkt
-                label: Punkt 1
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: punkt2
-                label: Punkt 2
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: punkt3
-                label: Punkt 3
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: punkt4
-                label: Punkt 4
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: underrubrik2
-                label: Underrubrik 2
-                type: string
-                required: true
-              - name: stycke3
-                label: Stycke 3
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: underrubrik3
-                label: Underrubrik 3
-                type: string
-                required: true
-              - name: punkt5
-                label: Punkt 5
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: punkt6
-                label: Punkt 6
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: punkt7
-                label: Punkt 7
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: punkt8
-                label: Punkt 8
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: block1
+                label: Block 1
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: punkt
+                    label: Punkt 1
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: punkt2
+                    label: Punkt 2
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: punkt3
+                    label: Punkt 3
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: punkt4
+                    label: Punkt 4
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: block2
+                label: Block 2
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: text
+                    label: Text
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: block3
+                label: Block 3
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: punkt
+                    label: Punkt 1
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: punkt2
+                    label: Punkt 2
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: punkt3
+                    label: Punkt 3
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: punkt4
+                    label: Punkt 4
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
           - name: s_it
-            label: Teknik och IT för tolkverksamhet Kommer snart
+            label: 5. Teknik och IT för tolkverksamhet Kommer snart
             type: object
             fields:
               - name: overrubrik
@@ -802,7 +902,7 @@ content:
                 type: text
                 description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
           - name: s_faq
-            label: Inför bokningen
+            label: 6. Inför bokningen
             type: object
             fields:
               - name: overrubrik
@@ -813,35 +913,89 @@ content:
                 type: string
                 required: true
               - name: stycke
-                label: Stycke 1
+                label: Stycke
                 type: text
                 description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: stycke2
-                label: Stycke 2
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: stycke3
-                label: Stycke 3
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: stycke4
-                label: Stycke 4
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: stycke5
-                label: Stycke 5
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: stycke6
-                label: Stycke 6
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: stycke7
-                label: Stycke 7
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: fraga1
+                label: Fråga och svar 1
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Fråga
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                    required: true
+                  - name: text
+                    label: Svar
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: fraga2
+                label: Fråga och svar 2
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Fråga
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                    required: true
+                  - name: text
+                    label: Svar
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: fraga3
+                label: Fråga och svar 3
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Fråga
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                    required: true
+                  - name: text
+                    label: Svar
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: fraga4
+                label: Fråga och svar 4
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Fråga
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                    required: true
+                  - name: text
+                    label: Svar
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: fraga5
+                label: Fråga och svar 5
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Fråga
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                    required: true
+                  - name: text
+                    label: Svar
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: fraga6
+                label: Fråga och svar 6
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Fråga
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                    required: true
+                  - name: text
+                    label: Svar
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
           - name: s_cta
-            label: Redo att boka?
+            label: 7. Redo att boka?
             type: object
             fields:
               - name: rubrik
@@ -852,12 +1006,11 @@ content:
                 label: Ingress
                 type: text
                 description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-      - name: sida_boka
-        label: Boka tolk
-        type: file
-        path: innehall/sidor/boka.yml
-        format: yaml
-        fields:
+          - name: kort
+            label: "Enkelt läge: Kort om sidan (lättläst sammanfattning)"
+            type: string
+            list: true
+            description: Korta meningar på lättläst svenska. En mening per rad.
           - name: meta
             label: Sökmotorer och delning
             type: object
@@ -872,13 +1025,14 @@ content:
                 type: text
                 required: true
                 description: Visas under länken i Google. Cirka 150 tecken.
-          - name: kort
-            label: Kort om sidan (lättläst, visas i Enkelt läge)
-            type: string
-            list: true
-            description: Korta meningar på lättläst svenska. En mening per rad.
+      - name: sida_boka
+        label: Boka tolk
+        type: file
+        path: innehall/sidor/boka.yml
+        format: yaml
+        fields:
           - name: topp
-            label: "Sidans topp: Skicka en bokningsförfrågan"
+            label: 1. Toppen – Skicka en bokningsförfrågan
             type: object
             fields:
               - name: overrubrik
@@ -893,31 +1047,35 @@ content:
                 type: text
                 description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
           - name: h_steg
-            label: Så här gör ni
+            label: 2. Så här gör ni
             type: object
             fields:
-              - name: rubrik
-                label: Rubrik 1
-                type: string
-                required: true
-              - name: punkt
-                label: Punkt 1
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: punkt2
-                label: Punkt 2
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: punkt3
-                label: Punkt 3
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: block1
+                label: Block 1
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: punkt
+                    label: Punkt 1
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: punkt2
+                    label: Punkt 2
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: punkt3
+                    label: Punkt 3
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
               - name: stycke
                 label: Stycke 1
                 type: text
                 description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
               - name: underrubrik
-                label: Underrubrik 1
+                label: Underrubrik
                 type: string
                 required: true
               - name: mall
@@ -928,84 +1086,107 @@ content:
                 label: Stycke 2
                 type: text
                 description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: rubrik2
-                label: Rubrik 2
-                type: string
-                required: true
-              - name: underrubrik2
-                label: Underrubrik 2
-                type: string
-                required: true
-              - name: stycke3
-                label: Stycke 3
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: underrubrik3
-                label: Underrubrik 3
-                type: string
-                required: true
-              - name: stycke4
-                label: Stycke 4
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: underrubrik4
-                label: Underrubrik 4
-                type: string
-                required: true
-              - name: stycke5
-                label: Stycke 5
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: rubrik3
-                label: Rubrik 3
-                type: string
-                required: true
-              - name: begrepp
-                label: Begrepp 1
-                type: string
-                required: true
-              - name: forklaring
-                label: Förklaring 1
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: begrepp2
-                label: Begrepp 2
-                type: string
-                required: true
-              - name: forklaring2
-                label: Förklaring 2
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: begrepp3
-                label: Begrepp 3
-                type: string
-                required: true
-              - name: forklaring3
-                label: Förklaring 3
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: rubrik4
-                label: Rubrik 4
-                type: string
-                required: true
-              - name: punkt4
-                label: Punkt 4
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: punkt5
-                label: Punkt 5
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: stycke6
-                label: Stycke 6
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-      - name: sida_om_oss
-        label: Om oss
-        type: file
-        path: innehall/sidor/om-oss.yml
-        format: yaml
-        fields:
+              - name: block2
+                label: Block 2
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+              - name: steg1
+                label: Steg 1
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: text
+                    label: Text
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: steg2
+                label: Steg 2
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: text
+                    label: Text
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: steg3
+                label: Steg 3
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: text
+                    label: Text
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: block3
+                label: Block 3
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: rubrik2
+                    label: Begrepp 2
+                    type: string
+                    required: true
+                  - name: text
+                    label: Förklaring
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: rubrik3
+                    label: Begrepp 3
+                    type: string
+                    required: true
+                  - name: text2
+                    label: Förklaring 2
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: rubrik4
+                    label: Begrepp 4
+                    type: string
+                    required: true
+                  - name: text3
+                    label: Förklaring 3
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: block4
+                label: Block 4
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: punkt
+                    label: Punkt 1
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: punkt2
+                    label: Punkt 2
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: text
+                    label: Text
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+          - name: kort
+            label: "Enkelt läge: Kort om sidan (lättläst sammanfattning)"
+            type: string
+            list: true
+            description: Korta meningar på lättläst svenska. En mening per rad.
           - name: meta
             label: Sökmotorer och delning
             type: object
@@ -1020,15 +1201,24 @@ content:
                 type: text
                 required: true
                 description: Visas under länken i Google. Cirka 150 tecken.
-          - name: kort
-            label: Kort om sidan (lättläst, visas i Enkelt läge)
-            type: string
-            list: true
-            description: Korta meningar på lättläst svenska. En mening per rad.
+      - name: sida_om_oss
+        label: Om oss
+        type: file
+        path: innehall/sidor/om-oss.yml
+        format: yaml
+        fields:
           - name: topp
-            label: "Sidans topp: Ett litet tolkföretag med nära kontakt"
+            label: 1. Toppen – Ett litet tolkföretag med nära kontakt
             type: object
             fields:
+              - name: foto
+                label: Foto (valfritt)
+                type: image
+                description: Liggande bild, minst 1200 pixlar bred. Utan foto visas en platshållare.
+              - name: fototext
+                label: Bildtext för skärmläsare (alt-text)
+                type: string
+                description: Krävs om du lägger in ett foto. Beskriv vad bilden visar.
               - name: overrubrik
                 label: Överrubrik
                 type: string
@@ -1040,16 +1230,8 @@ content:
                 label: Ingress
                 type: text
                 description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: foto
-                label: Foto (valfritt)
-                type: image
-                description: Liggande bild, minst 1200 pixlar bred. Utan foto visas en platshållare.
-              - name: fototext
-                label: Bildtext för skärmläsare (alt-text)
-                type: string
-                description: Krävs om du lägger in ett foto. Beskriv vad bilden visar.
           - name: h_namn
-            label: Link + Karo
+            label: 2. Link + Karo
             type: object
             fields:
               - name: overrubrik
@@ -1068,7 +1250,7 @@ content:
                 type: text
                 description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
           - name: h_var
-            label: Det vi står för
+            label: 3. Det vi står för
             type: object
             fields:
               - name: overrubrik
@@ -1078,32 +1260,44 @@ content:
                 label: Rubrik
                 type: string
                 required: true
-              - name: underrubrik
-                label: Underrubrik 1
-                type: string
-                required: true
-              - name: stycke
-                label: Stycke 1
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: underrubrik2
-                label: Underrubrik 2
-                type: string
-                required: true
-              - name: stycke2
-                label: Stycke 2
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: underrubrik3
-                label: Underrubrik 3
-                type: string
-                required: true
-              - name: stycke3
-                label: Stycke 3
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: del1
+                label: Del 1
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: text
+                    label: Text
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: del2
+                label: Del 2
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: text
+                    label: Text
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: del3
+                label: Del 3
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: text
+                    label: Text
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
           - name: h_kval
-            label: Så arbetar vi med kvalitet
+            label: 4. Så arbetar vi med kvalitet
             type: object
             fields:
               - name: overrubrik
@@ -1117,116 +1311,156 @@ content:
                 label: Ingress
                 type: text
                 description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: underrubrik
-                label: Underrubrik 1
-                type: string
-                required: true
-              - name: stycke
-                label: Stycke 1
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: punkt
-                label: Punkt 1
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: punkt2
-                label: Punkt 2
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: punkt3
-                label: Punkt 3
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: punkt4
-                label: Punkt 4
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: underrubrik2
-                label: Underrubrik 2
-                type: string
-                required: true
-              - name: stycke2
-                label: Stycke 2
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: punkt5
-                label: Punkt 5
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: punkt6
-                label: Punkt 6
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: punkt7
-                label: Punkt 7
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: punkt8
-                label: Punkt 8
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: underrubrik3
-                label: Underrubrik 3
-                type: string
-                required: true
-              - name: begrepp
-                label: Begrepp 1
-                type: string
-                required: true
-              - name: forklaring
-                label: Förklaring 1
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: begrepp2
-                label: Begrepp 2
-                type: string
-                required: true
-              - name: begrepp3
-                label: Begrepp 3
-                type: string
-                required: true
-              - name: forklaring2
-                label: Förklaring 2
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: begrepp4
-                label: Begrepp 4
-                type: string
-                required: true
-              - name: forklaring3
-                label: Förklaring 3
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: begrepp5
-                label: Begrepp 5
-                type: string
-                required: true
-              - name: begrepp6
-                label: Begrepp 6
-                type: string
-                required: true
-              - name: forklaring4
-                label: Förklaring 4
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: underrubrik4
-                label: Underrubrik 4
-                type: string
-                required: true
-              - name: stycke3
-                label: Stycke 3
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: stycke4
-                label: Stycke 4
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: kort1
+                label: Kort 1
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: text
+                    label: Text
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: punkt
+                    label: Punkt 1
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: punkt2
+                    label: Punkt 2
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: punkt3
+                    label: Punkt 3
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: punkt4
+                    label: Punkt 4
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: kort2
+                label: Kort 2
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: text
+                    label: Text
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: punkt
+                    label: Punkt 1
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: punkt2
+                    label: Punkt 2
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: punkt3
+                    label: Punkt 3
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: punkt4
+                    label: Punkt 4
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: kort3
+                label: Kort 3
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+              - name: rad1
+                label: Rad 1
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Begrepp
+                    type: string
+                    required: true
+                  - name: text
+                    label: Förklaring
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: rad2
+                label: Rad 2
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Begrepp
+                    type: string
+                    required: true
+              - name: rad3
+                label: Rad 3
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Begrepp
+                    type: string
+                    required: true
+                  - name: text
+                    label: Förklaring
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: rad4
+                label: Rad 4
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Begrepp
+                    type: string
+                    required: true
+                  - name: text
+                    label: Förklaring
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: rad5
+                label: Rad 5
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Begrepp
+                    type: string
+                    required: true
+              - name: rad6
+                label: Rad 6
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Begrepp
+                    type: string
+                    required: true
+                  - name: text
+                    label: Förklaring
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: kort4
+                label: Kort 4
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: text
+                    label: Text
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: text2
+                    label: Text 2
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
               - name: stycke5
-                label: Stycke 5
+                label: Stycke
                 type: text
                 description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
           - name: h_cta
-            label: Vill ni arbeta med oss?
+            label: 5. Vill ni arbeta med oss?
             type: object
             fields:
               - name: rubrik
@@ -1237,12 +1471,11 @@ content:
                 label: Stycke
                 type: text
                 description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-      - name: sida_bli_tolk
-        label: Bli tolk hos oss
-        type: file
-        path: innehall/sidor/bli-tolk.yml
-        format: yaml
-        fields:
+          - name: kort
+            label: "Enkelt läge: Kort om sidan (lättläst sammanfattning)"
+            type: string
+            list: true
+            description: Korta meningar på lättläst svenska. En mening per rad.
           - name: meta
             label: Sökmotorer och delning
             type: object
@@ -1257,15 +1490,24 @@ content:
                 type: text
                 required: true
                 description: Visas under länken i Google. Cirka 150 tecken.
-          - name: kort
-            label: Kort om sidan (lättläst, visas i Enkelt läge)
-            type: string
-            list: true
-            description: Korta meningar på lättläst svenska. En mening per rad.
+      - name: sida_bli_tolk
+        label: Bli tolk hos oss
+        type: file
+        path: innehall/sidor/bli-tolk.yml
+        format: yaml
+        fields:
           - name: topp
-            label: "Sidans topp: Frilansa som tolk hos Linkaro"
+            label: 1. Toppen – Frilansa som tolk hos Linkaro
             type: object
             fields:
+              - name: foto
+                label: Foto (valfritt)
+                type: image
+                description: Liggande bild, minst 1200 pixlar bred. Utan foto visas en platshållare.
+              - name: fototext
+                label: Bildtext för skärmläsare (alt-text)
+                type: string
+                description: Krävs om du lägger in ett foto. Beskriv vad bilden visar.
               - name: overrubrik
                 label: Överrubrik
                 type: string
@@ -1289,56 +1531,56 @@ content:
                 label: Punkt 3
                 type: text
                 description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: foto
-                label: Foto (valfritt)
-                type: image
-                description: Liggande bild, minst 1200 pixlar bred. Utan foto visas en platshållare.
-              - name: fototext
-                label: Bildtext för skärmläsare (alt-text)
-                type: string
-                description: Krävs om du lägger in ett foto. Beskriv vad bilden visar.
           - name: h_vem
-            label: Vem vi söker
+            label: 2. Vem vi söker
             type: object
             fields:
-              - name: rubrik
-                label: Rubrik 1
-                type: string
-                required: true
-              - name: punkt
-                label: Punkt 1
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: punkt2
-                label: Punkt 2
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: punkt3
-                label: Punkt 3
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: stycke
-                label: Stycke
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: rubrik2
-                label: Rubrik 2
-                type: string
-                required: true
-              - name: punkt4
-                label: Punkt 4
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: punkt5
-                label: Punkt 5
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: punkt6
-                label: Punkt 6
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: block1
+                label: Block 1
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: punkt
+                    label: Punkt 1
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: punkt2
+                    label: Punkt 2
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: punkt3
+                    label: Punkt 3
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: text
+                    label: Text
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: block2
+                label: Block 2
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: punkt
+                    label: Punkt 1
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: punkt2
+                    label: Punkt 2
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: punkt3
+                    label: Punkt 3
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
           - name: h_hur
-            label: Från intresseanmälan till första uppdraget
+            label: 3. Från intresseanmälan till första uppdraget
             type: object
             fields:
               - name: overrubrik
@@ -1348,48 +1590,68 @@ content:
                 label: Rubrik
                 type: string
                 required: true
-              - name: underrubrik
-                label: Underrubrik 1
-                type: string
-                required: true
-              - name: stycke
-                label: Stycke 1
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: underrubrik2
-                label: Underrubrik 2
-                type: string
-                required: true
-              - name: stycke2
-                label: Stycke 2
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: underrubrik3
-                label: Underrubrik 3
-                type: string
-                required: true
-              - name: stycke3
-                label: Stycke 3
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: underrubrik4
-                label: Underrubrik 4
-                type: string
-                required: true
-              - name: stycke4
-                label: Stycke 4
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: underrubrik5
-                label: Underrubrik 5
-                type: string
-                required: true
-              - name: stycke5
-                label: Stycke 5
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: steg1
+                label: Steg 1
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: text
+                    label: Text
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: steg2
+                label: Steg 2
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: text
+                    label: Text
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: steg3
+                label: Steg 3
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: text
+                    label: Text
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: steg4
+                label: Steg 4
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: text
+                    label: Text
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: steg5
+                label: Steg 5
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: text
+                    label: Text
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
               - name: underrubrik6
-                label: Underrubrik 6
+                label: Underrubrik
                 type: string
                 required: true
               - name: punkt
@@ -1409,7 +1671,7 @@ content:
                 type: text
                 description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
           - name: h_anm
-            label: Berätta om dig
+            label: 4. Berätta om dig
             type: object
             fields:
               - name: overrubrik
@@ -1444,19 +1706,18 @@ content:
                 type: text
                 description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
           - name: h_boka
-            label: Letar du efter tolk till ett uppdrag?
+            label: 5. Letar du efter tolk till ett uppdrag?
             type: object
             fields:
               - name: rubrik
                 label: Rubrik
                 type: string
                 required: true
-      - name: sida_kontakt
-        label: Kontakt
-        type: file
-        path: innehall/sidor/kontakt.yml
-        format: yaml
-        fields:
+          - name: kort
+            label: "Enkelt läge: Kort om sidan (lättläst sammanfattning)"
+            type: string
+            list: true
+            description: Korta meningar på lättläst svenska. En mening per rad.
           - name: meta
             label: Sökmotorer och delning
             type: object
@@ -1471,13 +1732,14 @@ content:
                 type: text
                 required: true
                 description: Visas under länken i Google. Cirka 150 tecken.
-          - name: kort
-            label: Kort om sidan (lättläst, visas i Enkelt läge)
-            type: string
-            list: true
-            description: Korta meningar på lättläst svenska. En mening per rad.
+      - name: sida_kontakt
+        label: Kontakt
+        type: file
+        path: innehall/sidor/kontakt.yml
+        format: yaml
+        fields:
           - name: topp
-            label: "Sidans topp: Kontakta oss"
+            label: 1. Toppen – Kontakta oss
             type: object
             fields:
               - name: overrubrik
@@ -1496,11 +1758,11 @@ content:
                 type: text
                 description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
           - name: h_skriv
-            label: Skriv till oss
+            label: 2. Skriv till oss
             type: object
             fields:
               - name: rubrik
-                label: Rubrik 1
+                label: Rubrik
                 type: string
                 required: true
               - name: stycke
@@ -1512,7 +1774,7 @@ content:
                 type: text
                 description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
               - name: underrubrik
-                label: Underrubrik 1
+                label: Underrubrik
                 type: string
                 required: true
               - name: mall
@@ -1523,93 +1785,125 @@ content:
                 label: Stycke 3
                 type: text
                 description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: rubrik2
-                label: Rubrik 2
+              - name: block1
+                label: Block 1
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+              - name: block2
+                label: Block 2
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: text
+                    label: Text
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: text2
+                    label: Text 2
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: block3
+                label: Block 3
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: text
+                    label: Text
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: block4
+                label: Block 4
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: text
+                    label: Text
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+                  - name: text2
+                    label: Text 2
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: block5
+                label: Block 5
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Rubrik
+                    type: string
+                    required: true
+                  - name: text
+                    label: Text
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: rad1
+                label: Rad 1
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Begrepp
+                    type: string
+                    required: true
+                  - name: text
+                    label: Förklaring
+                    type: text
+                    description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+              - name: rad2
+                label: Rad 2
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Begrepp
+                    type: string
+                    required: true
+              - name: rad3
+                label: Rad 3
+                type: object
+                fields:
+                  - name: rubrik
+                    label: Begrepp
+                    type: string
+                    required: true
+          - name: kort
+            label: "Enkelt läge: Kort om sidan (lättläst sammanfattning)"
+            type: string
+            list: true
+            description: Korta meningar på lättläst svenska. En mening per rad.
+          - name: meta
+            label: Sökmotorer och delning
+            type: object
+            fields:
+              - name: titel
+                label: Sidtitel
                 type: string
                 required: true
-              - name: underrubrik2
-                label: Underrubrik 2
-                type: string
-                required: true
-              - name: stycke4
-                label: Stycke 4
+                description: Visas i webbläsarens flik och i Google. Högst cirka 60 tecken.
+              - name: beskrivning
+                label: Beskrivning
                 type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: stycke5
-                label: Stycke 5
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: underrubrik3
-                label: Underrubrik 3
-                type: string
                 required: true
-              - name: stycke6
-                label: Stycke 6
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: underrubrik4
-                label: Underrubrik 4
-                type: string
-                required: true
-              - name: stycke7
-                label: Stycke 7
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: stycke8
-                label: Stycke 8
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: rubrik3
-                label: Rubrik 3
-                type: string
-                required: true
-              - name: stycke9
-                label: Stycke 9
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: begrepp
-                label: Begrepp 1
-                type: string
-                required: true
-              - name: forklaring
-                label: Förklaring
-                type: text
-                description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-              - name: begrepp2
-                label: Begrepp 2
-                type: string
-                required: true
-              - name: begrepp3
-                label: Begrepp 3
-                type: string
-                required: true
+                description: Visas under länken i Google. Cirka 150 tecken.
       - name: sida_integritetspolicy
         label: Integritetspolicy
         type: file
         path: innehall/sidor/integritetspolicy.yml
         format: yaml
         fields:
-          - name: meta
-            label: Sökmotorer och delning
-            type: object
-            fields:
-              - name: titel
-                label: Sidtitel
-                type: string
-                required: true
-                description: Visas i webbläsarens flik och i Google. Högst cirka 60 tecken.
-              - name: beskrivning
-                label: Beskrivning
-                type: text
-                required: true
-                description: Visas under länken i Google. Cirka 150 tecken.
-          - name: kort
-            label: Kort om sidan (lättläst, visas i Enkelt läge)
-            type: string
-            list: true
-            description: Korta meningar på lättläst svenska. En mening per rad.
           - name: topp
-            label: "Sidans topp: Integritetspolicy"
+            label: 1. Toppen – Integritetspolicy
             type: object
             fields:
               - name: overrubrik
@@ -1624,12 +1918,9 @@ content:
                 type: text
                 description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
           - name: avsnitt
-            label: Policytext
+            label: 2. Policytexten
             type: object
             fields:
-              - name: datum
-                label: Senast uppdaterad
-                type: date
               - name: brodtext
                 label: Text
                 type: rich-text
@@ -1637,33 +1928,36 @@ content:
                 options:
                   format: markdown
                   media: false
+              - name: datum
+                label: "{{ s.avsnitt.datum | svdatum }}"
+                type: date
+          - name: kort
+            label: "Enkelt läge: Kort om sidan (lättläst sammanfattning)"
+            type: string
+            list: true
+            description: Korta meningar på lättläst svenska. En mening per rad.
+          - name: meta
+            label: Sökmotorer och delning
+            type: object
+            fields:
+              - name: titel
+                label: Sidtitel
+                type: string
+                required: true
+                description: Visas i webbläsarens flik och i Google. Högst cirka 60 tecken.
+              - name: beskrivning
+                label: Beskrivning
+                type: text
+                required: true
+                description: Visas under länken i Google. Cirka 150 tecken.
       - name: sida_tillganglighet
         label: Tillgänglighetsredogörelse
         type: file
         path: innehall/sidor/tillganglighet.yml
         format: yaml
         fields:
-          - name: meta
-            label: Sökmotorer och delning
-            type: object
-            fields:
-              - name: titel
-                label: Sidtitel
-                type: string
-                required: true
-                description: Visas i webbläsarens flik och i Google. Högst cirka 60 tecken.
-              - name: beskrivning
-                label: Beskrivning
-                type: text
-                required: true
-                description: Visas under länken i Google. Cirka 150 tecken.
-          - name: kort
-            label: Kort om sidan (lättläst, visas i Enkelt läge)
-            type: string
-            list: true
-            description: Korta meningar på lättläst svenska. En mening per rad.
           - name: topp
-            label: "Sidans topp: Tillgänglighetsredogörelse"
+            label: 1. Toppen – Tillgänglighetsredogörelse
             type: object
             fields:
               - name: overrubrik
@@ -1678,12 +1972,9 @@ content:
                 type: text
                 description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
           - name: avsnitt
-            label: Redogörelse
+            label: 2. Redogörelsen
             type: object
             fields:
-              - name: datum
-                label: Senast granskad
-                type: date
               - name: brodtext
                 label: Text
                 type: rich-text
@@ -1691,16 +1982,18 @@ content:
                 options:
                   format: markdown
                   media: false
+              - name: datum
+                label: "{{ s.avsnitt.datum | svdatum }}"
+                type: date
               - name: slutnot
                 label: Slutnot (liten text)
                 type: text
                 description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
-      - name: sida_sidan_saknas
-        label: Sidan saknas (404)
-        type: file
-        path: innehall/sidor/sidan-saknas.yml
-        format: yaml
-        fields:
+          - name: kort
+            label: "Enkelt läge: Kort om sidan (lättläst sammanfattning)"
+            type: string
+            list: true
+            description: Korta meningar på lättläst svenska. En mening per rad.
           - name: meta
             label: Sökmotorer och delning
             type: object
@@ -1715,8 +2008,14 @@ content:
                 type: text
                 required: true
                 description: Visas under länken i Google. Cirka 150 tecken.
+      - name: sida_sidan_saknas
+        label: Sidan saknas (404)
+        type: file
+        path: innehall/sidor/sidan-saknas.yml
+        format: yaml
+        fields:
           - name: topp
-            label: "Sidans topp: Sidan finns inte"
+            label: 1. Toppen – Sidan finns inte
             type: object
             fields:
               - name: overrubrik
@@ -1746,6 +2045,20 @@ content:
                 label: Punkt 4
                 type: text
                 description: "Fetstil: **ord**. Länk: [text](/sida/). Kontaktuppgifter: {epost}, {sms}, {orgnr}."
+          - name: meta
+            label: Sökmotorer och delning
+            type: object
+            fields:
+              - name: titel
+                label: Sidtitel
+                type: string
+                required: true
+                description: Visas i webbläsarens flik och i Google. Högst cirka 60 tecken.
+              - name: beskrivning
+                label: Beskrivning
+                type: text
+                required: true
+                description: Visas under länken i Google. Cirka 150 tecken.
 settings:
   content:
     merge: true

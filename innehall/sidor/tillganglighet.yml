@@ -1,17 +1,8 @@
-meta:
-  titel: Tillgänglighetsredogörelse | Linkaro
-  beskrivning: Hur tillgänglig linkaro.se är, kända brister och hur du kontaktar oss om något inte fungerar.
-kort:
-  - Vi vill att alla ska kunna använda webbplatsen.
-  - Du kan använda tangentbord, skärmläsare och punktskrift.
-  - Du kan slå på Enkelt läge högst upp på sidan.
-  - Säg till om något inte fungerar. Du behöver inte ringa.
 topp:
   overrubrik: Tillgänglighet
   rubrik: Tillgänglighetsredogörelse
   ingress: Linkaro finns till för att människor ska förstå varandra. Därför ska webbplatsen fungera för alla – oavsett om du ser, hör, läser med punktskrift eller använder tangentbord.
 avsnitt:
-  datum: "2026-11-18"
   brodtext: |-
     ## Hur tillgänglig är webbplatsen?
 
@@ -43,4 +34,13 @@ avsnitt:
     Vi granskade webbplatsen i november 2026. Alla sidor testades med det automatiska verktyget axe mot WCAG 2.2 nivå A och AA, både i normalt läge och i Enkelt läge, på dator och mobil. Vi testade också manuellt med tangentbord och med förstoring upp till 400 procent.
 
     Härnäst vill vi testa webbplatsen tillsammans med döva, hörselskadade och dövblinda användare, och med skärmläsare och punktskriftsdisplay. Vi uppdaterar redogörelsen efter varje granskning.
+  datum: "2026-11-18"
   slutnot: Linkaro AB är ett privat företag och omfattas inte av lagen om tillgänglighet till digital offentlig service. Vi följer den ändå så långt det går.
+kort:
+  - Vi vill att alla ska kunna använda webbplatsen.
+  - Du kan använda tangentbord, skärmläsare och punktskrift.
+  - Du kan slå på Enkelt läge högst upp på sidan.
+  - Säg till om något inte fungerar. Du behöver inte ringa.
+meta:
+  titel: Tillgänglighetsredogörelse | Linkaro
+  beskrivning: Hur tillgänglig linkaro.se är, kända brister och hur du kontaktar oss om något inte fungerar.
