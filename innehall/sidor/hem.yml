@@ -1,6 +1,7 @@
 meta:
   titel: Linkaro – teckenspråks- och dövblindtolkning
-  beskrivning: Teckenspråks- och dövblindtolkning med personlig kontakt – från förfrågan till uppföljning. I Stockholmsregionen och på distans.
+  beskrivning: Teckenspråks- och dövblindtolkning med personlig kontakt – från
+    förfrågan till uppföljning. I Stockholmsregionen och på distans.
   delningstitel: Linkaro – tolkning som skapar förbindelse
 kort:
   - Linkaro är ett tolkföretag i Stockholm.
@@ -10,7 +11,8 @@ kort:
   - Du kan kontakta oss med e-post, sms eller video. Du behöver inte ringa.
 s_h1:
   rubrik: Tolkning som skapar förbindelse
-  stycke: Vi tolkar mellan svenskt teckenspråk och svenska. Vi tolkar på plats och på distans.
+  stycke: Vi tolkar mellan svenskt teckenspråk och svenska. Vi tolkar på plats och
+    på distans.
 s_video:
   rubrik: Välkommen på teckenspråk
   stycke: Filmen på svenskt teckenspråk kommer snart. Den får svensk text.
@@ -18,7 +20,8 @@ s_video:
 s_tj:
   rubrik: Det här gör vi
   punkt: "**Teckenspråkstolkning.** Vi tolkar mellan teckenspråk och svenska."
-  punkt2: "**Dövblindtolkning.** Vi tolkar med taktilt teckenspråk. Vi beskriver omgivningen och ledsagar."
+  punkt2: "**Dövblindtolkning.** Vi tolkar med taktilt teckenspråk. Vi beskriver
+    omgivningen och ledsagar."
   punkt3: "**Distanstolkning.** Vi tolkar på video."
   stycke: "[Läs mer om våra tjänster](/tjanster/)"
 s_var:
@@ -46,14 +49,16 @@ s_tolk:
   stycke: Vill du arbeta med oss? [Läs mer och anmäl intresse](/bli-tolk/)
 h_hero:
   bild: /bilder/hem-portratt.jpg
-  bildtext: Susanne, grundare och tolk på Linkaro.
+  bildtext: Susanne, medgrundare och tolk på Linkaro.
   rubrik: Tolkning som skapar förbindelse
-  ingress: Teckenspråks- och dövblindtolkning med personlig kontakt – från förfrågan till uppföljning.
+  ingress: Teckenspråks- och dövblindtolkning med personlig kontakt – från
+    förfrågan till uppföljning.
   punkt: Du behöver aldrig ringa
 h_trust:
   rubrik: Därför kan ni lita på oss
   underrubrik: Utbildade och erfarna tolkar
-  stycke: Utbildade / auktoriserade tolkar av Kammarkollegiet, med många års erfarenhet.
+  stycke: Utbildade / auktoriserade tolkar av Kammarkollegiet, med många års
+    erfarenhet.
   underrubrik2: God tolksed
   stycke2: Vi är opartiska och tolkar allt som sägs och tecknas.
   underrubrik3: Tystnadsplikt
@@ -63,11 +68,14 @@ h_trust:
 h_tj:
   overrubrik: Tjänster
   rubrik: Tolkning för alla som behöver förstå varandra
-  ingress: Vi tolkar på plats och på distans. Ni beskriver situationen – vi föreslår rätt tolkning och rätt tolk.
+  ingress: Vi tolkar på plats och på distans. Ni beskriver situationen – vi
+    föreslår rätt tolkning och rätt tolk.
   underrubrik: Teckenspråkstolkning
-  stycke: Mellan svenskt teckenspråk och talad svenska, i möten, samtal och undervisning.
+  stycke: Mellan svenskt teckenspråk och talad svenska, i möten, samtal och
+    undervisning.
   underrubrik2: Dövblindtolkning
-  stycke2: Taktilt teckenspråk, haptiska signaler, syntolkning av omgivningen och ledsagning.
+  stycke2: Taktilt teckenspråk, haptiska signaler, syntolkning av omgivningen och
+    ledsagning.
   underrubrik3: Distanstolkning
   stycke3: Tolkning via säker videolänk – när det är smidigare än att ses på plats.
 h_var:
@@ -77,7 +85,8 @@ h_var:
   underrubrik: Vård och omsorg
   stycke: Läkarbesök, behandling, habilitering och samtal inom omsorgen.
   underrubrik2: Arbetsliv
-  stycke2: Arbetsplatsträffar, medarbetarsamtal, introduktion och anställningsintervjuer.
+  stycke2: Arbetsplatsträffar, medarbetarsamtal, introduktion och
+    anställningsintervjuer.
   underrubrik3: Utbildning
   stycke3: Föreläsningar, lektioner, kurser och utvecklingssamtal.
   underrubrik4: Möten och konferenser
@@ -90,23 +99,30 @@ h_why:
   overrubrik: Varför Linkaro
   rubrik: Nära, noggrant och att lita på
   underrubrik: Personlig kontakt
-  stycke: Ni får en kontaktperson som känner till ert uppdrag, från förfrågan till uppföljning.
+  stycke: Ni får en kontaktperson som känner till ert uppdrag, från förfrågan till
+    uppföljning.
   underrubrik2: Rätt tolk för uppdraget
-  stycke2: Vi matchar tolk efter situation, ämne, tolkmetod och tolkanvändarens önskemål.
+  stycke2: Vi matchar tolk efter situation, ämne, tolkmetod och tolkanvändarens
+    önskemål.
   underrubrik3: Pålitlighet och uppföljning
-  stycke3: Tydlig bekräftelse, förberedda tolkar och uppföljning efteråt. Avvikelser hanterar vi snabbt och öppet.
+  stycke3: Tydlig bekräftelse, förberedda tolkar och uppföljning efteråt.
+    Avvikelser hanterar vi snabbt och öppet.
 h_video:
   overrubrik: På svenskt teckenspråk
   rubrik: Välkommen till Linkaro
-  ingress: "[Namn] berättar kort vilka vi är, hur vi arbetar och hur du når oss. Du kan alltid fråga efter oss med namn när du bokar tolk."
-  stycke: "[Video: välkomsthälsning på svenskt teckenspråk, cirka 60 sekunder, med svensk text. Filmen publiceras snart.]"
+  ingress: Susanne berättar kort vilka vi är, hur vi arbetar och hur du når oss.
+    Du kan alltid fråga efter oss med namn när du bokar tolk.
+  stycke: "[Video: välkomsthälsning på svenskt teckenspråk, cirka 60 sekunder, med
+    svensk text. Filmen publiceras snart.]"
   fraga: Läs filmens text
   stycke2: Hej och välkommen till Linkaro.
-  stycke3: "[Hela texten till filmen, samma innehåll som textningen. Fylls i när filmen är inspelad.]"
+  stycke3: "[Hela texten till filmen, samma innehåll som textningen. Fylls i när
+    filmen är inspelad.]"
 h_tolk:
   overrubrik: För tolkar
   rubrik: Är du tolk? Väx med oss
-  ingress: Vi bygger ett nätverk av kvalificerade teckenspråks- och dövblindtolkar som vill arbeta nära, med tydliga uppdrag och god uppföljning.
+  ingress: Vi bygger ett nätverk av kvalificerade teckenspråks- och dövblindtolkar
+    som vill arbeta nära, med tydliga uppdrag och god uppföljning.
   punkt: Uppdrag i Stockholmsregionen och på distans
   punkt2: Kort väg till beslut i ett litet, familjeägt bolag
   punkt3: Tydliga villkor och förberedelsematerial inför varje uppdrag
