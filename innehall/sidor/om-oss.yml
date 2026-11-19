@@ -1,6 +1,8 @@
 meta:
   titel: Om oss – ett litet tolkföretag med nära kontakt | Linkaro
-  beskrivning: Linkaro AB är ett familjeägt tolkföretag i Stockholmsregionen. Läs om grundarna, namnet, våra värderingar och hur vi arbetar med kvalitet.
+  beskrivning: Linkaro AB är ett familjeägt företag i Stockholmsregionen. Huvud
+    inriktningen är Tecken och Dövblind-tolkning Läs om grundarna, namnet, våra
+    värderingar och hur vi arbetar med kvalitet.
 kort:
   - Linkaro är ett litet tolkföretag. En familj äger företaget.
   - Vi tolkar noggrant och har tystnadsplikt.
@@ -8,29 +10,35 @@ kort:
 topp:
   overrubrik: Om oss
   rubrik: Ett litet tolkföretag med nära kontakt
-  ingress: Linkaro AB är ett familjeägt bolag i Stockholmsregionen. Vi tror att tolkning blir bäst när den är personlig, noggrann och går att lita på.
-  foto: ""
-  fototext: ""
+  ingress: Linkaro AB är ett familjeägt bolag i Stockholmsregionen. Vi tror att
+    tolkning blir bäst när den är personlig, noggrann och går att lita på.
 h_namn:
   overrubrik: Namnet
   rubrik: Link + Karo
-  ingress: "**Link** betyder länk och förbindelse. **Karo** står för kärna och värde. Tolken är länken som bygger bron mellan två språk och två världar."
-  ingress2: Symbolen är två sammanlänkade cirklar. Där de möts bildas ett öga, med kärnan som pupill. Teckenspråk är ett språk man ser – och att se och bli sedd är grunden för all kommunikation.
+  ingress: "**Link** betyder länk och förbindelse. **Karo** står för kärna och
+    värde. Tolken är länken som bygger bron mellan två språk och två världar."
+  ingress2: Symbolen är två sammanlänkade cirklar. Där de möts bildas ett öga, med
+    kärnan som pupill. Teckenspråk är ett språk man ser – och att se och bli
+    sedd är grunden för all kommunikation.
 h_var:
   overrubrik: Våra värderingar
   rubrik: Det vi står för
   underrubrik: Precision
-  stycke: Vi förbereder oss noga och tolkar det som sägs och tecknas – varken mer eller mindre.
+  stycke: Vi förbereder oss noga och tolkar det som sägs och tecknas – varken mer
+    eller mindre.
   underrubrik2: Respekt
-  stycke2: För tolkanvändare, beställare och alla i rummet. Var och en är expert på sin egen kommunikation.
+  stycke2: För tolkanvändare, beställare och alla i rummet. Var och en är expert
+    på sin egen kommunikation.
   underrubrik3: Att bli sedd
   stycke3: Vi lyssnar på önskemål och anpassar tolkningen efter människan, inte tvärtom.
 h_kval:
   overrubrik: Kvalitet
   rubrik: Så arbetar vi med kvalitet
-  ingress: Kortfattat för er som beställer eller upphandlar. Fler detaljer finns i vår företagspresentation.
+  ingress: Kortfattat för er som beställer eller upphandlar. Fler detaljer finns i
+    vår företagspresentation.
   underrubrik: Systematiskt kvalitetsarbete
-  stycke: "Vi arbetar enligt principerna i ISO 9001: planera, genomföra, följa upp och förbättra."
+  stycke: "Vi arbetar enligt principerna i ISO 9001: planera, genomföra, följa upp
+    och förbättra."
   punkt: Kvalitetskontroll och uppföljning av uppdrag
   punkt2: Avvikelser och klagomål dokumenteras, åtgärdas och följs upp
   punkt3: "Kvalitetssäkring av underkonsulter: utbildning, referenser och avtal"
@@ -53,8 +61,10 @@ h_kval:
   begrepp6: Kontakt upphandling
   forklaring4: "[{epostadress}](mailto:{epostadress}?subject=Upphandling)"
   underrubrik4: Företagspresentation
-  stycke3: Tjänster, kvalitetsarbete, försäkring och bolagsuppgifter samlat i ett dokument.
-  stycke4: "[Företagspresentation som PDF kommer.] Vill ni ha den nu? [Be om den via e-post](mailto:{epostadress}?subject=F%C3%B6retagspresentation)."
+  stycke3: Tjänster, kvalitetsarbete, försäkring och bolagsuppgifter samlat i ett
+    dokument.
+  stycke4: Vill ni ha den nu? [Be om den via
+    e-post](mailto:{epostadress}?subject=F%C3%B6retagspresentation).
   stycke5: Har något inte fungerat? [Lämna synpunkter eller klagomål](/kontakt/)
 h_cta:
   rubrik: Vill ni arbeta med oss?
