@@ -1,9 +1,10 @@
 topp:
-  foto: ""
-  fototext: ""
+  foto: /bilder/geminigeneratedimagek4czwkk4czwkk4cz.jpg
   overrubrik: För frilanstolkar
   rubrik: Frilansa som tolk hos Linkaro
-  ingress: Vi bygger ett nätverk av frilansande teckenspråks- och dövblindtolkar. Du bestämmer över din tid och tackar ja till de uppdrag som passar dig – vi sköter kundkontakten och förmedlar uppdragen.
+  ingress: Vi bygger ett nätverk av frilansande teckenspråks- och dövblindtolkar.
+    Du bestämmer över din tid och tackar ja till de uppdrag som passar dig – vi
+    sköter kundkontakten och förmedlar uppdragen.
   punkt: Du väljer dina uppdrag
   punkt2: På plats och på distans
   punkt3: Kort väg till beslut
@@ -13,7 +14,9 @@ h_vem:
     punkt: Frilansande teckenspråkstolkar
     punkt2: Frilansande dövblindtolkar
     punkt3: Tolkar som vill ta uppdrag på distans
-    text: Du kan vara ny i yrket eller ha lång erfarenhet. Tar du redan uppdrag via andra förmedlingar, eller har en anställning, går det bra att kombinera. Det viktiga är att du är noggrann och tar ansvar.
+    text: Du kan vara ny i yrket eller ha lång erfarenhet. Tar du redan uppdrag via
+      andra förmedlingar, eller har en anställning, går det bra att kombinera.
+      Det viktiga är att du är noggrann och tar ansvar.
   block2:
     rubrik: Krav
     punkt: Avslutad tolkutbildning [eller auktorisation från Kammarkollegiet]
@@ -27,13 +30,15 @@ h_hur:
     text: Skicka din intresseanmälan med e-post. Det tar några minuter.
   steg2:
     rubrik: Intervju och referenser
-    text: Du kallas till intervju på plats hos oss, via videosamtal eller Teams. Vi tar referenser.
+    text: Du kallas till intervju på plats hos oss, via videosamtal eller Teams. Vi
+      tar referenser.
   steg3:
     rubrik: Avtal och sekretess
     text: Går du vidare godkänner du samarbetsavtalet och sekretessförbindelsen.
   steg4:
     rubrik: Välkommen till Linkaro
-    text: Vi registrerar dig som tolk hos oss – och ser fram emot att förmedla dina tjänster till Linkaros kunder.
+    text: Vi registrerar dig som tolk hos oss – och ser fram emot att förmedla dina
+      tjänster till Linkaros kunder.
   steg5:
     rubrik: Gemensam uppföljning
     text: Vi bestämmer en tid för att tillsammans följa upp hur det har gått.
@@ -46,21 +51,34 @@ h_anm:
   overrubrik: Intresseanmälan
   rubrik: Berätta om dig
   ingress: Du förbinder dig inte till något genom att anmäla intresse.
-  ingress2: Hellre via video? Skriv det i ditt meddelande, så bokar vi ett samtal – gärna på teckenspråk.
-  stycke: Vi sparar dina uppgifter så länge det behövs för rekryteringen. Läs mer i vår [integritetspolicy](/integritetspolicy/).
+  ingress2: Hellre via video? Skriv det i ditt meddelande, så bokar vi ett samtal
+    – gärna på teckenspråk.
+  stycke: Vi sparar dina uppgifter så länge det behövs för rekryteringen. Läs mer
+    i vår [integritetspolicy](/integritetspolicy/).
   underrubrik: E-postmall för intresseanmälan
-  mall: |
+  mall: >
     Intresseanmälan – tolk
 
+
     Namn:
+
     Ort eller region:
+
     Mobil (valfritt):
+
     Tolkutbildning – skola, examensår och eventuell auktorisation:
-    Jag tolkar – svenskt teckenspråk, tecken som stöd, dövblindtolkning, på distans:
+
+    Jag tolkar – svenskt teckenspråk, tecken som stöd, dövblindtolkning, på
+    distans:
+
     Har du egen firma med F-skatt? Ja, nej eller startar snart (inget krav):
-    Hur mycket vill du arbeta via oss? Enstaka uppdrag, regelbundet eller så mycket som möjligt:
+
+    Hur mycket vill du arbeta via oss? Enstaka uppdrag, regelbundet eller så
+    mycket som möjligt:
+
 
     Berätta gärna mer:
+
 
     (Bifoga gärna ditt cv som pdf eller Word.)
   stycke2: "Mottagare: {epost}"
@@ -73,4 +91,6 @@ kort:
   - Skicka ett e-postmeddelande och berätta om dig.
 meta:
   titel: Bli tolk hos oss – frilansa med Linkaro
-  beskrivning: "Är du teckenspråks- eller dövblindtolk? Frilansa med Linkaro: du väljer dina uppdrag, vi sköter kundkontakten. Uppdrag i Stockholmsregionen och på distans."
+  beskrivning: "Är du teckenspråks- eller dövblindtolk? Frilansa med Linkaro: du
+    väljer dina uppdrag, vi sköter kundkontakten. Uppdrag i Stockholmsregionen
+    och på distans."
