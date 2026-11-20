@@ -1,31 +1,41 @@
 topp:
   overrubrik: Om oss
   rubrik: Ett litet tolkföretag med nära kontakt
-  ingress: Linkaro AB är ett familjeägt bolag i Stockholmsregionen. Vi tror att tolkning blir bäst när den är personlig, noggrann och går att lita på.
+  ingress: Linkaro AB är ett familjeägt bolag i Stockholmsregionen. Vi tror att
+    tolkning blir bäst när den är personlig, noggrann och går att lita på.
+  foto: /bilder/geminigeneratedimageper5hgper5hgper5.jpg
 h_namn:
   overrubrik: Namnet
   rubrik: Link + Karo
-  ingress: "**Link** betyder länk och förbindelse. **Karo** står för kärna och värde. Tolken är länken som bygger bron mellan två språk och två världar."
-  ingress2: Symbolen är två sammanlänkade cirklar. Där de möts bildas ett öga, med kärnan som pupill. Teckenspråk är ett språk man ser – och att se och bli sedd är grunden för all kommunikation.
+  ingress: "**Link** betyder länk och förbindelse. **Karo** står för kärna och
+    värde. Tolken är länken som bygger bron mellan två språk och två världar."
+  ingress2: Symbolen är två sammanlänkade cirklar. Där de möts bildas ett öga, med
+    kärnan som pupill. Teckenspråk är ett språk man ser – och att se och bli
+    sedd är grunden för all kommunikation.
 h_var:
   overrubrik: Våra värderingar
   rubrik: Det vi står för
   del1:
     rubrik: Precision
-    text: Vi förbereder oss noga och tolkar det som sägs och tecknas – varken mer eller mindre.
+    text: Vi förbereder oss noga och tolkar det som sägs och tecknas – varken mer
+      eller mindre.
   del2:
     rubrik: Respekt
-    text: För tolkanvändare, beställare och alla i rummet. Var och en är expert på sin egen kommunikation.
+    text: För tolkanvändare, beställare och alla i rummet. Var och en är expert på
+      sin egen kommunikation.
   del3:
     rubrik: Att bli sedd
-    text: Vi lyssnar på önskemål och anpassar tolkningen efter människan, inte tvärtom.
+    text: Vi lyssnar på önskemål och anpassar tolkningen efter människan, inte
+      tvärtom.
 h_kval:
   overrubrik: Kvalitet
   rubrik: Så arbetar vi med kvalitet
-  ingress: Kortfattat för er som beställer eller upphandlar. Fler detaljer finns i vår företagspresentation.
+  ingress: Kortfattat för er som beställer eller upphandlar. Fler detaljer finns i
+    vår företagspresentation.
   kort1:
     rubrik: Systematiskt kvalitetsarbete
-    text: "Vi arbetar enligt principerna i ISO 9001: planera, genomföra, följa upp och förbättra."
+    text: "Vi arbetar enligt principerna i ISO 9001: planera, genomföra, följa upp
+      och förbättra."
     punkt: Kvalitetskontroll och uppföljning av uppdrag
     punkt2: Avvikelser och klagomål dokumenteras, åtgärdas och följs upp
     punkt3: "Kvalitetssäkring av underkonsulter: utbildning, referenser och avtal"
@@ -57,8 +67,10 @@ h_kval:
     text: "[{epostadress}](mailto:{epostadress}?subject=Upphandling)"
   kort4:
     rubrik: Företagspresentation
-    text: Tjänster, kvalitetsarbete, försäkring och bolagsuppgifter samlat i ett dokument.
-    text2: Vill ni ha den nu? [Be om den via e-post](mailto:{epostadress}?subject=F%C3%B6retagspresentation).
+    text: Tjänster, kvalitetsarbete, försäkring och bolagsuppgifter samlat i ett
+      dokument.
+    text2: Vill ni ha den nu? [Be om den via
+      e-post](mailto:{epostadress}?subject=F%C3%B6retagspresentation).
   stycke5: Har något inte fungerat? [Lämna synpunkter eller klagomål](/kontakt/)
 h_cta:
   rubrik: Vill ni arbeta med oss?
@@ -69,4 +81,6 @@ kort:
   - Vi följer upp varje uppdrag och blir bättre hela tiden.
 meta:
   titel: Om oss – ett litet tolkföretag med nära kontakt | Linkaro
-  beskrivning: Linkaro AB är ett familjeägt företag i Stockholmsregionen. Huvud inriktningen är Tecken och Dövblind-tolkning Läs om grundarna, namnet, våra värderingar och hur vi arbetar med kvalitet.
+  beskrivning: Linkaro AB är ett familjeägt företag i Stockholmsregionen. Huvud
+    inriktningen är Tecken och Dövblind-tolkning Läs om grundarna, namnet, våra
+    värderingar och hur vi arbetar med kvalitet.
