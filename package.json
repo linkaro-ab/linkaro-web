@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "build": "eleventy && node bygg/kontroll.mjs",
-    "start": "eleventy --serve --port=8080"
+    "start": "eleventy --serve --port=8080",
+    "build:prep": "node bygg/prep.mjs"
   },
   "engines": {
     "node": ">=20"
@@ -15,6 +16,7 @@
     "@11ty/eleventy-img": "7.1.1",
     "js-yaml": "5.5.0",
     "markdown-it": "15.0.3",
-    "parse5": "7.3.0"
+    "parse5": "7.3.0",
+    "staticrypt": "3.5.4"
   }
 }

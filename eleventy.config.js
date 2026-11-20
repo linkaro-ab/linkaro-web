@@ -68,7 +68,7 @@ export default function (eleventyConfig) {
   });
 
   // Filer som kopieras oförändrade
-  for (const p of ['assets', 'favicon.ico', 'favicon.svg', 'apple-touch-icon.png', 'site.webmanifest', 'CNAME', 'robots.txt', 'sitemap.xml']) {
+  for (const p of ['assets', 'favicon.ico', 'favicon.svg', 'apple-touch-icon.png', 'site.webmanifest', 'CNAME', 'robots.txt', 'sitemap.xml', 'tools']) {
     eleventyConfig.addPassthroughCopy(p);
   }
   eleventyConfig.addPassthroughCopy({ 'innehall/bilder': 'bilder' });

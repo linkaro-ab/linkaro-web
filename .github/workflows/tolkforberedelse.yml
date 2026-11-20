@@ -1,0 +1,59 @@
+# Bygger om tolkförberedelsen (tools/prep.html) med färsk lexikondata en gång i månaden, eller när du startar den.
+# Lösenordet hämtas från repo-hemligheten STATICRYPT_PASSWORD (Settings → Secrets and variables → Actions).
+# Filen checkas bara in om den har ändrats, och då startas "Bygg och publicera".
+name: Uppdatera tolkförberedelsen
+
+on:
+  schedule:
+    - cron: '0 4 1 * *'   # den 1:a varje månad kl. 04 UTC
+  workflow_dispatch:
+    inputs:
+      tvinga:
+        description: Kryptera om även om lexikondatan inte har ändrats (t.ex. efter byte av lösenord)
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: tolkforberedelse
+  cancel-in-progress: false
+
+jobs:
+  bygg:
+    name: Bygg och kryptera
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - run: pip install wordfreq
+      - run: npm ci
+      - name: Bygg och kryptera
+        env:
+          STATICRYPT_PASSWORD: ${{ secrets.STATICRYPT_PASSWORD }}
+          PYTHON: python
+        run: npm run build:prep -- ${{ inputs.tvinga && ' ' || '--bara-om-andrad' }}
+      - name: Checka in om filen har ändrats
+        id: commit
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet -- tools/prep.html tools-src/prep/innehall.sha256; then
+            echo "Ingen ändring."; exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add tools/prep.html tools-src/prep/innehall.sha256
+          git commit -m "Tolkförberedelsen: ny lexikondata"
+          git pull --rebase origin main
+          git push origin HEAD:main
+          # Pushar från GITHUB_TOKEN startar inte andra körningar, så publiceringen startas här.
+          gh workflow run publicera.yml --ref main

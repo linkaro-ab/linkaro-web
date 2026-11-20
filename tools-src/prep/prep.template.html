@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Förberedelse inför tolkuppdrag – Linkaro</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #F2F7F7; --surface: #FFFFFF; --ink: #0B2A33; --muted: #4E6A72; --rule: #D3E2E3;
+  --pine: #0E4A58; --pine-soft: #DDF1EE; --sand: #C2512F; --sand-soft: #FDE8E1;
+  --slate: #1C6E7A; --slate-soft: #E0EFF1; --miss: #A23B2A; --miss-soft: #F9E3DE;
+  --focus: #1C8C80; --coral: #FF7A59;
+  color-scheme: light; box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #08262F; --surface: #0D3540; --ink: #E6F1F0; --muted: #9DB9BC; --rule: #1E4A55;
+    --pine: #7FD1C7; --pine-soft: #123F49; --sand: #FF9A7E; --sand-soft: #3A2A27;
+    --slate: #9ED8E0; --slate-soft: #123A45; --miss: #FF9F8A; --miss-soft: #3D2420;
+    --focus: #7FD1C7; --coral: #FF7A59; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #08262F; --surface: #0D3540; --ink: #E6F1F0; --muted: #9DB9BC; --rule: #1E4A55;
+  --pine: #7FD1C7; --pine-soft: #123F49; --sand: #FF9A7E; --sand-soft: #3A2A27;
+  --slate: #9ED8E0; --slate-soft: #123A45; --miss: #FF9F8A; --miss-soft: #3D2420;
+  --focus: #7FD1C7; --coral: #FF7A59; color-scheme: dark;
+}
+html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+*, *::before, *::after { box-sizing: inherit; }
+body { margin: 0; background: var(--bg); color: var(--ink);
+  font-family: "Atkinson Hyperlegible", "Segoe UI", system-ui, -apple-system, sans-serif;
+  font-size: 1.0625rem; line-height: 1.55; }
+a { color: var(--pine); }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; border-radius: 4px; }
+.sr { position: absolute; left: -9999px; }
+.wrap { max-width: 76rem; margin: 0 auto; padding: 2.25rem 1.25rem 3rem; }
+header.band { background: radial-gradient(ellipse 70% 140% at 75% 10%, #134F5E 0%, #0C3E4C 45%, #082F3A 100%); color: #E6F1F0; }
+.band-in { max-width: 76rem; margin: 0 auto; padding: 1.6rem 1.25rem; display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; }
+.band-in img { height: clamp(2.2rem, 5vw, 3.2rem); width: auto; display: block; }
+.band-in .sep { width: 1px; align-self: stretch; background: #5DA6A3; }
+.band-in .tag { font-family: Poppins, "Segoe UI", system-ui, sans-serif; font-weight: 500; font-size: clamp(1rem, 2vw, 1.35rem); letter-spacing: .01em; }
+@media (max-width: 560px) { .band-in .sep { display: none; } .band-in { gap: .6rem 1rem; } }
+h1, h2, h3, .optional-h { font-family: Poppins, "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif; font-weight: 600; letter-spacing: -.005em; }
+.b-freq { background: var(--slate-soft); color: var(--slate); font-weight: 400; }
+header.top { display: flex; align-items: center; gap: .75rem; margin-bottom: 2rem; }
+.mark { width: 2rem; height: 2rem; flex: none; }
+.brand { font-weight: 700; letter-spacing: .02em; color: var(--pine); }
+h1 { font-size: clamp(1.75rem, 3.2vw, 2.5rem); line-height: 1.15; margin: 0 0 .5rem; max-width: 22ch; }
+.lede { color: var(--muted); max-width: 62ch; margin: 0 0 2rem; }
+.grid { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.25fr); gap: 2.5rem; align-items: start; }
+@media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+.pane > h2 { font-size: 1.15rem; margin: 0 0 .75rem; }
+textarea { width: 100%; min-height: 22rem; resize: vertical; font: inherit; font-size: 1rem; line-height: 1.6;
+  color: var(--ink); background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 1rem; }
+.actions { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .75rem; align-items: center; }
+button { font: inherit; font-size: .95rem; cursor: pointer; border-radius: 6px; padding: .6rem 1rem;
+  border: 1px solid var(--pine); background: transparent; color: var(--pine); }
+button.primary { background: var(--pine); color: var(--bg); font-weight: 700; }
+button.quiet { border-color: transparent; color: var(--muted); padding-left: .5rem; padding-right: .5rem; }
+button:disabled { opacity: .55; cursor: default; }
+.ai-note { font-size: .85rem; color: var(--muted); margin: .5rem 0 0; max-width: 55ch; }
+.ai-status { font-size: .95rem; color: var(--pine); margin-top: .75rem; min-height: 1.5em; }
+
+.progress { display: flex; align-items: baseline; gap: .75rem; margin-bottom: .5rem; }
+.progress strong { font-size: 2rem; line-height: 1; color: var(--pine); }
+.bar { height: 6px; background: var(--rule); border-radius: 3px; overflow: hidden; margin-bottom: 1rem; }
+.bar span { display: block; height: 100%; width: 0; background: var(--coral); transition: width .3s ease; }
+.stats { color: var(--muted); font-size: .9rem; margin: 0 0 1.25rem; }
+.domains { display: flex; flex-wrap: wrap; gap: .4rem; align-items: center; margin: 0 0 1.5rem; }
+.domains b { margin-right: .25rem; }
+.domains span { background: var(--slate-soft); color: var(--slate); border-radius: 999px; padding: .15rem .7rem; font-size: .9rem; }
+
+details.group { margin-bottom: 1.25rem; border-left: 4px solid var(--gc, var(--pine)); padding-left: 1rem; }
+details.group > summary { list-style: none; cursor: pointer; display: flex; align-items: baseline; gap: .75rem; padding: .25rem 0; }
+details.group > summary::-webkit-details-marker { display: none; }
+details.group > summary::before { content: ""; width: .55rem; height: .55rem; border-right: 2px solid var(--muted); border-bottom: 2px solid var(--muted);
+  transform: rotate(-45deg); transition: transform .15s; flex: none; align-self: center; margin-right: .1rem; }
+details.group[open] > summary::before { transform: rotate(45deg); }
+details.group h3 { font-size: 1.45rem; line-height: 1.2; margin: 0; }
+.gcount { font-size: .95rem; color: var(--muted); }
+.why-g { color: var(--muted); font-size: .92rem; margin: .1rem 0 .6rem; max-width: 60ch; }
+.g-name { --gc: var(--slate); } .g-abbr { --gc: var(--sand); } .g-fack { --gc: var(--pine); } .g-other { --gc: var(--muted); } .g-own { --gc: var(--muted); }
+.g-rel { --gc: var(--sand); } .g-cat { --gc: var(--slate); }
+
+ul.terms { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--rule); }
+ul.terms > li { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: .35rem 1rem; padding: .75rem 0; border-bottom: 1px solid var(--rule); }
+ul.terms > li.done .word { color: var(--muted); }
+.word { font-weight: 700; font-size: 1.1rem; overflow-wrap: anywhere; }
+.count { color: var(--muted); font-weight: 400; font-size: .85rem; margin-left: .35rem; }
+.why { grid-column: 1 / -1; color: var(--muted); font-size: .88rem; margin: -.2rem 0 0; }
+.lex { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: .35rem .6rem; align-items: center; font-size: .9rem; }
+.badge { border-radius: 4px; padding: .05rem .5rem; font-size: .82rem; font-weight: 700; }
+.b-found { background: var(--pine-soft); color: var(--pine); }
+.b-bok { background: var(--sand-soft); color: var(--sand); }
+.b-part { background: var(--slate-soft); color: var(--slate); }
+.b-miss { background: var(--miss-soft); color: var(--miss); }
+.row-tools { display: flex; gap: .5rem; align-items: center; flex-wrap: wrap; justify-content: flex-end; }
+select, input[type="text"] { font: inherit; font-size: .9rem; color: var(--ink); background: var(--surface);
+  border: 1px solid var(--rule); border-radius: 6px; padding: .35rem .5rem; }
+li.status-finns select { border-color: var(--pine); background: var(--pine-soft); }
+li.status-bokstav select, li.status-stam select { border-color: var(--sand); background: var(--sand-soft); }
+.note { grid-column: 1 / -1; width: 100%; }
+.remove { font-size: .85rem; padding: .3rem .5rem; }
+
+.chips { display: flex; flex-wrap: wrap; gap: .45rem; padding: .25rem 0 .5rem; }
+.chip { display: inline-flex; align-items: center; gap: .35rem; border: 1px solid var(--rule); background: var(--surface);
+  border-radius: 999px; padding: .2rem .25rem .2rem .7rem; font-size: .92rem; }
+.chip.miss { border-style: dashed; color: var(--muted); }
+.chip button { padding: .05rem .5rem; font-size: .85rem; border-radius: 999px; border-color: var(--rule); }
+.chip .w { font-weight: 700; }
+.chip-why { display: block; width: 100%; }
+.relist { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--rule); }
+.relist li { display: flex; flex-wrap: wrap; gap: .25rem .75rem; align-items: baseline; padding: .55rem 0; border-bottom: 1px solid var(--rule); }
+.relist .w { font-weight: 700; }
+.relist .rw { color: var(--muted); font-size: .88rem; flex-basis: 100%; }
+.relist .sp { flex: 1; }
+.add { display: flex; gap: .5rem; margin-top: .5rem; }
+.add input { flex: 1; min-width: 0; }
+.empty { color: var(--muted); border: 1px dashed var(--rule); border-radius: 6px; padding: 1.5rem; }
+.level { border: 0; padding: 0; margin: 0 0 1rem; }
+.level legend { font-weight: 700; font-size: 1rem; margin-bottom: .4rem; padding: 0; }
+.seg { display: inline-flex; border: 1px solid var(--pine); border-radius: 6px; overflow: hidden; flex-wrap: wrap; }
+.seg label { position: relative; }
+.seg input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
+.seg span { display: block; padding: .45rem .9rem; font-size: .92rem; color: var(--pine); cursor: pointer; }
+.seg label + label span { border-left: 1px solid var(--pine); }
+.seg input:checked + span { background: var(--pine); color: var(--bg); font-weight: 700; }
+.seg input:focus-visible + span { outline: 3px solid var(--focus); outline-offset: -3px; }
+.level-hint { font-size: .85rem; color: var(--muted); margin: .4rem 0 0; max-width: 55ch; }
+.known-btn { font-size: .85rem; padding: .3rem .6rem; }
+li.is-known .word { color: var(--muted); }
+details.g-known { --gc: var(--rule); }
+.profile-box { margin-top: 1.75rem; font-size: .92rem; }
+.profile-box summary { cursor: pointer; color: var(--pine); font-weight: 700; }
+.profile-box .chips { margin-top: .5rem; }
+dialog.sign { border: 0; border-radius: 10px; padding: 1.25rem; width: min(560px, 94vw); background: var(--bg); color: var(--ink); box-shadow: 0 20px 60px rgba(0,0,0,.35); }
+dialog.sign::backdrop { background: rgba(10,15,13,.55); }
+dialog.sign h2 { margin: 0 2rem .2rem 0; font-size: 1.5rem; overflow-wrap: anywhere; }
+dialog.sign .sub { color: var(--muted); font-size: .88rem; margin: 0 0 .6rem; }
+dialog.sign video { width: 100%; aspect-ratio: 4 / 3; background: #000; border-radius: 8px; display: block; }
+dialog.sign .dlg-row { display: flex; gap: .35rem; flex-wrap: wrap; align-items: center; margin: .6rem 0 0; font-size: .9rem; color: var(--muted); }
+dialog.sign .dlg-row button { padding: .25rem .65rem; font-size: .88rem; }
+dialog.sign .dlg-row button[aria-pressed="true"] { background: var(--pine); color: var(--bg); font-weight: 700; }
+dialog.sign .x { position: absolute; top: .6rem; right: .6rem; border: 0; font-size: 1.5rem; line-height: 1; padding: .2rem .55rem; color: var(--muted); }
+dialog.sign .dlg-link { display: inline-block; margin-top: .8rem; }
+.optional-h { font-size: 1.15rem; margin: 2.25rem 0 .25rem; }
+.optional-p { color: var(--muted); font-size: .92rem; margin: 0 0 1rem; max-width: 60ch; }
+footer { margin-top: 3rem; color: var(--muted); font-size: .85rem; max-width: 72ch; }
+footer p { margin: .3rem 0; }
+.toast { position: fixed; left: 50%; bottom: calc(1.5rem + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%);
+  background: var(--ink); color: var(--bg); padding: .6rem 1rem; border-radius: 6px; font-size: .9rem; opacity: 0; pointer-events: none; transition: opacity .2s; }
+.toast.show { opacity: 1; }
+@media (prefers-reduced-motion: reduce) { .bar span, .toast, details.group > summary::before { transition: none; } }
+@media print {
+  header.band,
+  .input-pane, .actions, .add, .row-tools button, .remove, header.top, .toast, .bar, .chip button, #optional { display: none !important; }
+  .grid { display: block; } body { background: #fff; color: #000; } ul.terms > li { break-inside: avoid; }
+}
+</style>
+</head>
+<body>
+<header class="band"><div class="band-in"><img src="data:image/png;base64,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" alt="Linkaro" width="564" height="108"><span class="sep" aria-hidden="true"></span><span class="tag">We create the link</span></div></header>
+<div class="wrap">
+
+  <h1>Förbered ordförrådet inför ditt tolkuppdrag</h1>
+  <p class="lede">Klistra in dagordning, kallelse eller underlag. Verktyget plockar ut namn, förkortningar och facktermer, kollar vilka som finns i Svenskt teckenspråkslexikon och länkar direkt till tecknet. Det som saknas ser du direkt, så att du vet vad du behöver bokstavera eller stämma av innan du kommer på plats.</p>
+
+  <div class="grid">
+    <section class="pane input-pane" aria-labelledby="in-h">
+      <fieldset class="level">
+        <legend>Min erfarenhet</legend>
+        <div class="seg" role="radiogroup">
+          <label><input type="radio" name="level" value="ny"><span>Ny tolk</span></label>
+          <label><input type="radio" name="level" value="erfaren"><span>Erfaren</span></label>
+          <label><input type="radio" name="level" value="expert"><span>Mycket erfaren</span></label>
+        </div>
+        <p class="level-hint" id="levelHint"></p>
+      </fieldset>
+      <h2 id="in-h">Underlag</h2>
+      <label for="src" class="sr">Text från underlaget</label>
+      <textarea id="src" placeholder="Klistra in text här…"></textarea>
+      <div class="actions">
+        <button class="primary" id="analyze">Ta fram termer</button>
+        <button id="ai" hidden>Analysera med AI</button>
+        <button id="stop" class="quiet" hidden>Avbryt</button>
+        <button id="example">Prova med exempel</button>
+        <button class="quiet" id="clear">Rensa allt</button>
+      </div>
+      <div class="ai-status" id="aiStatus" role="status" aria-live="polite"></div>
+      <p class="ai-note" id="aiNote" hidden>”Ta fram termer” körs helt i din webbläsare. ”Analysera med AI” skickar texten till Claude, så ta bort personuppgifter och sekretessbelagd information först.</p>
+      <details class="profile-box" id="profileBox"><summary id="profileSum">Tecken jag kan</summary>
+        <p class="ai-note" style="margin-top:.5rem">Ord du har markerat med ”Kan jag” döljs i framtida förberedelser. Listan sparas i den här webbläsaren och påverkas inte av ”Rensa allt”.</p>
+        <div class="chips" id="knownChips"></div>
+      </details>
+    </section>
+
+    <section class="pane" aria-labelledby="out-h">
+      <h2 id="out-h">Termlista</h2>
+      <div id="summary" hidden>
+        <div class="progress"><strong id="doneCount">0</strong><span id="doneText">av 0 termer förberedda</span></div>
+        <div class="bar"><span id="bar"></span></div>
+        <p class="stats" id="stats"></p>
+      </div>
+      <div class="domains" id="domains" hidden></div>
+      <div id="out"><p class="empty">Termerna dyker upp här när du har klistrat in ett underlag och valt ”Ta fram termer”.</p></div>
+      <div class="add" id="addRow" hidden>
+        <input type="text" id="addInput" placeholder="Lägg till egen term" aria-label="Lägg till egen term">
+        <button id="addBtn">Lägg till</button>
+      </div>
+      <div class="actions" id="exportRow" hidden>
+        <button id="copy">Kopiera listan</button>
+        <button id="print">Skriv ut</button>
+      </div>
+      <div id="optional" hidden>
+        <h2 class="optional-h">Kan också dyka upp</h2>
+        <p class="optional-p">Valfritt. Ord som inte står i underlaget men hör till samma ämnesområde. Lägg till dem du vill förbereda.</p>
+        <div id="optOut"></div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>Tecken och ämnesområden kommer från Svenskt teckenspråkslexikon, Avdelningen för teckenspråk, Institutionen för lingvistik, Stockholms universitet, licensierat under CC BY-NC-SA 4.0. Lexikondata från <span id="lexDate"></span>, hämtad via zrajm.org. Ordfrekvenser från wordfreq (Robyn Speer m.fl.), CC BY-SA 4.0. Prototyp för internt test.</p>
+    <p>Utan AI-analys stannar texten du klistrar in i din webbläsare.</p>
+  </footer>
+</div>
+<dialog class="sign" id="signDlg" aria-labelledby="dlgWord">
+  <button class="x" id="dlgClose" aria-label="Stäng">×</button>
+  <h2 id="dlgWord"></h2>
+  <p class="sub" id="dlgSub"></p>
+  <video id="dlgVideo" controls autoplay muted loop playsinline></video>
+  <div class="dlg-row" id="dlgVariants"></div>
+  <div class="dlg-row" id="dlgSpeed">Hastighet <button data-r="0.5">0,5×</button><button data-r="0.75">0,75×</button><button data-r="1" aria-pressed="true">1×</button></div>
+  <a class="dlg-link" id="dlgLink" target="_blank" rel="noopener">Öppna i Svenskt teckenspråkslexikon</a>
+</dialog>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script type="application/json" id="freqdata">__FREQDATA__</script>
+<script type="application/json" id="lexdata">__LEXDATA__</script>
+<script>
+const LEXDATA = JSON.parse(document.getElementById('lexdata').textContent);
+// Word frequency (Zipf scale) for Swedish, from wordfreq (subtitles, web, Wikipedia m.m.).
+const FREQ = new Map();
+for (const [band, words] of Object.entries(JSON.parse(document.getElementById('freqdata').textContent))) for (const w of words.split(' ')) FREQ.set(w, +band);
+const BASE = 'https://teckensprakslexikon.su.se';
+const signUrl = id => `${BASE}/ord/${String(id).padStart(5, '0')}`;
+// Popup viewer. Set VIEWER to the hosted teckenvisare page to get title, variants, speed and a lexicon link.
+// When empty, the popup shows the lexicon's video file directly.
+const VIEWER = '';
+function to7bit(str) {
+  return str.toLowerCase().replace(/[^a-z0-9-]/gu, m => ({ ' ': '-', 'é': 'e', 'ü': 'u', 'å': 'a', 'ä': 'a', 'ö': 'o', '–': '-' }[m] || '')).replace(/-{2,}/, '-');
+}
+const videoUrl = (id, head) => { const s = String(id).padStart(5, '0'); return `${BASE}/movies/${s.slice(0, 2)}/${to7bit(head)}-${s}-tecken.mp4`; };
+let dlgRate = 1;
+function openSignDialog(word, vs, i) {
+  const dlg = document.getElementById('signDlg'), vid = document.getElementById('dlgVideo');
+  const show = j => {
+    const v = vs[j], id = String(v.id).padStart(5, '0');
+    document.getElementById('dlgWord').textContent = word;
+    document.getElementById('dlgSub').textContent = (v.h.toLowerCase() !== word.toLowerCase() ? `Uppslagsord: ${v.h}. ` : '') + `Tecken ${id}`;
+    document.getElementById('dlgLink').href = signUrl(id);
+    vid.src = videoUrl(id, v.h); vid.playbackRate = dlgRate; vid.play().catch(() => {});
+    document.querySelectorAll('#dlgVariants button').forEach((b, k) => b.setAttribute('aria-pressed', k === j));
+  };
+  const vb = document.getElementById('dlgVariants');
+  vb.innerHTML = vs.length > 1 ? vs.map((_, k) => `<button>Tecken ${k + 1}</button>`).join('') : '';
+  vb.onclick = e => { const b = e.target.closest('button'); if (b) show([...vb.children].indexOf(b)); };
+  show(i);
+  if (!dlg.open) dlg.showModal();
+}
+document.addEventListener('DOMContentLoaded', () => {});
+(function initDialog() {
+  const dlg = document.getElementById('signDlg'); if (!dlg) return setTimeout(initDialog, 50);
+  const vid = document.getElementById('dlgVideo');
+  document.getElementById('dlgClose').onclick = () => dlg.close();
+  dlg.addEventListener('click', e => { if (e.target === dlg) dlg.close(); });
+  dlg.addEventListener('close', () => { vid.pause(); vid.removeAttribute('src'); vid.load(); });
+  vid.addEventListener('loadedmetadata', () => { vid.playbackRate = dlgRate; });
+  document.getElementById('dlgSpeed').addEventListener('click', e => {
+    const b = e.target.closest('button'); if (!b) return;
+    dlgRate = parseFloat(b.dataset.r); vid.playbackRate = dlgRate;
+    document.querySelectorAll('#dlgSpeed button').forEach(x => x.setAttribute('aria-pressed', x === b));
+  });
+})();
+const vAttr = list => esc(list.map(([id, h]) => `${String(id).padStart(5, '0')}~${h}`).join('|'));
+document.addEventListener('click', e => {
+  const a = e.target.closest('a.sign-link'); if (!a || e.ctrlKey || e.metaKey || e.shiftKey) return;
+  const vs = a.dataset.v.split('|').map(x => { const [id, ...h] = x.split('~'); return { id, h: h.join('~') }; });
+  const i = Math.min(parseInt(a.dataset.i || '0', 10) || 0, vs.length - 1);
+  // Self-hosted (outside claude.ai): show the video in an in-page dialog.
+  if (!window.claude && typeof HTMLDialogElement === 'function') { e.preventDefault(); openSignDialog(a.dataset.w || vs[i].h, vs, i); return; }
+  const url = VIEWER
+    ? `${VIEWER}?w=${encodeURIComponent(a.dataset.w || vs[i].h)}&i=${i}&v=${encodeURIComponent(a.dataset.v)}`
+    : videoUrl(vs[i].id, vs[i].h);
+  const win = window.open(url, 'linkaro-tecken', `popup,width=560,height=${VIEWER ? 640 : 460}`);
+  if (win) { e.preventDefault(); try { win.focus(); } catch (_) {} }
+});
+const searchUrl = q => `${BASE}/sok?q=${encodeURIComponent(q)}`;
+const KEY = 'linkaro-tolkprep-v2';
+const GENERIC_TAG = /^\/(bokstavering|språkvetenskap|ovanligt tecken|Österberg|dialekt|genuint tecken|egennamn|finskt|bildtecken|ålderdomligt|lån)/i;
+
+document.getElementById('lexDate').textContent = new Date(LEXDATA.date).toLocaleDateString('sv-SE');
+
+/* ---------- Lexicon lookup ---------- */
+const SUFFIXES = ['ningarna','ningar','ningen','ning','ornas','arnas','ernas','orna','arna','erna','ens','ets','ers','ars','ors','en','et','er','ar','or','na','ns','ts','s','n','t'];
+function direct(k) { return LEXDATA.f[k] || null; }
+function findForms(word) {
+  const k = word.trim().toLowerCase();
+  if (!k) return null;
+  if (direct(k)) return { key: k, ids: direct(k) };
+  for (const s of SUFFIXES) {
+    if (k.length - s.length < 3 || !k.endsWith(s)) continue;
+    const b = k.slice(0, -s.length);
+    if (direct(b)) return { key: b, ids: direct(b) };
+    if (/^(or|orna|ornas)$/.test(s) && direct(b + 'a')) return { key: b + 'a', ids: direct(b + 'a') };
+    if (/^(er|erna|ernas)$/.test(s) && direct(b + 'e')) return { key: b + 'e', ids: direct(b + 'e') };
+  }
+  return null;
+}
+function leftPart(left) {
+  if (direct(left)) return { key: left, ids: direct(left) };
+  if (left.endsWith('s') && left.length > 4 && direct(left.slice(0, -1))) return { key: left.slice(0, -1), ids: direct(left.slice(0, -1)) };
+  return null;
+}
+function compoundParts(word, depth = 0) {
+  const k = word.toLowerCase().replace(/-/g, '');
+  let best = null;
+  const better = (parts) => {
+    const min = Math.min(...parts.map(p => p.w.length));
+    if (!best || parts.length < best.parts.length || (parts.length === best.parts.length && min > best.min)) best = { parts, min };
+  };
+  for (let i = 3; i <= k.length - 3; i++) {
+    const r = findForms(k.slice(i)); if (!r) continue;
+    const left = k.slice(0, i);
+    const l = leftPart(left);
+    if (l) { better([{ w: l.key, ids: l.ids }, { w: r.key, ids: r.ids }]); continue; }
+    if (depth < 2 && left.length >= 7) {
+      const deeper = compoundParts(left, depth + 1);
+      if (deeper && deeper.every(p => p.w.length >= 4) && r.key.length >= 4) better([...deeper, { w: r.key, ids: r.ids }]);
+    }
+  }
+  return best ? best.parts : null;
+}
+function zipf(word) {
+  const k = String(word).trim().toLowerCase();
+  if (FREQ.has(k)) return FREQ.get(k);
+  for (const s of SUFFIXES) if (k.length - s.length >= 3 && k.endsWith(s) && FREQ.has(k.slice(0, -s.length))) return FREQ.get(k.slice(0, -s.length));
+  return 2;
+}
+function freqLabel(z) { return z >= 4.5 ? 'Mycket vanligt ord' : z >= 3.5 ? 'Vanligt ord' : z >= 2.5 ? 'Ovanligt ord' : 'Sällsynt ord'; }
+function include(t) {
+  if (t.group === 'name' || t.group === 'abbr' || t.group === 'own') return true;
+  const z = zipf(t.lemma || t.word), L = lvl();
+  if (t.group === 'other') return z < L.otherMax;
+  if (z >= L.fackMax) return false;
+  if (L.missingOnly && z >= 2.5) { const lk = lookup(t.lemma || t.word); return lk.status !== 'found' || lk.bok; }
+  return true;
+}
+function lookup(word) {
+  const hit = findForms(word) || (word.includes('-') ? findForms(word.split('-')[0]) : null);
+  if (hit) {
+    const entries = hit.ids.map(i => LEXDATA.e[i]);
+    const tags = entries.flatMap(e => e[2].map(t => LEXDATA.tags[t]));
+    const bok = entries.every(e => e[2].some(t => LEXDATA.tags[t] === '/bokstavering'));
+    return { status: 'found', ids: entries.map(e => e[0]), heads: entries.map(e => e[1]), head: hit.key, bok, tags: [...new Set(tags)] };
+  }
+  const parts = word.length >= 7 ? compoundParts(word) : null;
+  if (parts) return { status: 'parts', parts: parts.map(p => ({ w: p.w, id: LEXDATA.e[p.ids[0]][0], h: LEXDATA.e[p.ids[0]][1] })) };
+  return { status: 'miss' };
+}
+
+/* ---------- Rule-based extraction ---------- */
+const STOP = new Set(('och i att det som en på är av för med till den har de inte om ett han hon men var jag sig från vi så kan man när år säger hade ska skall eller nu sedan också efter detta under mycket blir bli blev vid två där andra mot dessa vara alla får finns dem denna kommer många genom vilket hos sin sina sitt utan ut upp vad ingen inga mer mest samt även då dag dagar tid se sätt både bara skulle kunde ha här hur vilken vilka vem vår våra vårt er era ert deras dess något några någon alltså därför dock dels just kl klockan nr sid enligt inom kring ovan nedan via per över ner fram mellan före bakom vill måste bör gör göra gjort ger gav ta tar tog står stod fanns punkt ärende ärenden beslut föregående mötet möte mötes dagordning protokoll sammanträde ordförande sekreterare justering justerare övriga frågor nästa öppnande avslutning information underlag kallelse presenterar berättar informerar').split(/\s+/));
+
+function extractRules(text) {
+  const tokenRe = /[A-Za-zÅÄÖåäöÉéÜü][A-Za-zÅÄÖåäöÉéÜü0-9-]*/g;
+  const found = new Map(); let m;
+  while ((m = tokenRe.exec(text)) !== null) {
+    let w = m[0].replace(/-+$/, ''); if (!w) continue;
+    const before = text.slice(Math.max(0, m.index - 3), m.index);
+    const sentenceStart = m.index === 0 || /[.!?:\n]\s*$|^\s*$/.test(before) || /\d\.\s*$/.test(before);
+    const isAbbr = /^[A-ZÅÄÖ]{2,}(-[a-zåäö]+)?$/.test(w);
+    if (isAbbr) w = w.split('-')[0];
+    const key = isAbbr ? w : w.toLowerCase();
+    if (!found.has(key)) found.set(key, { forms: new Map(), count: 0, capsMid: 0, lowerSeen: 0 });
+    const f = found.get(key); f.count++; f.forms.set(w, (f.forms.get(w) || 0) + 1);
+    const nextCap = /^\s+[A-ZÅÄÖ][a-zåäö]/.test(text.slice(tokenRe.lastIndex, tokenRe.lastIndex + 3));
+    if (/^[A-ZÅÄÖ][a-zåäö]/.test(w) && (!sentenceStart || nextCap)) f.capsMid++;
+    if (/^[a-zåäö]/.test(w)) f.lowerSeen++;
+  }
+  for (const [key, f] of found) {
+    if (key.endsWith('s') && found.has(key.slice(0, -1)) && f.lowerSeen === 0) {
+      const base = found.get(key.slice(0, -1)); if (base.capsMid > 0) { base.count += f.count; found.delete(key); }
+    }
+  }
+  const out = [];
+  for (const [key, f] of found) {
+    const lower = key.toLowerCase();
+    if (STOP.has(lower) || lower.length < 3) continue;
+    const display = [...f.forms.entries()].sort((a, b) => b[1] - a[1])[0][0];
+    let group = null;
+    if (/^[A-ZÅÄÖ]{2,}$/.test(key)) group = 'abbr';
+    else if (f.capsMid > 0 && f.lowerSeen === 0) group = 'name';
+    else if (lower.length >= lvl().fackLen || (zipf(lower) < 3 && lower.length >= 5)) group = 'fack';
+    else if (lower.length >= 5) group = 'other';
+    if (!group) continue;
+    const word = (group === 'abbr' || group === 'name') ? display : lower;
+    const t = { id: word.toLowerCase(), word, group, count: f.count, why: '' };
+    if (include(t)) out.push(t);
+  }
+  return out;
+}
+
+/* ---------- State ---------- */
+const GROUPS = {
+  name: { title: 'Namn', why: 'Personer, orter och organisationer. Kolla om det finns ett etablerat namntecken, annars bokstavera.' },
+  abbr: { title: 'Förkortningar', why: 'Avgör om förkortningen bokstaveras, tecknas som begrepp eller skrivs ut.' },
+  fack: { title: 'Facktermer', why: 'Ämnesspecifika ord. Saknas tecknet i lexikonet, visas vilka delar av ordet som har tecken.' },
+  other:{ title: 'Centrala ord', why: 'Ord som återkommer och bär mötets innehåll.' },
+  own:  { title: 'Egna termer', why: 'Termer du har lagt till själv.' }
+};
+const STATUS = [['', 'Ej kollat'], ['finns', 'Tecken finns'], ['bokstav', 'Bokstaveras'], ['stam', 'Stäm av på plats']];
+const EXAMPLE = `Kallelse till samverkansmöte, Region Stockholm och Huddinge kommun
+
+1. Uppföljning av LSS-insatser för vuxna med dövblindhet
+2. Ny rutin för beställning av distanstolkning via Bildtelefoni.net
+3. Socialförvaltningen informerar om habiliteringsplaner och samordnad individuell plan (SIP)
+4. Upphandling av tolktjänster 2027 – krav på teckenspråkstolkning, dövblindtolkning och skrivtolkning
+5. Hörselhabiliteringen presenterar nya hörselimplantat
+6. Personlig assistans och assistansersättning från Försäkringskassan
+7. Karin Wallgren från SPSM berättar om tillgänglighetsanpassningar i specialskolan
+
+Underlag: Försäkringskassans vägledning om assistansersättning. Samordnad individuell plan ska upprättas inom fyra veckor. Distanstolkning används när tolk inte kan närvara fysiskt.`;
+
+let state = { text: '', terms: [], domains: [], related: [], openGroups: {}, source: '' };
+const PKEY = 'linkaro-tolkprofil-v1';
+let profile = { level: 'erfaren', known: [] };
+try { const p = JSON.parse(localStorage.getItem(PKEY) || 'null'); if (p) profile = Object.assign(profile, p); } catch (e) {}
+function saveProfile() { try { localStorage.setItem(PKEY, JSON.stringify(profile)); } catch (e) {} }
+const isKnown = w => profile.known.includes(String(w).toLowerCase());
+const LEVELS = {
+  ny:      { hint: 'Fler termer, även ganska vanliga ord, och förslag på närliggande ord visas direkt.', fackLen: 9, otherMax: 4.8, fackMax: 5.5, maxTerms: 60, related: 20,
+             ai: 'Tolken är ny i yrket. Ta med fler termer, även vanligare ord som kan vara svåra att teckna eller lätta att tveka på. Ge tydliga förklaringar.' },
+  erfaren: { hint: 'Facktermer, namn, förkortningar och ovanliga ord.', fackLen: 11, otherMax: 3.2, fackMax: 3.8, maxTerms: 40, related: 15,
+             ai: 'Tolken är erfaren. Hoppa över vardagsord och vanligt förekommande ord. Fokusera på facktermer, namn, förkortningar och centrala begrepp.' },
+  expert:  { hint: 'Bara sällsynta facktermer, namn, förkortningar och ord som saknas i lexikonet.', fackLen: 11, otherMax: 0, fackMax: 2.8, maxTerms: 25, related: 10, missingOnly: true,
+             ai: 'Tolken är mycket erfaren. Ta bara med ovanliga eller mycket ämnesspecifika facktermer, namn och förkortningar. Inga allmänna ord.' }
+};
+const lvl = () => LEVELS[profile.level] || LEVELS.erfaren;
+function load() { try { const s = JSON.parse(localStorage.getItem(KEY) || 'null'); if (s && Array.isArray(s.terms)) state = Object.assign(state, s); } catch (e) {} }
+function save() { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {} }
+
+function mergeTerms(fresh) {
+  const old = new Map(state.terms.map(t => [t.id, t]));
+  const merged = fresh.map(t => { const o = old.get(t.id); return o ? { ...t, status: o.status, note: o.note } : { status: '', note: '', ...t }; });
+  const own = state.terms.filter(t => t.group === 'own' && !merged.some(x => x.id === t.id));
+  return merged.concat(own);
+}
+
+/* ---------- Rendering ---------- */
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const tagName = t => t.replace(/^\//, '').split('/').map((p, i) => i === 0 ? p.charAt(0).toUpperCase() + p.slice(1) : p).join(' › ');
+
+function lexHtml(word, L) {
+  if (L.status === 'found') {
+    const vl = vAttr(L.ids.slice(0, 5).map((id, j) => [id, L.heads[j]]));
+    const links = L.ids.slice(0, 5).map((id, i) => `<a class="sign-link" data-v="${vl}" data-i="${i}" data-w="${esc(word)}" href="${signUrl(id)}" target="_blank" rel="noopener">${L.ids.length > 1 ? 'Tecken ' + (i + 1) : 'Se tecknet'}<span class="sr"> för ${esc(word)}</span></a>`).join(' ');
+    const more = L.ids.length > 5 ? `<a href="${searchUrl(L.head)}" target="_blank" rel="noopener">+${L.ids.length - 5} till</a>` : '';
+    return `<span class="badge b-found">I lexikonet${L.ids.length > 1 ? ` (${L.ids.length} varianter)` : ''}</span>${L.bok ? '<span class="badge b-bok">Bokstaveras</span>' : ''}${links}${more}`;
+  }
+  if (L.status === 'parts') {
+    return `<span class="badge b-part">Delar finns</span>` + L.parts.map(p => `<a class="sign-link" data-v="${vAttr([[p.id, p.h]])}" data-w="${esc(p.w)}" href="${signUrl(p.id)}" target="_blank" rel="noopener">${esc(p.w)}</a>`).join(' + ');
+  }
+  return `<span class="badge b-miss">Saknas i lexikonet</span><a href="${searchUrl(word)}" target="_blank" rel="noopener">Sök ändå</a>`;
+}
+
+function groupOpen(key) { return state.openGroups[key] !== false; }
+
+function render() {
+  const out = document.getElementById('out');
+  const has = state.terms.length > 0;
+  ['summary', 'addRow', 'exportRow'].forEach(id => document.getElementById(id).hidden = !has);
+  const dom = document.getElementById('domains');
+  dom.hidden = !state.domains.length;
+  dom.innerHTML = state.domains.length ? '<b>Ämnesområden:</b>' + state.domains.map(d => `<span>${esc(d)}</span>`).join('') : '';
+  if (!has) {
+    out.innerHTML = '<p class="empty">Termerna dyker upp här när du har klistrat in ett underlag och valt ”Ta fram termer”.</p>';
+    document.getElementById('optional').hidden = true;
+    return;
+  }
+  const looks = new Map(state.terms.map(t => [t.id, lookup(t.lemma || t.word)]));
+  const active = state.terms.filter(t => !isKnown(t.lemma || t.word));
+  const knownItems = state.terms.filter(t => isKnown(t.lemma || t.word));
+  const done = active.filter(t => t.status).length;
+  const aLooks = active.map(t => looks.get(t.id));
+  const nFound = aLooks.filter(l => l.status === 'found').length;
+  const nParts = aLooks.filter(l => l.status === 'parts').length;
+  document.getElementById('doneCount').textContent = done;
+  document.getElementById('doneText').textContent = `av ${active.length} termer förberedda`;
+  document.getElementById('bar').style.width = (active.length ? 100 * done / active.length : 100) + '%';
+  document.getElementById('stats').textContent = `${nFound} finns i lexikonet, ${nParts} har delar som finns, ${active.length - nFound - nParts} saknas.` + (knownItems.length ? ` ${knownItems.length} kan du redan.` : '');
+
+  let html = '';
+  for (const g of [...Object.keys(GROUPS), 'known']) {
+    const items = (g === 'known' ? knownItems : active.filter(t => t.group === g)).sort((a, b) => (b.count || 0) - (a.count || 0) || a.word.localeCompare(b.word, 'sv'));
+    if (!items.length) continue;
+    const G = g === 'known' ? { title: 'Kan jag redan', why: 'Termer från underlaget som finns i din lista över tecken du kan. Räknas inte in i förberedelsen.' } : GROUPS[g];
+    const open = g === 'known' ? state.openGroups.known === true : groupOpen(g);
+    html += `<details class="group g-${g}" data-g="${g}"${open ? ' open' : ''}><summary><h3>${G.title}</h3><span class="gcount">${items.length} st</span></summary>
+      <p class="why-g">${G.why}</p><ul class="terms">`;
+    for (const t of items) {
+      const L = looks.get(t.id);
+      const kn = g === 'known';
+      html += `<li data-id="${esc(t.id)}" class="${kn ? 'is-known' : t.status ? 'done status-' + t.status : ''}">
+        <div class="word">${esc(t.word)}${t.count > 1 ? `<span class="count">${t.count} ggr</span>` : ''}</div>
+        <div class="row-tools">
+          ${kn ? '' : `<select aria-label="Status för ${esc(t.word)}">${STATUS.map(([v, l]) => `<option value="${v}"${t.status === v ? ' selected' : ''}>${l}</option>`).join('')}</select>`}
+          <button class="known-btn" data-w="${esc(t.lemma || t.word)}" aria-pressed="${kn}">${kn ? 'Kan jag inte' : 'Kan jag'}</button>
+          <button class="quiet remove" aria-label="Ta bort ${esc(t.word)}">Ta bort</button>
+        </div>
+        ${t.why ? `<p class="why">${esc(t.why)}</p>` : ''}
+        <div class="lex">${(t.group === 'fack' || t.group === 'other') ? `<span class="badge b-freq">${freqLabel(zipf(t.lemma || t.word))}</span>` : ''}${lexHtml(t.lemma || t.word, L)}</div>
+        ${kn ? '' : `<input type="text" class="note" placeholder="Anteckning, t.ex. hur tecknet görs eller vem du ska fråga" value="${esc(t.note || '')}" aria-label="Anteckning för ${esc(t.word)}">`}
+      </li>`;
+    }
+    html += '</ul></details>';
+  }
+  out.innerHTML = html;
+  renderOptional(looks);
+  renderProfile();
+}
+
+function renderOptional(looks) {
+  const inList = new Set([...state.terms.map(t => (t.lemma || t.word).toLowerCase()), ...profile.known]);
+  const optOpen = k => state.openGroups[k] === true || (state.openGroups[k] === undefined && profile.level === 'ny');
+  let html = '';
+  // AI-suggested related terms
+  const rel = (state.related || []).filter(r => !inList.has(r.term.toLowerCase()));
+  if (rel.length) {
+    html += `<details class="group g-rel" data-g="opt-ai"${optOpen('opt-ai') ? ' open' : ''}><summary><h3>Närliggande facktermer</h3><span class="gcount">${rel.length} förslag från AI</span></summary>
+      <p class="why-g">Ord som ofta hör till ämnet. Kolla vilka som har tecken och lägg till dem du vill förbereda.</p><ul class="relist">`;
+    for (const r of rel) {
+      const L = lookup(r.term);
+      html += `<li><span class="w">${esc(r.term)}</span><span class="lex" style="display:inline-flex;gap:.4rem;flex-wrap:wrap">${lexHtml(r.term, L)}</span><span class="sp"></span>
+        <button class="add-rel" data-term="${esc(r.term)}" data-why="${esc(r.why || '')}">Lägg till</button>${r.why ? `<span class="rw">${esc(r.why)}</span>` : ''}</li>`;
+    }
+    html += '</ul></details>';
+  }
+  // Lexicon categories of the found signs
+  const counts = new Map();
+  for (const t of state.terms) {
+    const L = looks.get(t.id);
+    if (L.status !== 'found') continue;
+    for (const tg of L.tags) if (!GENERIC_TAG.test(tg)) counts.set(tg, (counts.get(tg) || 0) + 1);
+  }
+  const top = [...counts.entries()].sort((a, b) => b[1] - a[1]).slice(0, 4);
+  for (const [tg, n] of top) {
+    const ti = LEXDATA.tags.indexOf(tg);
+    const seen = new Set();
+    const signs = LEXDATA.e.filter(e => e[2].includes(ti)).filter(e => { const k = e[1].toLowerCase(); if (seen.has(k) || inList.has(k)) return false; seen.add(k); return true; })
+      .sort((a, b) => a[1].localeCompare(b[1], 'sv'));
+    if (!signs.length) continue;
+    const key = 'opt-cat-' + ti;
+    html += `<details class="group g-cat" data-g="${key}"${optOpen(key) ? ' open' : ''}><summary><h3>${esc(tagName(tg))}</h3><span class="gcount">${signs.length} tecken i lexikonet</span></summary>
+      <p class="why-g">Ämnesområde i lexikonet som ${n} av dina termer hör till.</p><div class="chips">` +
+      signs.slice(0, 60).map(e => `<span class="chip"><a class="w sign-link" data-v="${vAttr([[e[0], e[1]]])}" data-w="${esc(e[1])}" href="${signUrl(e[0])}" target="_blank" rel="noopener">${esc(e[1])}</a><button class="add-rel" data-term="${esc(e[1])}" aria-label="Lägg till ${esc(e[1])}">+</button></span>`).join('') +
+      (signs.length > 60 ? `<span class="chip miss">+${signs.length - 60} till</span>` : '') + '</div></details>';
+  }
+  document.getElementById('optOut').innerHTML = html;
+  document.getElementById('optional').hidden = !html;
+}
+
+function renderProfile() {
+  const k = [...profile.known].sort((a, b) => a.localeCompare(b, 'sv'));
+  document.getElementById('profileSum').textContent = `Tecken jag kan (${k.length})`;
+  document.getElementById('knownChips').innerHTML = k.length
+    ? k.map(w => `<span class="chip"><span class="w">${esc(w)}</span><button class="unknow" data-w="${esc(w)}" aria-label="Ta bort ${esc(w)} från listan">×</button></span>`).join('')
+    : '<span class="ai-note" style="margin:0">Inga ännu. Tryck ”Kan jag” på en term för att lägga till den.</span>';
+}
+function toggleKnown(w) {
+  const k = String(w).toLowerCase();
+  profile.known = isKnown(k) ? profile.known.filter(x => x !== k) : [...profile.known, k];
+  saveProfile(); render(); renderProfile();
+}
+function setLevelUI() {
+  document.querySelectorAll('input[name="level"]').forEach(r => r.checked = r.value === profile.level);
+  document.getElementById('levelHint').textContent = lvl().hint;
+}
+document.querySelectorAll('input[name="level"]').forEach(r => r.addEventListener('change', () => {
+  profile.level = r.value; saveProfile(); setLevelUI();
+  if (state.source === 'rules' && src.value.trim()) { document.getElementById('analyze').click(); toast('Termlistan är uppdaterad efter din nivå.'); }
+  else if (state.source === 'ai') { toast('Nivån gäller nästa AI-analys.'); render(); }
+}));
+document.getElementById('knownChips').addEventListener('click', e => { const b = e.target.closest('.unknow'); if (b) toggleKnown(b.dataset.w); });
+
+/* ---------- AI ---------- */
+let sample = null, ctl = null;
+(async () => {
+  try { sample = await window.claude?.use('sample'); } catch (e) { sample = null; }
+  if (sample) { document.getElementById('ai').hidden = false; document.getElementById('aiNote').hidden = false; }
+})();
+
+function aiPrompt(text) {
+  const known = profile.known.slice(-300);
+  return `Du hjälper en tolk i svenskt teckenspråk att förbereda ett tolkuppdrag. Läs underlaget nedan och svara ENDAST med JSON, utan markdown, enligt formatet:
+{"domains":["..."],"terms":[{"term":"ordet som det står i texten","lemma":"grundform i singular obestämd form","type":"name|abbr|fack|other","why":"kort förklaring på svenska, max 12 ord"}],"related":[{"term":"grundform","why":"kort förklaring, max 12 ord"}]}
+
+Regler:
+- domains: 1–4 ämnesområden underlaget hör till, korta svenska namn.
+- Tolkens nivå: ${lvl().ai}
+${known.length ? `- Tolken kan redan dessa tecken, ta INTE med dem i terms eller related: ${known.join(', ')}
+` : ''}- terms: de termer tolken bör förbereda: name = personer, orter, organisationer, myndigheter; abbr = förkortningar (förklara vad de står för i why); fack = facktermer/ämnesspecifika ord; other = andra centrala ord. Max ${lvl().maxTerms} termer. För namn och förkortningar: lemma = samma som term (utan genitiv-s).
+- related: upp till ${lvl().related} facktermer som INTE står i texten men sannolikt dyker upp i ett möte om samma ämne. Grundform.
+- Hitta inte på fakta om personer.
+
+Underlag:
+"""
+${text.slice(0, 12000)}
+"""`;
+}
+
+async function runAI() {
+  const text = document.getElementById('src').value.trim();
+  if (!text) { toast('Klistra in ett underlag först.'); return; }
+  const st = document.getElementById('aiStatus');
+  const aiBtn = document.getElementById('ai'), stopBtn = document.getElementById('stop');
+  aiBtn.disabled = true; stopBtn.hidden = false; st.textContent = 'Analyserar underlaget…';
+  ctl = new AbortController();
+  try {
+    const data = await sample.json(aiPrompt(text), { modelTier: 'default', signal: ctl.signal });
+    const terms = (data.terms || []).filter(t => t && t.term).map(t => {
+      const group = ['name', 'abbr', 'fack', 'other'].includes(t.type) ? t.type : 'other';
+      const lemma = (t.lemma || t.term).trim();
+      const word = group === 'name' || group === 'abbr' ? lemma : lemma.toLowerCase();
+      const cnt = (text.toLowerCase().match(new RegExp(t.term.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g')) || []).length;
+      return { id: word.toLowerCase(), word, lemma, group, count: cnt, why: t.why || '' };
+    });
+    const uniq = []; const seen = new Set();
+    for (const t of terms) if (!seen.has(t.id)) { seen.add(t.id); uniq.push(t); }
+    const kept = uniq.filter(include);
+    state.text = text; state.terms = mergeTerms(kept); state.source = 'ai';
+    state.domains = Array.isArray(data.domains) ? data.domains.slice(0, 4) : [];
+    state.related = Array.isArray(data.related) ? data.related.filter(r => r && r.term).slice(0, lvl().related) : [];
+    save(); render(); st.textContent = `Klart. ${kept.length} termer och ${state.related.length} förslag på närliggande ord.`;
+  } catch (e) {
+    const msg = { aborted: 'Analysen avbröts.', not_granted: 'AI-analys är inte tillåten i den här vyn.', rate_limited: 'För många förfrågningar just nu. Vänta en stund och försök igen.' }[e?.code]
+      || 'AI-analysen misslyckades. Använd ”Ta fram termer” eller försök igen senare.';
+    st.textContent = msg;
+    if (e?.code === 'not_granted') { aiBtn.hidden = true; document.getElementById('aiNote').hidden = true; }
+  } finally { aiBtn.disabled = false; stopBtn.hidden = true; ctl = null; }
+}
+
+/* ---------- Misc ---------- */
+function toast(msg) { const el = document.getElementById('toast'); el.textContent = msg; el.classList.add('show'); clearTimeout(toast.t); toast.t = setTimeout(() => el.classList.remove('show'), 2200); }
+function asText() {
+  const label = Object.fromEntries(STATUS);
+  let s = 'Termlista inför tolkuppdrag\n\n';
+  for (const g of Object.keys(GROUPS)) {
+    const items = state.terms.filter(t => t.group === g && !isKnown(t.lemma || t.word)); if (!items.length) continue;
+    s += GROUPS[g].title + '\n';
+    for (const t of items) {
+      const L = lookup(t.lemma || t.word);
+      const lex = L.status === 'found' ? signUrl(L.ids[0]) : L.status === 'parts' ? 'delar: ' + L.parts.map(p => p.w).join(' + ') : 'saknas i lexikonet';
+      s += `- ${t.word} [${label[t.status]}] (${lex})${t.note ? ' – ' + t.note : ''}\n`;
+    }
+    s += '\n';
+  }
+  return s;
+}
+function addTerm(w, why = '') {
+  w = w.trim(); if (!w) return;
+  if (state.terms.some(t => (t.lemma || t.word).toLowerCase() === w.toLowerCase())) { toast('Termen finns redan i listan.'); return; }
+  state.terms.push({ id: w.toLowerCase(), word: w, lemma: w, group: 'own', count: 0, status: '', note: '', why });
+  save(); render(); toast(`”${w}” är tillagd under Egna termer.`);
+}
+
+const src = document.getElementById('src');
+document.getElementById('analyze').addEventListener('click', () => {
+  state.text = src.value; const fresh = extractRules(src.value);
+  state.terms = mergeTerms(fresh); state.domains = []; state.related = []; state.source = 'rules';
+  save(); render(); document.getElementById('aiStatus').textContent = '';
+  if (!fresh.length) toast('Hittade inga termer. Prova med ett längre underlag.');
+});
+document.getElementById('ai').addEventListener('click', runAI);
+document.getElementById('stop').addEventListener('click', () => ctl?.abort());
+document.getElementById('example').addEventListener('click', () => { src.value = EXAMPLE; document.getElementById('analyze').click(); });
+const clearBtn = document.getElementById('clear');
+let clearArmed = null;
+clearBtn.addEventListener('click', () => {
+  if ((state.terms.length || src.value.trim()) && !clearArmed) {
+    clearBtn.textContent = 'Klicka igen för att rensa';
+    clearBtn.style.color = 'var(--miss)';
+    clearArmed = setTimeout(() => { clearArmed = null; clearBtn.textContent = 'Rensa allt'; clearBtn.style.color = ''; }, 4000);
+    return;
+  }
+  clearTimeout(clearArmed); clearArmed = null; clearBtn.textContent = 'Rensa allt'; clearBtn.style.color = '';
+  state = { text: '', terms: [], domains: [], related: [], openGroups: {}, source: '' };
+  src.value = '';
+  try { localStorage.removeItem(KEY); } catch (e) {}
+  render();
+  document.getElementById('aiStatus').textContent = '';
+  toast('Underlag och termlista är rensade. Din nivå och dina kända tecken finns kvar.');
+});
+document.addEventListener('toggle', e => {
+  const d = e.target; if (!(d instanceof HTMLDetailsElement) || !d.dataset.g) return;
+  state.openGroups[d.dataset.g] = d.open; save();
+}, true);
+const outEl = document.getElementById('out');
+outEl.addEventListener('change', e => {
+  const li = e.target.closest('li'); if (!li || e.target.tagName !== 'SELECT') return;
+  const t = state.terms.find(x => x.id === li.dataset.id); if (t) { t.status = e.target.value; save(); render(); }
+});
+outEl.addEventListener('input', e => {
+  if (!e.target.classList.contains('note')) return;
+  const t = state.terms.find(x => x.id === e.target.closest('li').dataset.id); if (t) { t.note = e.target.value; save(); }
+});
+outEl.addEventListener('click', e => {
+  const kb = e.target.closest('.known-btn'); if (kb) { toggleKnown(kb.dataset.w); return; }
+  if (!e.target.classList.contains('remove')) return;
+  state.terms = state.terms.filter(x => x.id !== e.target.closest('li').dataset.id); save(); render();
+});
+document.getElementById('optOut').addEventListener('click', e => {
+  const b = e.target.closest('.add-rel'); if (b) addTerm(b.dataset.term, b.dataset.why || '');
+});
+document.getElementById('addBtn').addEventListener('click', () => { const i = document.getElementById('addInput'); addTerm(i.value); i.value = ''; });
+document.getElementById('addInput').addEventListener('keydown', e => { if (e.key === 'Enter') { addTerm(e.target.value); e.target.value = ''; } });
+document.getElementById('copy').addEventListener('click', async () => {
+  const text = asText();
+  try { await navigator.clipboard.writeText(text); toast('Listan är kopierad.'); }
+  catch (e) { const ta = document.createElement('textarea'); ta.value = text; document.body.appendChild(ta); ta.select();
+    try { document.execCommand('copy'); toast('Listan är kopierad.'); } catch (_) { toast('Kopieringen blockerades. Markera och kopiera manuellt.'); } ta.remove(); }
+});
+document.getElementById('print').addEventListener('click', () => { document.querySelectorAll('#out details').forEach(d => d.open = true); window.print(); });
+
+load(); src.value = state.text || ''; setLevelUI(); render(); renderProfile();
+</script>
+</body>
+</html>

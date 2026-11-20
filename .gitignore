@@ -17,3 +17,8 @@ node_modules/
 
 # Byggd webbplats (skapas av npm run build)
 _site/
+
+# Tolkförberedelsen: okrypterad byggfil och Python-miljö får aldrig checkas in
+tools-src/**/build/
+tools-src/**/.venv/
+__pycache__/

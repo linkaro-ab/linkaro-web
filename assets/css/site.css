@@ -138,6 +138,9 @@ strong, b { font-weight: 700; }
 }
 .dark .eyebrow { color: var(--turkos-ljus); }
 .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--korall); display: inline-block; flex: none; }
+/* Prick som länkar till internt verktyg (Om oss → kvalitet). Osynlig klickyta 24 × 24 px. */
+.dot-link { position: relative; display: inline-flex; flex: none; border-radius: 50%; }
+.dot-link::before { content: ""; position: absolute; inset: -8px; }
 .lead { font-size: 20px; color: var(--text-dampad); }
 .dark .lead, .dark .muted { color: var(--text-pa-petrol); }
 .muted { color: var(--text-dampad); }
@@ -654,7 +657,7 @@ html.enkelt .kort h2 { font-size: 26px !important; }
 html.enkelt .kort ul { padding-left: 1.2em; display: flex; flex-direction: column; gap: 6px; }
 html.enkelt .g, html.enkelt .hero-grid, html.enkelt .sec-head, html.enkelt .cta-box, html.enkelt .btns { display: flex !important; flex-direction: column; gap: 24px; align-items: stretch; }
 html.enkelt main .deco-svg, html.enkelt main .ph, html.enkelt main .phero-img, html.enkelt main svg[aria-hidden='true'],
-html.enkelt main .hero-art, html.enkelt main .dot, html.enkelt main .num, html.enkelt main .decor { display: none !important; }
+html.enkelt main .hero-art, html.enkelt main .dot, html.enkelt main .dot-link, html.enkelt main .num, html.enkelt main .decor { display: none !important; }
 html.enkelt main section, html.enkelt main .sec, html.enkelt main .phero, html.enkelt main .hero, html.enkelt main .svc-sec {
   background: var(--vit) !important; color: var(--petrol-djup); padding-top: 40px !important; padding-bottom: 40px !important; border: 0;
 }

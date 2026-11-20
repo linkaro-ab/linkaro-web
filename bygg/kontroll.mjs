@@ -28,6 +28,13 @@ const idn = new Map(); // sida -> Set(id)
 for (const fil of sidor) {
   const html = fs.readFileSync(fil, 'utf8');
   const sida = '/' + path.relative(UT, fil).replace(/index\.html$/, '');
+  // Interna verktyg (tools/) är lösenordsskyddade: de kontrolleras bara för att innehållet är krypterat.
+  if (sida.startsWith('/tools/')) {
+    if (!/staticryptEncryptedMsgUniqueVariableName/.test(html) || /id="lexdata"|__LEXDATA__/.test(html)) {
+      fel.push(`${sida}: sidan är inte krypterad med StatiCrypt och får inte publiceras. Bygg om med npm run build:prep.`);
+    }
+    continue;
+  }
   const doc = parse(html);
   const ids = new Set();
   const lankar = [];
